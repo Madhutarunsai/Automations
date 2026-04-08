@@ -129,6 +129,31 @@ def cmd_calendar(args: argparse.Namespace) -> None:
         print(f"\nSaved to {args.save}")
 
 
+def cmd_research(args: argparse.Namespace) -> None:
+    """Check autoresearch readiness or show experiment results."""
+    from content_engine.research import (
+        check_autoresearch_ready,
+        format_readiness_report,
+        ResultsLog,
+        AUTORESEARCH_DIR,
+    )
+
+    if args.results:
+        from pathlib import Path
+        log = ResultsLog.load(Path(args.results))
+        summary = log.summary()
+        print(f"\nExperiment Results: {args.results}\n{'=' * 40}")
+        print(f"  Total experiments: {summary['total_experiments']}")
+        print(f"  Kept:     {summary['kept']}")
+        print(f"  Discarded: {summary['discarded']}")
+        print(f"  Crashed:  {summary['crashed']}")
+        if summary["best_bpb"] is not None:
+            print(f"  Best BPB: {summary['best_bpb']:.6f}")
+    else:
+        checks = check_autoresearch_ready()
+        print(f"\n{format_readiness_report(checks)}")
+
+
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(
         prog="content-engine",
@@ -142,11 +167,16 @@ def main(argv: list[str] | None = None) -> None:
     cal_p = sub.add_parser("calendar", help="Show a sample content calendar")
     cal_p.add_argument("--save", help="Save calendar to a JSON file")
 
+    res_p = sub.add_parser("research", help="Autoresearch readiness check or results viewer")
+    res_p.add_argument("--results", help="Path to results.tsv to display")
+
     args = parser.parse_args(argv)
     if args.command == "demo":
         cmd_demo(args)
     elif args.command == "calendar":
         cmd_calendar(args)
+    elif args.command == "research":
+        cmd_research(args)
     else:
         parser.print_help()
         sys.exit(1)
