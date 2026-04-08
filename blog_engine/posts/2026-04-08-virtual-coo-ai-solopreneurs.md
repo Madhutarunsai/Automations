@@ -5,7 +5,7 @@ meta_description: "A virtual COO AI manages your operations, schedules, and work
 primary_keyword: "virtual COO AI"
 secondary_keywords: ["AI COO for small business", "AI operations manager", "solopreneur AI assistant"]
 pillar: "Hiring & Operations"
-word_count: 2050
+word_count: 2110
 seo_score: 0
 aeo_score: 0
 geo_score: 0

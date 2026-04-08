@@ -1,11 +1,11 @@
 ---
 title: "AI Employee Onboarding: Automate Your Hiring Flow"
 slug: "ai-employee-onboarding-automation"
-meta_description: "AI employee onboarding cuts new hire ramp-up time by 50%. Learn to automate onboarding with ClickUp, Make.com, Notion, and Claude step by step."
+meta_description: "AI employee onboarding cuts new hire ramp-up time by 50%. Full guide to automating onboarding with ClickUp, Make.com, Notion, and Claude for your team."
 primary_keyword: "AI employee onboarding"
 secondary_keywords: ["automated onboarding system", "onboarding automation", "AI hiring workflow"]
 pillar: "Hiring & Operations"
-word_count: 2150
+word_count: 2240
 seo_score: 0
 aeo_score: 0
 geo_score: 0

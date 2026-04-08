@@ -1,11 +1,11 @@
 ---
 title: "Automated SOP Creation: How AI Builds SOPs Fast"
 slug: "automated-sop-creation-ai"
-meta_description: "Learn how automated SOP creation with AI saves 10+ hours per week. Step-by-step guide using Claude, Notion, and Make.com to generate SOPs instantly."
+meta_description: "Automated SOP creation with AI saves 10+ hours per week. A complete step-by-step guide using Claude, Notion, and Make.com to generate SOPs in minutes."
 primary_keyword: "automated SOP creation"
 secondary_keywords: ["AI SOP generator", "SOP automation", "create SOPs with AI"]
 pillar: "Hiring & Operations"
-word_count: 2100
+word_count: 1880
 seo_score: 0
 aeo_score: 0
 geo_score: 0
