@@ -1,0 +1,15 @@
+[project]
+name = "content-engine"
+version = "0.1.0"
+description = "Content automation engine with multi-stage pipelines and scheduling"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+content-engine = "content_engine.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
