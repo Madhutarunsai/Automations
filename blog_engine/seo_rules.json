@@ -1,0 +1,93 @@
+{
+  "site": {
+    "name": "Web AI Automations",
+    "url": "https://webaiautomations.com",
+    "author": "Madhu Tarun Sai",
+    "description": "AI Automation Specialist helping solopreneurs scale with custom AI solutions"
+  },
+  "seo": {
+    "min_word_count": 1500,
+    "max_word_count": 2500,
+    "title_max_chars": 60,
+    "meta_description_min_chars": 150,
+    "meta_description_max_chars": 160,
+    "min_headings": 5,
+    "min_internal_links": 2,
+    "min_external_links": 1,
+    "primary_keywords_per_post": 1,
+    "secondary_keywords_per_post": 3,
+    "keyword_density_min": 0.01,
+    "keyword_density_max": 0.025
+  },
+  "aeo": {
+    "direct_answer_within_words": 100,
+    "min_faq_questions": 5,
+    "question_formats": ["What is", "How to", "How does", "Why should", "What are the benefits of", "How much does"],
+    "citation_tone": true
+  },
+  "geo": {
+    "min_statistics": 3,
+    "min_step_by_step_sections": 1,
+    "min_tool_mentions": 3,
+    "include_comparisons": true,
+    "include_pricing_data": true
+  },
+  "content_pillars": [
+    {
+      "name": "AI Automation for Business",
+      "day": "Monday",
+      "topics": ["workflow automation", "AI agents", "business automation ROI", "no-code automation", "AI for small business"]
+    },
+    {
+      "name": "Lead Generation",
+      "day": "Tuesday",
+      "topics": ["cold email automation", "LinkedIn outreach", "lead scoring AI", "automated prospecting", "email deliverability"]
+    },
+    {
+      "name": "Hiring & Operations",
+      "day": "Wednesday",
+      "topics": ["AI hiring", "automated screening", "SOP automation", "operations management", "virtual COO"]
+    },
+    {
+      "name": "Tools & Tutorials",
+      "day": "Thursday",
+      "topics": ["Make.com", "n8n", "Zapier", "Claude Code", "ChatGPT", "Instantly", "ClickUp", "Notion AI"]
+    },
+    {
+      "name": "Case Studies & ROI",
+      "day": "Friday",
+      "topics": ["automation ROI", "before after", "client results", "cost savings", "time savings"]
+    }
+  ],
+  "target_keywords": {
+    "primary": [
+      "AI automation for business",
+      "automated lead generation",
+      "AI hiring system",
+      "business automation agency",
+      "AI automation specialist",
+      "no code automation",
+      "solopreneur automation",
+      "AI workflow automation",
+      "cold email automation",
+      "proposal automation AI"
+    ],
+    "long_tail": [
+      "how to automate lead generation with AI",
+      "best AI tools for solopreneurs 2026",
+      "automated hiring system for small business",
+      "how to use Make.com for business automation",
+      "AI automation agency vs hiring in-house",
+      "cold email automation setup guide",
+      "how to scale business with AI agents",
+      "automated proposal generator for agencies",
+      "AI COO for small business",
+      "n8n vs Zapier vs Make comparison 2026"
+    ]
+  },
+  "internal_links": {
+    "homepage": "https://webaiautomations.com",
+    "projects": "https://webaiautomations.com/projects1",
+    "linkedin": "https://www.linkedin.com/in/madhu-tarun-sai/"
+  }
+}
