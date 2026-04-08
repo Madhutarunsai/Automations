@@ -1,0 +1,25 @@
+Add a blog section to my website. Create:
+1. A /blog page that lists all blog posts in a responsive grid layout
+2. Individual /blog/[slug] pages that render full blog post content from markdown
+3. Add "Blog" to the main navigation menu
+4. Each blog card should show: title, category tag, description, date, and estimated read time
+5. Add category filter buttons at the top: All, AI Automation, Lead Gen, Hiring & Operations, Tools, Case Studies
+6. Make it fully responsive for mobile
+7. Add proper SEO meta tags, Open Graph tags, and JSON-LD Article schema to each blog post page
+8. Add FAQ schema markup for FAQ sections in blog posts
+9. Add a canonical URL to each blog post
+10. Generate a sitemap.xml that includes all blog post URLs
+11. Add a CTA banner at the bottom of every blog post that says "Want us to build this automation for you? Book a free consultation" linking to the homepage
+12. Add a "Related Posts" section at the bottom showing 2-3 other posts
+13. Style the blog to match my existing site design, colors, and fonts
+
+I have 5 blog posts to start with. Here are the slugs and titles:
+- /blog/ai-hiring-system-small-business — "How to Build an AI Hiring System for Small Business"
+- /blog/automated-sop-creation-ai — "Automated SOP Creation: How AI Builds SOPs Fast"
+- /blog/virtual-coo-ai-solopreneurs — "Virtual COO AI: Why Solopreneurs Need One in 2026"
+- /blog/ai-employee-onboarding-automation — "AI Employee Onboarding: Automate Your Hiring Flow"
+- /blog/clickup-ai-operations-management — "ClickUp AI Operations: Manage Your Business Smarter"
+
+All are in the "Hiring & Operations" category, dated April 8, 2026, by Madhu Tarun Sai.
+
+Set up the blog infrastructure first, then I will add the individual post content next.
