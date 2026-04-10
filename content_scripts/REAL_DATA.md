@@ -29,15 +29,19 @@
 - Client paid $500, received the system, then vanished
 - First client scammed him for $500
 
-## Revenue Journey (First ~6 Months)
-- Less than $1,000 total across early months
+## Revenue Journey
+- First 6 months on Upwork: barely made $1,000 TOTAL (not per month — total)
 - Invested in multiple courses and outreach channels
 - Burned money learning what doesn't work
 - Took money from dad to survive
+- From May 2025 onward: made ~$30,000 (the hockey stick moment)
+- That's roughly $5,000-$8,500/month once things clicked
 - First stable client came, then used proof/portfolio to stack more
-- Used to get paid ~$23/hour, making $200-$400 per project
+- Used to get paid ~$23/hour, making $200-$400 per project early on
 - Eventually got to $2,400-$3,000/month (3x teaching salary)
 - Family reaction: "Congrats for working on your dreams" (by then already making 3x salary)
+
+**The real arc:** $1,000 total in 6 months → $30,000 in the next ~11 months
 
 ## Current Numbers
 - Monthly revenue: $5,500 - $8,500 USD
