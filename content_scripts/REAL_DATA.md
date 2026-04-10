@@ -25,9 +25,9 @@
 
 ## First Client
 - Window washing company — needed a CRM build-out
-- Charged: $100 total (NOT $1,000)
-- Client paid HALF ($50) and disappeared after getting the SOP
-- First client scammed him for $50
+- Charged: $1,000
+- Client paid $500, received the system, then vanished
+- First client scammed him for $500
 
 ## Revenue Journey (First ~6 Months)
 - Less than $1,000 total across early months
@@ -146,7 +146,7 @@ Start with:
 - NOT $50/month tools — $500-$800/month
 - Hiring time cut to WITHIN 1 WEEK (not 2 weeks)
 - Email open rate: 93% (sometimes 98%)
-- First project: $100 (not $1,000) — scammed for $50
+- First project: $1,000 — client paid $500 and vanished after receiving the system
 - Quit date was a Friday, not planned — project ended/paused
 - Got next job within ~3 weeks (Nov 27-31)
 - Was sending 10-15 proposals/day during the gap
