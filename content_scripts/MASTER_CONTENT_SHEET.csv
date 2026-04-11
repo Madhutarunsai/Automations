@@ -1,0 +1,104 @@
+SECTION,Script #,Type,Topic,Week,Day,Lead Magnet Keyword,Status
+SCRIPT,1,Teaching,What AI automation actually is — explained simply,Week 1,Mon,AUTOMATION or SEQUENCE,Written
+SCRIPT,2,Teaching,How to write a prompt that works (3-rule formula),Week 1,Mon,SOP or CLAUDE,Written
+SCRIPT,3,Teaching,What AI automation actually is — for beginners,Week 1,Tue,AUTOMATION or SEQUENCE,Written
+SCRIPT,4,Teaching,3 AI tools and when to use each (ChatGPT vs Claude vs Gemini),Week 1,Tue,TOOLS,Written
+SCRIPT,5,Teaching,Free tool stack to start freelancing today,Week 1,Wed,TOOLS,Written
+SCRIPT,6,Teaching,How to set up your Upwork profile step by step,Week 1,Wed,PROFILE,Written
+SCRIPT,7,Teaching,How to pick a niche (the scoring framework),Week 1,Thu,NICHE,Written
+SCRIPT,8,Teaching,How to write a proposal that gets replies (4-line template),Week 2,Mon,PROPOSAL,Written
+SCRIPT,9,Teaching,How to record a video proposal (Vidyard walkthrough),Week 2,Mon,PROPOSAL,Written
+SCRIPT,10,Teaching,How to spot bad Upwork jobs in 10 seconds,Week 2,Tue,PROFILE,Written
+SCRIPT,11,Teaching,Your first n8n automation in 30 minutes,Week 2,Tue,AUTOMATION or SEQUENCE,Written
+SCRIPT,12,Teaching,How to automate your email (6 templates + n8n),Week 2,Wed,EMAILS,Written
+SCRIPT,13,Teaching,How to price your projects (value pricing),Week 2,Thu,PRICING,Written
+SCRIPT,14,Teaching,What to say when they ask what is your rate,Week 2,Thu,PRICING,Written
+SCRIPT,15,Teaching,How to write a cold email that gets replies,Week 3,Mon,EMAILS,Written
+SCRIPT,16,Teaching,How to onboard a new client (exact process),Week 3,Mon,TEMPLATE or CRM,Written
+SCRIPT,17,Teaching,How to communicate with clients so they trust you,Week 3,Tue,TEMPLATE or CRM,Written
+SCRIPT,18,Teaching,How to write an offer that sells,Week 3,Wed,AUDIT (default CTA),Written
+SCRIPT,19,Teaching,5 AI mistakes beginners make,Week 3,Wed,AUDIT (default CTA),Written
+SCRIPT,20,Teaching,How to build a portfolio with zero clients,Week 3,Thu,TEMPLATE or CRM,Written
+SCRIPT,21,Teaching,How to use AI for client research before calls,Week 4,Mon,TEMPLATE or CRM,Written
+SCRIPT,22,Teaching,Managing multiple clients with Notion,Week 4,Mon,TEMPLATE or CRM,Written
+SCRIPT,23,Teaching,How to follow up without being annoying,Week 4,Tue,AUDIT (default CTA),Written
+SCRIPT,24,Teaching,How to automate lead follow-ups (n8n sequence),Week 4,Tue,AUTOMATION or SEQUENCE,Written
+SCRIPT,25,Teaching,One idea to 42 posts (content system breakdown),Week 4,Wed,HOOKS,Written
+SCRIPT,26,Teaching,The Sunday 30-minute habit,Week 4,Thu,AUDIT (default CTA),Written
+SCRIPT,27,Teaching,How to vet an AI freelancer before hiring,Week 5,Mon,TOOLS,Written
+SCRIPT,28,Teaching,Time money effort — pick two,Week 5,Mon,AUDIT (default CTA),Written
+SCRIPT,29,Teaching,How to reverse engineer any tools hidden API,Week 5,Tue,TOOLS,Written
+SCRIPT,30,Teaching,How to start from zero — the 7-day plan,Week 5,Tue,START,Written
+SCRIPT,31,Teaching,How AI video generation works (HeyGen walkthrough),Week 5,Wed,AUDIT (default CTA),Written
+SCRIPT,32,Teaching,How to clone your voice for content (3-min setup),Week 5,Wed,HOOKS,Written
+SCRIPT,33,Teaching,LinkedIn algorithm — why personal beats company page,Week 5,Thu,AUDIT (default CTA),Written
+SCRIPT,34,Teaching,How to build automated email sequences that get 93% open rates,Week 5,Thu,PRICING,Written
+SCRIPT,35,Teaching,How to use website visitor tracking for warm leads,Week 5,Fri,AUDIT (default CTA),Written
+SCRIPT,36,Teaching,The SOP-before-automation rule (why most automations break),Week 5,Fri,AUTOMATION or SEQUENCE,Written
+SCRIPT,37,Service,The content problem every staffing owner has,Week 1,Thu,HOOKS,Written
+SCRIPT,38,Service,The 3-minute setup — how the content system works,Week 1,Fri,HOOKS,Written
+SCRIPT,39,Service,Dashboard walkthrough — 30 videos + 30 carousels ready to post,Week 2,Fri,AUDIT (default CTA),Written
+SCRIPT,40,Service,Why personal brand beats company page (staffing-specific),Week 2,Fri,AUDIT (default CTA),Written
+SCRIPT,41,Service,Staffing company: 6 weeks to 1 week hiring (results),Week 3,Fri,AUDIT (default CTA),Written
+SCRIPT,42,Service,Healthcare client: same clients at 30% ad spend,Week 3,Fri,TEMPLATE or CRM,Written
+SCRIPT,43,Service,93% email open rates — how we built the campaign,Week 4,Fri,PRICING,Written
+SCRIPT,44,Service,The hidden API story — when every other freelancer quit,Week 4,Fri,TOOLS,Written
+SCRIPT,45,Service,Content automation: 42 posts/month from a 20-min voice memo,Week 5,Sat,AUTOMATION or SEQUENCE,Written
+SCRIPT,46,Service,Why were we doing this by hand — client reaction compilation,Week 5,Sat,TEMPLATE or CRM,Written
+SCRIPT,47,Service,Before and after: a staffing owners LinkedIn (0 to 60 posts/month),Week 1,Sat,AUDIT (default CTA),Written
+SCRIPT,48,Service,How we built a 1-day hiring system with Airtable,Week 2,Sat,AUDIT (default CTA),Written
+SCRIPT,49,Story,Teacher to AI builder — the origin (horse analogy),Week 1,Sun,AUDIT (default CTA),Written
+SCRIPT,50,Story,First client paid half and disappeared — the lesson,Week 2,Sun,TEMPLATE or CRM,Written
+SCRIPT,51,Story,The 10K promise — why I wont go home,Week 3,Sun,AUDIT (default CTA),Written
+SCRIPT,52,Story,The part nobody talks about (loneliness),Week 4,Sun,AUDIT (default CTA),Written
+SCRIPT,53,Story,My first six months: less than 1000 total then 30K,Week 5,Sun,AUDIT (default CTA),Written
+SCRIPT,54,Story,The artist who became an automation builder (8 mediums + patience),Week 3,Sat,AUTOMATION or SEQUENCE,Written
+SCRIPT,55,Story,What rejection actually teaches you,Week 4,Sat,AUDIT (default CTA),Written
+SCRIPT,56,Story,The 2 AM debugging sessions — when you cant sleep until its fixed,Week 1,Sat,AUDIT (default CTA),Written
+SCRIPT,57,Contrarian,Learn AI tools is bad advice — learn systems instead,Week 2,Sat,TOOLS,Written
+SCRIPT,58,Contrarian,You dont need a CRM until you have 5 clients,Week 3,Sat,TEMPLATE or CRM,Written
+SCRIPT,59,Contrarian,Courses are overrated — build 5 projects instead,Week 4,Sat,PRICING,Written
+SCRIPT,60,Contrarian,90% of people have the capability — they just stopped asking how,Week 5,Sun,AUDIT (default CTA),Written
+
+
+SECTION,Keyword,Type,Name,Description,PDF File,Status,
+LEAD MAGNET,TOOLS,DM,The AI Freelancer Tool Stack,Every tool organized by category with pricing and free alternatives,lead_magnets/pdfs/tools_stack.pdf,Built,
+LEAD MAGNET,PRICING,DM,Value Pricing Discovery Call Script,Word-for-word script for discovery calls,lead_magnets/pdfs/pricing_script.pdf,Built,
+LEAD MAGNET,SOP,DM,AI SOP Generator Prompt Pack,5 copy-paste prompts that turn transcripts into SOPs,lead_magnets/pdfs/sop_prompts.pdf,Built,
+LEAD MAGNET,CLAUDE,DM,CLAUDE.md Mega Pack (10 Files),10 CLAUDE.md files: proposal writer / cold email / SOP / content / CRM / onboarding / discovery / reports / scope / manager,lead_magnets/pdfs/claude_md_pack.pdf,Built,
+LEAD MAGNET,AUDIT,DM,Free 15-Min Automation Audit,Live call — show what to automate first,Calendly link,Built,
+LEAD MAGNET,CRM,DM,ClickUp Freelancer CRM Template,Pipeline / client tracking / automations / dashboard,lead_magnets/pdfs/clickup_crm.pdf,Built,
+LEAD MAGNET,AUTOMATION,DM,5 n8n Workflow Templates,Lead follow-up / weekly reports / onboarding / content repurposer / invoice reminders,lead_magnets/pdfs/n8n_guide.pdf,Built,
+LEAD MAGNET,SEQUENCE,DM,n8n 3-Email Follow-Up,Working automation + 3 email templates,lead_magnets/pdfs/n8n_guide.pdf,Built,
+LEAD MAGNET,PROFILE,Comment,Upwork Profile Template,Fill-in-the-blank headline / bio / portfolio with 3 experience levels,lead_magnets/pdfs/upwork_profile.pdf,Built,
+LEAD MAGNET,PROPOSAL,Comment,4-Line Proposal Template,The format + 5 niche examples + common mistakes,lead_magnets/pdfs/proposal_template.pdf,Built,
+LEAD MAGNET,HOOKS,Comment,50 Proven Video Hooks,50 hooks in 5 categories with fill-in-the-blank format,lead_magnets/pdfs/50_hooks.pdf,Built,
+LEAD MAGNET,EMAILS,Comment,10 Cold Email Templates,First outreach / follow-ups / testimonial / referral / re-engage / check-in,lead_magnets/pdfs/cold_emails.pdf,Built,
+LEAD MAGNET,START,Link in Bio,Zero-to-First-Client 7-Day Guide,Day-by-day plan with tools and templates,lead_magnets/pdfs/starter_guide.pdf,Built,
+LEAD MAGNET,NICHE,Link in Bio,Niche Selection Worksheet,Scoring framework: skills x industries x demand x budget,lead_magnets/pdfs/niche_worksheet.pdf,Built,
+LEAD MAGNET,CV,Portfolio,Professional CV / Resume,Full CV with metrics / results / methodology,lead_magnets/pdfs/cv_tarun.pdf,Built,
+
+
+PINNED COMMENT FOR EVERY POST,,,,,,,
+,,,,,,,
+PINNED COMMENT TEXT:,"Free resources — just comment or DM the keyword:
+
+TOOLS — My complete AI freelancer tool stack
+PROFILE — Upwork profile fill-in template
+PROPOSAL — 4-line proposal template that gets replies
+TEMPLATE — Notion business-in-a-box workspace
+CRM — ClickUp freelancer CRM template
+EMAILS — 10 cold email templates
+AUTOMATION — 5 n8n workflow templates
+SEQUENCE — 3-email follow-up automation
+CLAUDE — 10 CLAUDE.md files (proposal writer + SOP generator + content writer + more)
+SOP — AI SOP generator prompt pack
+HOOKS — 50 proven short-form video hooks
+PRICING — Value pricing discovery call script
+NICHE — Niche selection worksheet with scoring
+START — Zero-to-first-client 7-day guide
+
+Or skip the DIY:
+AUDIT — Free 15-min call. I will show you what to automate first.
+
+Everything above is free. No catch.",,,,,,
