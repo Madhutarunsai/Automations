@@ -1,0 +1,314 @@
+<html><head><meta charset="UTF-8"><title>AI SOP Generator — 5 Copy-Paste Prompts — @taruns_ai</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;line-height:1.6;max-width:800px;margin:0 auto;padding:40px}h1{font-size:26px;font-weight:700;margin-bottom:4px}h2{font-size:18px;font-weight:700;margin:28px 0 12px;border-bottom:2px solid #6366f1;padding-bottom:4px;text-transform:uppercase;letter-spacing:.05em}h3{font-size:14px;font-weight:600;margin:12px 0 4px}p,li{font-size:14px;margin-bottom:6px}ul,ol{padding-left:20px;margin-bottom:12px}pre,code{background:#f5f3ff;padding:8px 12px;border-radius:6px;font-size:12px;display:block;margin:8px 0;overflow-x:auto;white-space:pre-wrap}.sub{color:#6366f1;font-weight:600;margin-bottom:20px;font-size:15px}.footer{margin-top:32px;padding-top:16px;border-top:1px solid #eee;font-size:12px;color:#888}table{width:100%;border-collapse:collapse;margin:12px 0}th,td{text-align:left;padding:8px 12px;font-size:13px;border-bottom:1px solid #eee}th{background:#f5f3ff;font-weight:600;color:#6366f1}.highlight{background:#f0fdf4;border-left:3px solid #16a34a;padding:12px;margin:12px 0;font-size:13px}.warning{background:#fef3c7;border-left:3px solid #d97706;padding:12px;margin:12px 0;font-size:13px}</style></head><body>
+
+<h1>AI SOP Generator &mdash; 5 Copy-Paste Prompts</h1>
+<div class="sub">By Madhu Tarun Sai &mdash; @taruns_ai | webaiautomations.com</div>
+<p>These are the exact prompts I use to turn messy client processes into clean, professional SOPs in under 10 minutes. I built SOPs for 15 staffing firms across LA, Texas, and Washington using these. Copy, paste, replace the bracketed text, and hit enter.</p>
+
+<div class="highlight"><strong>How to use these:</strong> Each prompt is ready to paste into Claude or ChatGPT. Replace anything in [BRACKETS] with your actual content. The AI will return a fully formatted SOP you can hand directly to a client or team member.</div>
+
+<h2>Prompt 1: Loom Transcript to Formatted SOP</h2>
+<h3>When to use:</h3>
+<p>A client records a Loom video walking through their process. You download the transcript and need to turn it into a clean SOP.</p>
+
+<h3>The Prompt:</h3>
+<pre>You are a senior operations consultant. I'm going to paste a raw transcript from a Loom video where someone walks through a business process. Your job is to convert this into a professional, step-by-step Standard Operating Procedure (SOP).
+
+Rules:
+- Remove all filler words, tangents, and verbal tics
+- Organize into numbered steps with clear action verbs (Click, Navigate, Enter, Select, Verify)
+- Add a "Purpose" section at the top explaining what this process achieves
+- Add a "Prerequisites" section listing what the person needs before starting
+- Add a "Common Mistakes" section at the end based on any corrections or hesitations in the transcript
+- Use simple language a new hire could follow on day one
+- If the speaker references screen elements, describe them clearly (e.g., "the blue Save button in the top-right corner")
+- Estimate the time each major step takes
+
+Here is the transcript:
+
+[PASTE YOUR LOOM TRANSCRIPT HERE]
+
+Format the output as:
+
+TITLE: [Process Name] SOP
+VERSION: 1.0
+LAST UPDATED: [Today's Date]
+OWNER: [Role responsible]
+
+PURPOSE:
+[1-2 sentences]
+
+PREREQUISITES:
+- [List items needed]
+
+PROCEDURE:
+1. [Step with action verb]
+   - Detail if needed
+   - Expected result
+2. [Next step]
+   ...
+
+COMMON MISTAKES:
+- [Mistake]: [How to avoid it]
+
+ESTIMATED TOTAL TIME: [X minutes]</pre>
+
+<h3>Expected Output:</h3>
+<p>A clean, numbered SOP document with 10-30 steps, organized under clear headings, with time estimates and a mistakes section. Ready to drop into Notion, Google Docs, or deliver to a client as a PDF.</p>
+
+<h2>Prompt 2: Bullet Point List to Step-by-Step Procedure</h2>
+<h3>When to use:</h3>
+<p>A client sends you a rough list of bullet points describing how they do something. It is not organized, steps are missing, and the order might be wrong.</p>
+
+<h3>The Prompt:</h3>
+<pre>You are a process documentation specialist. I'm going to give you a rough bullet-point list that describes a business process. It may be incomplete, out of order, or vague.
+
+Your job:
+1. Reorder the steps into the correct logical sequence
+2. Fill in any obviously missing steps (flag these with [ADDED - verify with team])
+3. Convert each bullet into a clear, actionable step starting with a verb
+4. Group related steps under section headings
+5. Add decision points where the process branches (use IF/THEN format)
+6. Add a "Handoff" note wherever responsibility shifts to another person or system
+
+Here are the bullet points:
+
+[PASTE YOUR BULLET POINTS HERE]
+
+Context about this process:
+- Department: [e.g., Sales, HR, Operations]
+- Who performs this: [e.g., Account Manager, Recruiter]
+- Frequency: [e.g., daily, per new client, weekly]
+- Tools involved: [e.g., Airtable, Slack, Gmail]
+
+Format the output as:
+
+PROCESS: [Name]
+PERFORMED BY: [Role]
+FREQUENCY: [How often]
+TOOLS REQUIRED: [List]
+
+SECTION 1: [Section Name]
+1. [Action verb] + [specific instruction]
+   - Tool: [which tool]
+   - Output: [what this step produces]
+   IF [condition], THEN [alternative step]
+2. [Next step]
+   HANDOFF: [To whom/what system]
+
+SECTION 2: [Section Name]
+...
+
+GAPS IDENTIFIED:
+- [Step X]: [What seems to be missing — verify with the team]</pre>
+
+<h3>Expected Output:</h3>
+<p>A structured procedure with 3-5 sections, clearly numbered steps, decision branches, handoff points, and a list of gaps to review with the client. This is the document that makes clients say "how did you organize this so fast?"</p>
+
+<h2>Prompt 3: Slack Conversation to Process Document</h2>
+<h3>When to use:</h3>
+<p>The process only exists in a Slack thread. Multiple people contributed. It is chaotic. You need to extract the actual procedure from the noise.</p>
+
+<h3>The Prompt:</h3>
+<pre>You are a business process analyst. I'm going to paste a Slack conversation where a team discusses and partially describes a business process. The conversation includes questions, answers, corrections, side discussions, and possibly conflicting information.
+
+Your job:
+1. Extract ONLY the process-relevant information — ignore greetings, jokes, off-topic messages
+2. Identify the actual sequence of steps from the conversation
+3. Where team members contradict each other, note both versions and flag as [NEEDS CLARIFICATION]
+4. Identify who seems to own each part of the process based on who described it
+5. Pull out any specific tools, links, credentials, or resources mentioned
+6. Note any tribal knowledge that should be documented (e.g., "oh yeah, you also have to do X or it breaks")
+
+Here is the Slack conversation:
+
+[PASTE THE SLACK THREAD HERE]
+
+Format the output as:
+
+PROCESS: [Best guess at process name]
+EXTRACTED FROM: Slack conversation, [date/channel if known]
+CONFIDENCE LEVEL: [High/Medium/Low — based on how clear the conversation was]
+
+PARTICIPANTS AND ROLES:
+- [Name]: [Apparent role in this process]
+
+RECONSTRUCTED PROCEDURE:
+1. [Step] — Source: [who mentioned this]
+   - [Details]
+2. [Step] — Source: [who mentioned this]
+   ...
+
+TOOLS AND RESOURCES MENTIONED:
+- [Tool/link/resource]: [How it's used]
+
+NEEDS CLARIFICATION:
+- [Item]: [Why it's unclear — what to ask the team]
+
+TRIBAL KNOWLEDGE CAPTURED:
+- [Undocumented rule or workaround mentioned in passing]</pre>
+
+<h3>Expected Output:</h3>
+<p>A reconstructed process document with source attribution, a confidence rating, and clear flags for items that need team verification. This is especially powerful because most companies have zero documentation — you are literally creating organizational knowledge from chat logs.</p>
+
+<h2>Prompt 4: Screen Recording Description to Training Guide</h2>
+<h3>When to use:</h3>
+<p>You watched a screen recording (yours or a client's) and took rough notes about what happened on screen. Now you need a training guide someone can follow without watching the video.</p>
+
+<h3>The Prompt:</h3>
+<pre>You are a technical training writer. I'm going to describe what happens in a screen recording of a software process. I'll describe the screens, clicks, and actions in rough notes. Your job is to turn this into a polished training guide that someone can follow step-by-step without ever watching the video.
+
+Rules:
+- Every click gets its own numbered step
+- Describe UI elements precisely: button names, menu locations, field labels
+- Include what the user should SEE after each step (expected result)
+- Add screenshots placeholders where visuals would help: [SCREENSHOT: description of what to capture]
+- Add "Checkpoint" boxes after every 5-7 steps so the reader can verify they're on track
+- Include a troubleshooting section for common issues
+- Write for someone who has never used this software before
+
+Here are my rough notes from the recording:
+
+[PASTE YOUR SCREEN RECORDING NOTES HERE]
+
+Software being used: [e.g., Airtable, n8n, Go High Level]
+Purpose of this process: [e.g., "Setting up a new client in the CRM"]
+Target reader: [e.g., "New team member, no technical background"]
+
+Format the output as:
+
+TRAINING GUIDE: [Process Name]
+SOFTWARE: [Tool name and version if known]
+ESTIMATED TIME: [X minutes]
+DIFFICULTY: [Beginner / Intermediate / Advanced]
+
+BEFORE YOU START:
+- [ ] [Prerequisite 1 — account access, permissions, etc.]
+- [ ] [Prerequisite 2]
+
+STEP-BY-STEP INSTRUCTIONS:
+
+Step 1: [Action]
+- Navigate to [specific location]
+- Click [exact button/link name]
+- You should see: [expected result]
+[SCREENSHOT: description]
+
+Step 2: [Action]
+...
+
+--- CHECKPOINT ---
+At this point, you should have:
+- [ ] [Completed item 1]
+- [ ] [Completed item 2]
+If anything looks different, [what to do]
+---
+
+TROUBLESHOOTING:
+| Problem | Cause | Solution |
+|---------|-------|----------|
+| [Issue] | [Why] | [Fix]   |
+
+GLOSSARY:
+- [Term]: [Definition — for any jargon used in the guide]</pre>
+
+<h3>Expected Output:</h3>
+<p>A professional training guide with 15-40 numbered steps, checkpoint sections, screenshot placeholders, and a troubleshooting table. Clients pay $500-2,000 for documentation like this. You just made it in 10 minutes.</p>
+
+<h2>Prompt 5: Messy Google Doc to Clean SOP with Sections</h2>
+<h3>When to use:</h3>
+<p>A client shares a Google Doc that is a wall of text, mixed formatting, half-finished thoughts, and outdated steps all jumbled together. You need to turn it into something usable.</p>
+
+<h3>The Prompt:</h3>
+<pre>You are a documentation architect. I'm going to paste the contents of a messy, unstructured Google Doc that attempts to describe a business process. It likely contains:
+- Run-on paragraphs with no clear steps
+- Outdated information mixed with current procedures
+- Incomplete thoughts and TODO notes
+- Inconsistent formatting
+- Duplicate or contradictory instructions
+
+Your job:
+1. Extract every actionable step, even if buried in paragraphs
+2. Organize into logical sections with clear hierarchy
+3. Separate current procedures from outdated/uncertain content
+4. Convert passive voice ("the form is filled out") to active voice ("Fill out the form")
+5. Add version control metadata
+6. Create a table of contents
+7. Flag anything that looks outdated with [REVIEW — possibly outdated]
+8. Flag any TODO/incomplete items with [INCOMPLETE — needs input from team]
+
+Here is the messy document:
+
+[PASTE THE GOOGLE DOC CONTENT HERE]
+
+Process name (if known): [e.g., "Client Onboarding"]
+Department: [e.g., "Operations"]
+Last known update: [e.g., "Unknown" or "~6 months ago"]
+
+Format the output as:
+
+═══════════════════════════════════════
+[PROCESS NAME] — Standard Operating Procedure
+═══════════════════════════════════════
+Version: 1.0 (Rebuilt from legacy documentation)
+Date: [Today]
+Owner: [Department/Role]
+Status: DRAFT — Requires team review
+
+TABLE OF CONTENTS:
+1. Overview
+2. [Section Name]
+3. [Section Name]
+...
+
+─────────────────────
+1. OVERVIEW
+─────────────────────
+Purpose: [What this process achieves]
+Scope: [Who this applies to, when it runs]
+Key Tools: [Software/systems involved]
+
+─────────────────────
+2. [SECTION NAME]
+─────────────────────
+2.1 [Step with action verb]
+    - Detail
+    - Expected outcome
+2.2 [Next step]
+    ...
+
+─────────────────────
+APPENDIX A: ITEMS FLAGGED FOR REVIEW
+─────────────────────
+- [Item]: [Why it needs review]
+
+─────────────────────
+APPENDIX B: INCOMPLETE ITEMS
+─────────────────────
+- [Item]: [What's missing]
+
+─────────────────────
+CHANGE LOG
+─────────────────────
+| Date | Version | Change | Author |
+|------|---------|--------|--------|
+| [Today] | 1.0 | Rebuilt from unstructured doc | [Your name] |</pre>
+
+<h3>Expected Output:</h3>
+<p>A fully restructured SOP with table of contents, numbered sections, review flags, and a change log. This is the deliverable that makes operations managers want to hire you for every department. One staffing firm client saw this output and immediately asked us to rebuild SOPs for all 15 offices.</p>
+
+<div class="warning"><strong>Pro tip:</strong> After generating any SOP, always send it back to the client with this note: "Here's the first draft based on what you shared. I flagged X items that need your input. Can we do a 15-minute review call to finalize?" This positions you as thorough and collaborative, and it almost always leads to additional SOP work.</div>
+
+<h2>Quick Reference</h2>
+<table>
+<tr><th>Prompt</th><th>Input</th><th>Time to SOP</th><th>Best For</th></tr>
+<tr><td>1. Loom Transcript</td><td>Video transcript</td><td>5 minutes</td><td>Visual processes, software walkthroughs</td></tr>
+<tr><td>2. Bullet Points</td><td>Rough list</td><td>3 minutes</td><td>Quick processes, client brain dumps</td></tr>
+<tr><td>3. Slack Thread</td><td>Chat conversation</td><td>8 minutes</td><td>Undocumented tribal knowledge</td></tr>
+<tr><td>4. Screen Recording</td><td>Your notes</td><td>10 minutes</td><td>Software training, onboarding guides</td></tr>
+<tr><td>5. Messy Google Doc</td><td>Existing doc</td><td>7 minutes</td><td>Legacy documentation, process overhauls</td></tr>
+</table>
+
+<div class="highlight"><strong>The business case:</strong> Companies pay $200-500 per SOP when done manually by a consultant. With these prompts, you can produce 5-10 SOPs per day. That's a content automation service you can sell for $2,000-5,000/month. One of our ecommerce clients now produces 42 pieces of content per month from a single 20-minute voice memo using a similar prompt-based system.</div>
+
+<div class="footer">Created by Madhu Tarun Sai &mdash; @taruns_ai<br>webaiautomations.com | DM "AUDIT" for a free 15-min automation consultation</div></body></html>
