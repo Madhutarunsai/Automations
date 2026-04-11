@@ -82,7 +82,38 @@
 
 **RULE: Never mention client company names or individual client names. Use descriptions only.**
 
-### Staffing & Recruitment Clients
+### FLAGSHIP SERVICE: Content Automation System for Staffing Companies
+**This is the main service to sell to staffing firms.**
+
+**What it is:** A done-for-you content machine that builds the staffing company owner's personal brand on autopilot.
+
+**How it works:**
+1. Collect client data: their business info, ICP (ideal candidate/client profile), positioning
+2. Client provides ONE 3-minute audio/video sample (for voice cloning)
+3. Client provides their photo or previous video footage
+4. The system preps content topics based on their data and ICP
+5. AI generates 30 videos using HeyGen (with client's face + cloned voice)
+6. AI generates 30 carousels (for LinkedIn/Instagram)
+7. All content delivered to a dashboard where client reviews and approves
+8. Content gets posted automatically
+
+**Monthly output:** 30 AI videos + 30 carousels = 60 pieces of content/month
+
+**Why staffing companies need this:**
+- Staffing owners are too busy recruiting to create content
+- Personal branding on LinkedIn is THE growth channel for staffing
+- Candidates follow PEOPLE, not company pages
+- Consistent content = inbound leads from both clients AND candidates
+- 60 pieces/month is impossible for a human — easy for the system
+- Competitors aren't doing this yet — first-mover advantage
+
+**The pitch:** "Your competitors are posting once a week. We'll post twice a day. With your face, your voice, your expertise. You don't touch anything."
+
+**Client input required:** 3-minute audio sample + one photo + 30-minute onboarding call. That's it.
+
+**Safe to share publicly:** YES — this is the main service. Talk about it everywhere.
+
+### Staffing & Recruitment Clients (Other Work)
 - **15 staffing firms** across LA, Texas, and Washington
 - Handled **9 firms' outreach simultaneously**
 - One firm on the West Coast: places thousands of people annually
