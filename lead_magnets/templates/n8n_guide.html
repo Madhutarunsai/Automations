@@ -1,0 +1,300 @@
+<html><head><meta charset="UTF-8"><title>5 n8n Automation Templates — Step-by-Step Setup Guides</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;line-height:1.6;max-width:800px;margin:0 auto;padding:40px}h1{font-size:26px;font-weight:700;margin-bottom:4px}h2{font-size:18px;font-weight:700;margin:28px 0 12px;border-bottom:2px solid #6366f1;padding-bottom:4px;text-transform:uppercase;letter-spacing:.05em}h3{font-size:14px;font-weight:600;margin:12px 0 4px}p,li{font-size:14px;margin-bottom:6px}ul,ol{padding-left:20px;margin-bottom:12px}pre,code{background:#f5f3ff;padding:8px 12px;border-radius:6px;font-size:12px;display:block;margin:8px 0;overflow-x:auto;white-space:pre-wrap}.sub{color:#6366f1;font-weight:600;margin-bottom:20px;font-size:15px}.footer{margin-top:32px;padding-top:16px;border-top:1px solid #eee;font-size:12px;color:#888}table{width:100%;border-collapse:collapse;margin:12px 0}th,td{text-align:left;padding:8px 12px;font-size:13px;border-bottom:1px solid #eee}th{background:#f5f3ff;font-weight:600;color:#6366f1}.highlight{background:#f0fdf4;border-left:3px solid #16a34a;padding:12px;margin:12px 0;font-size:13px}</style></head><body>
+
+<h1>5 n8n Automation Templates — Step-by-Step Setup Guides</h1>
+<p class="sub">Copy These Workflows Into Your n8n Instance in Under 30 Minutes Each — by @taruns_ai</p>
+
+<p>These are the 5 automations I build most often for clients. Together they've powered projects up to $14,840 and helped 15 staffing firms streamline their operations. Each guide below walks you through every node, every connection, and every configuration — no guessing required.</p>
+
+<div class="highlight"><strong>Prerequisites:</strong> n8n installed (run <code>npx n8n</code> or use n8n.cloud free tier). A Gmail account for email nodes. A Google Sheet for logging. API keys for Claude and ClickUp if using those templates.</div>
+
+<!-- TEMPLATE 1 -->
+<h2>1. Lead Follow-Up Sequence</h2>
+<p><strong>What it does:</strong> When a new lead comes in via webhook (form, landing page, Calendly), it sends an immediate welcome email, waits 3 days, sends a follow-up with value, waits 4 more days, sends a closing email, and logs the entire sequence in a Google Sheet.</p>
+<p><strong>Setup time:</strong> 20-25 minutes</p>
+
+<h3>Node List (7 nodes)</h3>
+<table>
+<tr><th>#</th><th>Node Type</th><th>Name</th><th>Purpose</th></tr>
+<tr><td>1</td><td>Webhook</td><td>New Lead Trigger</td><td>Receives incoming lead data (name, email, company)</td></tr>
+<tr><td>2</td><td>Gmail</td><td>Welcome Email</td><td>Sends immediate acknowledgment email</td></tr>
+<tr><td>3</td><td>Wait</td><td>Wait 3 Days</td><td>Pauses the workflow for 3 days</td></tr>
+<tr><td>4</td><td>Gmail</td><td>Value Follow-Up</td><td>Sends follow-up with a useful insight</td></tr>
+<tr><td>5</td><td>Wait</td><td>Wait 4 Days</td><td>Pauses the workflow for 4 more days</td></tr>
+<tr><td>6</td><td>Gmail</td><td>Close Email</td><td>Sends a "closing the loop" final email</td></tr>
+<tr><td>7</td><td>Google Sheets</td><td>Log Sequence</td><td>Logs lead + sequence status to a tracking sheet</td></tr>
+</table>
+
+<h3>Connections</h3>
+<p>New Lead Trigger → Welcome Email → Wait 3 Days → Value Follow-Up → Wait 4 Days → Close Email → Log Sequence</p>
+
+<h3>Email Templates</h3>
+<p><strong>Welcome Email (Node 2):</strong></p>
+<pre>Subject: Thanks for reaching out, {{$json.name}}
+
+Hi {{$json.name}},
+
+Thanks for your interest. I got your message and will review the details within 24 hours.
+
+In the meantime — here's a quick overview of how I typically help {{$json.company_type || 'businesses like yours'}}:
+1. Identify the 3 highest-ROI processes to automate
+2. Build and test in 1-2 weeks (not months)
+3. Hand off with documentation so your team owns it
+
+Talk soon,
+[Your name]</pre>
+
+<p><strong>Value Follow-Up (Node 4):</strong></p>
+<pre>Subject: Quick thought for {{$json.company || 'your team'}}
+
+Hi {{$json.name}},
+
+Following up with something useful — most teams I work with automate these 3 things first:
+1. Lead follow-up (biggest ROI, fastest to build)
+2. Weekly reporting (saves 3-5 hours/week)
+3. Client onboarding checklists (eliminates missed steps)
+
+Would any of these be relevant to you? Happy to share how I set them up.
+
+[Your name]</pre>
+
+<p><strong>Close Email (Node 6):</strong></p>
+<pre>Subject: Closing the loop
+
+Hi {{$json.name}},
+
+I've reached out a couple of times and don't want to be a pest. If automation isn't a priority right now, totally understand.
+
+If timing changes, my calendar is always open: [Calendly link]
+
+All the best,
+[Your name]</pre>
+
+<h3>Google Sheet Setup (Node 7)</h3>
+<p>Create a sheet called "Lead Sequence Log" with columns: Name, Email, Company, Webhook Date, Welcome Sent, Follow-Up Sent, Close Sent, Status. Map each field from the workflow data.</p>
+
+<!-- TEMPLATE 2 -->
+<h2>2. Weekly Client Report</h2>
+<p><strong>What it does:</strong> Every Monday at 9am, it pulls task data from ClickUp, sends the raw data to Claude for a professional summary, and emails the formatted report to the client. No more spending 45 minutes writing weekly updates manually.</p>
+<p><strong>Setup time:</strong> 25-30 minutes</p>
+
+<h3>Node List (5 nodes)</h3>
+<table>
+<tr><th>#</th><th>Node Type</th><th>Name</th><th>Purpose</th></tr>
+<tr><td>1</td><td>Schedule Trigger</td><td>Monday 9am</td><td>Fires every Monday at 9:00 AM</td></tr>
+<tr><td>2</td><td>HTTP Request</td><td>Get ClickUp Tasks</td><td>Pulls tasks from ClickUp API (completed last 7 days + in progress)</td></tr>
+<tr><td>3</td><td>HTTP Request</td><td>Claude Summary</td><td>Sends task data to Claude API for a professional summary</td></tr>
+<tr><td>4</td><td>Gmail</td><td>Send Report</td><td>Emails the formatted report to the client</td></tr>
+<tr><td>5</td><td>Google Sheets</td><td>Log Report</td><td>Logs report date + summary to a tracking sheet</td></tr>
+</table>
+
+<h3>Connections</h3>
+<p>Monday 9am → Get ClickUp Tasks → Claude Summary → Send Report → Log Report</p>
+
+<h3>ClickUp API Setup (Node 2)</h3>
+<pre>URL: https://api.clickup.com/api/v2/list/[LIST_ID]/task
+Method: GET
+Headers: Authorization: [YOUR_CLICKUP_API_KEY]
+Query params:
+  statuses[]: complete
+  statuses[]: in progress
+  date_updated_gt: {{$now.minus(7, 'days').toMillis()}}
+</pre>
+
+<h3>Claude Prompt (Node 3)</h3>
+<pre>URL: https://api.anthropic.com/v1/messages
+Method: POST
+Headers:
+  x-api-key: [YOUR_CLAUDE_API_KEY]
+  anthropic-version: 2023-06-01
+  Content-Type: application/json
+Body:
+{
+  "model": "claude-sonnet-4-20250514",
+  "max_tokens": 1024,
+  "messages": [{
+    "role": "user",
+    "content": "You are a project manager writing a weekly client report. Summarize these ClickUp tasks into a professional weekly update email. Group by: Completed This Week, In Progress, and Next Steps. Keep it under 200 words. Be specific about what was done.\n\nTasks:\n{{$json.tasks}}"
+  }]
+}</pre>
+
+<h3>Email Template (Node 4)</h3>
+<pre>Subject: Weekly Project Update — {{$now.format('MMM d, yyyy')}}
+
+Hi [Client Name],
+
+Here's your weekly update:
+
+{{$json.content[0].text}}
+
+Let me know if you have any questions or want to adjust priorities for next week.
+
+Best,
+[Your name]</pre>
+
+<!-- TEMPLATE 3 -->
+<h2>3. New Client Onboarding</h2>
+<p><strong>What it does:</strong> When a new client signs (triggered by webhook from your payment tool or manual trigger), it automatically creates a ClickUp project from a template, sends a welcome email with next steps, and posts a notification in your Slack channel. The entire onboarding checklist runs without you lifting a finger.</p>
+<p><strong>Setup time:</strong> 20-25 minutes</p>
+
+<h3>Node List (5 nodes)</h3>
+<table>
+<tr><th>#</th><th>Node Type</th><th>Name</th><th>Purpose</th></tr>
+<tr><td>1</td><td>Webhook</td><td>New Client Trigger</td><td>Receives client info (name, email, project type, start date)</td></tr>
+<tr><td>2</td><td>HTTP Request</td><td>Create ClickUp Project</td><td>Creates a new list in ClickUp with pre-set tasks</td></tr>
+<tr><td>3</td><td>Gmail</td><td>Welcome Email</td><td>Sends onboarding email with next steps</td></tr>
+<tr><td>4</td><td>Slack</td><td>Team Notification</td><td>Posts in your #clients Slack channel</td></tr>
+<tr><td>5</td><td>Google Sheets</td><td>Log Client</td><td>Adds client to your master client tracker</td></tr>
+</table>
+
+<h3>Connections</h3>
+<p>New Client Trigger → Create ClickUp Project → Welcome Email → Team Notification → Log Client</p>
+<p><em>Note: Nodes 3, 4, and 5 can run in parallel after Node 2 if you prefer. In n8n, connect Node 2's output to all three.</em></p>
+
+<h3>ClickUp Project Creation (Node 2)</h3>
+<pre>URL: https://api.clickup.com/api/v2/folder/[FOLDER_ID]/list
+Method: POST
+Headers: Authorization: [YOUR_CLICKUP_API_KEY]
+Body:
+{
+  "name": "{{$json.client_name}} — {{$json.project_type}}",
+  "content": "Client: {{$json.client_name}}\nEmail: {{$json.client_email}}\nStart: {{$json.start_date}}",
+  "status": "active"
+}</pre>
+
+<h3>Welcome Email (Node 3)</h3>
+<pre>Subject: Welcome aboard, {{$json.client_name}} — here's what happens next
+
+Hi {{$json.client_name}},
+
+Excited to get started on {{$json.project_type}}. Here's what to expect this week:
+
+1. I'll send you a brief questionnaire (5 min to complete)
+2. We'll have a 30-min kickoff call to map your workflows
+3. I'll deliver a project plan with timeline by end of week
+
+Action needed from you:
+- Reply to the questionnaire when it arrives (tomorrow)
+- Share access to tools we discussed (I'll send specific instructions)
+
+Your project space is set up and ready. If anything comes up before our kickoff call, just reply to this email.
+
+Looking forward to it,
+[Your name]</pre>
+
+<h3>Slack Notification (Node 4)</h3>
+<pre>Channel: #clients
+Message: :tada: New client signed!
+*Client:* {{$json.client_name}}
+*Project:* {{$json.project_type}}
+*Start date:* {{$json.start_date}}
+*ClickUp:* {{$node["Create ClickUp Project"].json.url}}</pre>
+
+<!-- TEMPLATE 4 -->
+<h2>4. Content Repurposer</h2>
+<p><strong>What it does:</strong> You paste a content topic or raw notes into a Google Sheet. The workflow reads new rows, sends them to Claude to generate (1) a short-form video script, (2) an Instagram carousel outline, and (3) a LinkedIn post — then writes all three back to the sheet. One idea becomes 3 pieces of content in under 2 minutes.</p>
+<p><strong>Setup time:</strong> 25-30 minutes</p>
+
+<h3>Node List (6 nodes)</h3>
+<table>
+<tr><th>#</th><th>Node Type</th><th>Name</th><th>Purpose</th></tr>
+<tr><td>1</td><td>Schedule Trigger</td><td>Every 30 Min</td><td>Checks the sheet for new rows every 30 minutes</td></tr>
+<tr><td>2</td><td>Google Sheets</td><td>Read New Topics</td><td>Reads rows where "Status" column is empty</td></tr>
+<tr><td>3</td><td>HTTP Request</td><td>Claude — Video Script</td><td>Generates a short-form video script (60-90 sec)</td></tr>
+<tr><td>4</td><td>HTTP Request</td><td>Claude — Instagram Carousel</td><td>Generates a 7-slide carousel outline</td></tr>
+<tr><td>5</td><td>HTTP Request</td><td>Claude — LinkedIn Post</td><td>Generates a LinkedIn post (hook + body + CTA)</td></tr>
+<tr><td>6</td><td>Google Sheets</td><td>Write Results</td><td>Writes all 3 outputs back to the row + sets status to "Done"</td></tr>
+</table>
+
+<h3>Connections</h3>
+<p>Every 30 Min → Read New Topics → Claude — Video Script → Claude — Instagram Carousel → Claude — LinkedIn Post → Write Results</p>
+
+<h3>Google Sheet Setup</h3>
+<p>Create a sheet called "Content Pipeline" with columns: Topic, Raw Notes, Video Script, Instagram Carousel, LinkedIn Post, Status, Date Processed.</p>
+
+<h3>Claude — Video Script Prompt (Node 3)</h3>
+<pre>Body:
+{
+  "model": "claude-sonnet-4-20250514",
+  "max_tokens": 1024,
+  "messages": [{
+    "role": "user",
+    "content": "Write a 60-90 second short-form video script about this topic. Use a strong hook in the first line. Include exactly 3 key points. End with a clear CTA. Format: HOOK → POINT 1 → POINT 2 → POINT 3 → CTA. Keep it conversational and punchy.\n\nTopic: {{$json.Topic}}\nNotes: {{$json['Raw Notes']}}"
+  }]
+}</pre>
+
+<h3>Claude — Instagram Carousel Prompt (Node 4)</h3>
+<pre>Body:
+{
+  "model": "claude-sonnet-4-20250514",
+  "max_tokens": 1024,
+  "messages": [{
+    "role": "user",
+    "content": "Create a 7-slide Instagram carousel outline about this topic. Slide 1: Hook/title (make them stop scrolling). Slides 2-6: One key insight per slide with a bold headline + 1-2 supporting sentences. Slide 7: CTA (follow + save + share). Keep text short — each slide should be readable in 3 seconds.\n\nTopic: {{$json.Topic}}\nNotes: {{$json['Raw Notes']}}"
+  }]
+}</pre>
+
+<h3>Claude — LinkedIn Post Prompt (Node 5)</h3>
+<pre>Body:
+{
+  "model": "claude-sonnet-4-20250514",
+  "max_tokens": 1024,
+  "messages": [{
+    "role": "user",
+    "content": "Write a LinkedIn post about this topic. Structure: 1-line hook (pattern interrupt or bold claim) → 1 line of whitespace → 5-7 lines of body (story or teaching) → CTA asking readers to comment or DM. Use short paragraphs. No hashtags. No emojis. Under 200 words.\n\nTopic: {{$json.Topic}}\nNotes: {{$json['Raw Notes']}}"
+  }]
+}</pre>
+
+<!-- TEMPLATE 5 -->
+<h2>5. Invoice Reminder</h2>
+<p><strong>What it does:</strong> Every weekday morning, it reads your invoices Google Sheet, filters for overdue invoices (due date is in the past + status is "unpaid"), sends a polite reminder email for each, and logs that the reminder was sent. No more chasing payments manually.</p>
+<p><strong>Setup time:</strong> 15-20 minutes</p>
+
+<h3>Node List (5 nodes)</h3>
+<table>
+<tr><th>#</th><th>Node Type</th><th>Name</th><th>Purpose</th></tr>
+<tr><td>1</td><td>Schedule Trigger</td><td>Weekdays 9am</td><td>Fires Monday-Friday at 9:00 AM</td></tr>
+<tr><td>2</td><td>Google Sheets</td><td>Read Invoices</td><td>Reads all rows from the invoices sheet</td></tr>
+<tr><td>3</td><td>IF</td><td>Filter Overdue</td><td>Passes through only rows where due_date &lt; today AND status = "unpaid"</td></tr>
+<tr><td>4</td><td>Gmail</td><td>Send Reminder</td><td>Sends a polite payment reminder to each overdue client</td></tr>
+<tr><td>5</td><td>Google Sheets</td><td>Log Reminder</td><td>Updates the row with "Reminder Sent" + today's date</td></tr>
+</table>
+
+<h3>Connections</h3>
+<p>Weekdays 9am → Read Invoices → Filter Overdue → Send Reminder → Log Reminder</p>
+
+<h3>Google Sheet Setup</h3>
+<p>Create a sheet called "Invoices" with columns: Client Name, Client Email, Invoice Number, Amount, Due Date, Status, Reminder Sent, Reminder Date.</p>
+
+<h3>IF Node Configuration (Node 3)</h3>
+<pre>Conditions (AND):
+  - {{$json.Status}} equals "unpaid"
+  - {{$json['Due Date']}} is before {{$now.format('yyyy-MM-dd')}}
+
+Output: TRUE branch → Send Reminder
+        FALSE branch → (no action, end)</pre>
+
+<h3>Reminder Email (Node 4)</h3>
+<pre>Subject: Friendly reminder — Invoice #{{$json['Invoice Number']}} ({{$json.Amount}})
+
+Hi {{$json['Client Name']}},
+
+Hope you're doing well. Quick reminder that Invoice #{{$json['Invoice Number']}} for {{$json.Amount}} was due on {{$json['Due Date']}}.
+
+If it's already been sent, please disregard this note. If not, here are the payment details:
+
+- Amount: {{$json.Amount}}
+- Invoice #: {{$json['Invoice Number']}}
+- Payment link: [Your payment link]
+
+Let me know if you have any questions or need me to resend the invoice.
+
+Thanks,
+[Your name]</pre>
+
+<h3>Log Update (Node 5)</h3>
+<p>Update the matching row: set "Reminder Sent" to "Yes" and "Reminder Date" to today's date. Use the row number from Node 2 to target the correct row.</p>
+
+<div class="highlight"><strong>Pro tip:</strong> These 5 automations are what I demo in discovery calls. When a prospect sees a working lead follow-up sequence or an automated weekly report, they immediately understand the value. Build all 5, record Loom walkthroughs of each, and you have a portfolio that sells itself. This approach helped me achieve 93-98% email open rates and land clients paying up to $14,840 per project.</div>
+
+<div class="footer">Created by Madhu Tarun Sai — @taruns_ai<br>webaiautomations.com | DM "AUDIT" for a free 15-min automation consultation</div></body></html>

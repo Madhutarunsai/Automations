@@ -1,0 +1,205 @@
+<html><head><meta charset="UTF-8"><title>Zero to First Client — The 7-Day Plan</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;line-height:1.6;max-width:800px;margin:0 auto;padding:40px}h1{font-size:26px;font-weight:700;margin-bottom:4px}h2{font-size:18px;font-weight:700;margin:28px 0 12px;border-bottom:2px solid #6366f1;padding-bottom:4px;text-transform:uppercase;letter-spacing:.05em}h3{font-size:14px;font-weight:600;margin:12px 0 4px}p,li{font-size:14px;margin-bottom:6px}ul,ol{padding-left:20px;margin-bottom:12px}pre,code{background:#f5f3ff;padding:8px 12px;border-radius:6px;font-size:12px;display:block;margin:8px 0;overflow-x:auto;white-space:pre-wrap}.sub{color:#6366f1;font-weight:600;margin-bottom:20px;font-size:15px}.footer{margin-top:32px;padding-top:16px;border-top:1px solid #eee;font-size:12px;color:#888}table{width:100%;border-collapse:collapse;margin:12px 0}th,td{text-align:left;padding:8px 12px;font-size:13px;border-bottom:1px solid #eee}th{background:#f5f3ff;font-weight:600;color:#6366f1}.highlight{background:#f0fdf4;border-left:3px solid #16a34a;padding:12px;margin:12px 0;font-size:13px}</style></head><body>
+
+<h1>Zero to First Client — The 7-Day Plan</h1>
+<p class="sub">From Nothing to Paid AI Automation Client in One Week — by @taruns_ai</p>
+
+<p>This is the exact playbook I'd follow if I had to start over from scratch today. No audience, no portfolio, no testimonials. Just a laptop and 2-3 hours per day. I used a version of this plan to build to Top Rated Plus with 100% Job Success on Upwork, land 15 staffing firm clients, and hit a $14,840 single project. You can do the same.</p>
+
+<div class="highlight"><strong>Before you start:</strong> You need an Upwork account (free), a Gmail address, and access to n8n (free, open source). That's it. Everything else you'll set up along the way.</div>
+
+<h2>Day 1 — Upwork Profile Setup</h2>
+
+<h3>What to do</h3>
+<p>Build your Upwork profile from zero to "client-ready" using the Upwork Profile Template (see the PROFILE lead magnet for the fill-in-the-blank version).</p>
+<ol>
+<li><strong>Headline:</strong> Use the format: "I help [niche] [outcome] using [tool] — [proof point]." Example: "I help staffing firms cut hiring time from 6 weeks to 1 week using n8n + AI automation."</li>
+<li><strong>Overview (bio):</strong> 3 paragraphs — (1) Who you help and what result you deliver. (2) How you do it (tools + method). (3) CTA to message you. Keep it under 200 words.</li>
+<li><strong>Skills:</strong> Add 15 skills. Mix broad (Automation, AI, Workflow Design) with specific (n8n, Make.com, API Integration, ChatGPT, Claude).</li>
+<li><strong>Portfolio:</strong> Skip for now — you'll build this on Day 3.</li>
+<li><strong>Hourly rate:</strong> Set to $50/hr. You'll quote projects, not hourly, but this signals quality.</li>
+<li><strong>Profile photo:</strong> Professional headshot. Plain background, good lighting. Phone camera is fine.</li>
+</ol>
+
+<h3>Time estimate</h3>
+<p>2-3 hours</p>
+
+<h3>Tools needed</h3>
+<p>Upwork account, the PROFILE template PDF</p>
+
+<h3>What "done" looks like</h3>
+<p>Your Upwork profile is 100% complete. Headline has a specific niche + outcome. Bio mentions at least one result (even if hypothetical: "workflows like these have helped staffing firms cut hiring from 6 weeks to 1 week"). All 15 skill tags are set.</p>
+
+<h2>Day 2 — Build Your First n8n Automation</h2>
+
+<h3>What to do</h3>
+<p>Build a simple but real automation: Form Submission → Email Notification → Google Sheet Log. This takes 30 minutes and becomes your first portfolio piece.</p>
+<ol>
+<li><strong>Install n8n:</strong> Run <code>npx n8n</code> or use n8n.cloud (free tier). Open the editor at localhost:5678.</li>
+<li><strong>Add a Webhook node:</strong> This is your "form submission" trigger. Copy the test URL — you'll use it to simulate form entries.</li>
+<li><strong>Add a Gmail node:</strong> Connect your Gmail. Set "To" as your own email. Subject: "New Lead: {{$json.name}}". Body: "Name: {{$json.name}}, Email: {{$json.email}}, Message: {{$json.message}}".</li>
+<li><strong>Add a Google Sheets node:</strong> Create a new Google Sheet called "Leads." Columns: Name, Email, Message, Date. Connect the node and map the fields.</li>
+<li><strong>Test it:</strong> Use the webhook test URL to send a sample JSON payload: <code>{"name":"Test Lead","email":"test@example.com","message":"I need help with automation"}</code></li>
+<li><strong>Verify:</strong> Check that (a) you received the email, (b) the row appeared in Google Sheets.</li>
+</ol>
+
+<h3>Time estimate</h3>
+<p>1-2 hours (including n8n setup)</p>
+
+<h3>Tools needed</h3>
+<p>n8n (free), Gmail, Google Sheets</p>
+
+<h3>What "done" looks like</h3>
+<p>A working 3-node automation that captures a form submission, sends you an email, and logs the lead in a spreadsheet. You've tested it end-to-end and it works.</p>
+
+<h2>Day 3 — Record Your First Portfolio Piece</h2>
+
+<h3>What to do</h3>
+<p>Record a 3-minute Loom or Vidyard walkthrough of the automation you built on Day 2. This becomes your portfolio video.</p>
+<ol>
+<li><strong>Install Loom or Vidyard:</strong> Free Chrome extension. Vidyard is free forever; Loom free tier works too.</li>
+<li><strong>Script your walkthrough (don't wing it):</strong></li>
+</ol>
+<pre>Intro (15 sec): "Here's an automation I built that captures leads from a web form, sends instant email notifications, and logs everything in Google Sheets — no code required."
+
+Demo (2 min): Walk through the n8n workflow. Show each node. Trigger the webhook live. Show the email arriving. Show the Google Sheet updating.
+
+Close (30 sec): "This same pattern works for appointment bookings, contact forms, survey responses — any time you need to capture data and act on it instantly. I build these for [your niche] businesses."</pre>
+<ol start="3">
+<li><strong>Upload to Upwork portfolio:</strong> Add the video link, title it "Lead Capture Automation — n8n Workflow Demo", and write a 2-sentence description.</li>
+</ol>
+
+<h3>Time estimate</h3>
+<p>1-1.5 hours (including re-takes)</p>
+
+<h3>Tools needed</h3>
+<p>Loom or Vidyard (free), the n8n workflow from Day 2</p>
+
+<h3>What "done" looks like</h3>
+<p>A clean 3-minute video is uploaded to your Upwork portfolio. It shows a real working automation with a professional walkthrough. You sound confident and clear.</p>
+
+<h2>Day 4 — Write Your First 5 Proposals</h2>
+
+<h3>What to do</h3>
+<p>Find 5 jobs on Upwork that match your niche and send proposals using the 4-line template.</p>
+<ol>
+<li><strong>Search for jobs:</strong> Use keywords like "automation," "n8n," "workflow," "AI integration," "make.com," or "[your niche] + automation." Filter to jobs posted in the last 24 hours with fewer than 10 proposals.</li>
+<li><strong>Use the 4-line proposal format:</strong></li>
+</ol>
+<pre>Line 1: Specific observation about their job post (proves you read it)
+Line 2: Relevant experience or result ("I built a similar workflow for a staffing firm — cut their hiring time from 6 weeks to 1 week")
+Line 3: How you'd approach their project (1-2 sentences)
+Line 4: Soft CTA ("Happy to share a quick Loom walkthrough of how I'd set this up. Worth a look?")</pre>
+<ol start="3">
+<li><strong>Attach your portfolio video</strong> from Day 3 to every proposal.</li>
+<li><strong>Keep each proposal under 150 words.</strong> Clients skim. Short wins.</li>
+<li><strong>Send all 5.</strong> Don't overthink. Speed beats perfection at this stage.</li>
+</ol>
+
+<h3>Time estimate</h3>
+<p>2-3 hours (including job searching)</p>
+
+<h3>Tools needed</h3>
+<p>Upwork account, the 4-line proposal template</p>
+
+<h3>What "done" looks like</h3>
+<p>5 proposals sent to real jobs. Each is personalized (Line 1 references something specific from their post). Your portfolio video is attached to every one.</p>
+
+<h2>Day 5 — Follow Up + Send 5 More</h2>
+
+<h3>What to do</h3>
+<p>Follow up on yesterday's proposals that haven't been viewed or responded to. Then send 5 new proposals.</p>
+<ol>
+<li><strong>Check proposal status:</strong> Go to Upwork → My Proposals → Submitted. See which have been viewed.</li>
+<li><strong>For viewed but no reply:</strong> Send a follow-up message on the job thread. Keep it short: "Hi [Name], wanted to add — I mapped out a quick approach for this. Happy to share it if helpful." (Don't re-pitch.)</li>
+<li><strong>For not viewed:</strong> No action yet. Give it 48 hours.</li>
+<li><strong>Send 5 new proposals</strong> using the same 4-line template. Try a slightly different niche or keyword if yesterday's jobs were thin.</li>
+</ol>
+
+<h3>Time estimate</h3>
+<p>2-3 hours</p>
+
+<h3>Tools needed</h3>
+<p>Upwork account</p>
+
+<h3>What "done" looks like</h3>
+<p>All Day 4 proposals have been followed up on (where applicable). 5 new proposals sent — that's 10 total proposals in 2 days. You're building momentum.</p>
+
+<h2>Day 6 — Post Your First LinkedIn Content</h2>
+
+<h3>What to do</h3>
+<p>Share what you built this week on LinkedIn. This is your first piece of content — it doesn't need to be perfect, it needs to exist.</p>
+<ol>
+<li><strong>Write a post using this framework:</strong></li>
+</ol>
+<pre>Hook: "I built my first AI automation this week. Here's what happened."
+
+Body (5-7 lines):
+- What you built (the form → email → sheet workflow)
+- How long it took (be honest — "about 2 hours")
+- What it does for a business (saves 30+ min/day of manual data entry)
+- One thing you learned
+- What you're building next
+
+CTA: "If you're in [niche] and still doing [pain point] manually, DM me 'AUDIT' — I'll show you what to automate first."</pre>
+<ol start="2">
+<li><strong>Add a screenshot</strong> of your n8n workflow as the post image. Visual posts get 2-3x more reach.</li>
+<li><strong>Post between 8-10am</strong> on a weekday for maximum reach.</li>
+<li><strong>Engage:</strong> For the next 30 minutes after posting, comment on 5-10 other posts in your niche. This boosts your post's visibility.</li>
+</ol>
+
+<h3>Time estimate</h3>
+<p>1-1.5 hours (writing + engaging)</p>
+
+<h3>Tools needed</h3>
+<p>LinkedIn account, screenshot of your n8n workflow</p>
+
+<h3>What "done" looks like</h3>
+<p>One LinkedIn post is live with a screenshot. You've commented on 5-10 other posts. You've started building your presence — even if you get 0 likes, you showed up.</p>
+
+<h2>Day 7 — Weekly Review + Plan Week 2</h2>
+
+<h3>What to do</h3>
+<p>Review your first week, track your numbers, and plan next week's actions.</p>
+<ol>
+<li><strong>Track your Week 1 metrics:</strong></li>
+</ol>
+<table>
+<tr><th>Metric</th><th>Your Number</th></tr>
+<tr><td>Proposals sent</td><td>_____ (target: 10)</td></tr>
+<tr><td>Proposals viewed</td><td>_____</td></tr>
+<tr><td>Replies / interviews</td><td>_____</td></tr>
+<tr><td>Discovery calls booked</td><td>_____</td></tr>
+<tr><td>Portfolio pieces created</td><td>_____ (target: 1)</td></tr>
+<tr><td>LinkedIn posts published</td><td>_____ (target: 1)</td></tr>
+</table>
+<ol start="2">
+<li><strong>Diagnose:</strong> If 0 replies from 10 proposals — your proposals need work, not more volume. Re-read the 4-line template. If replies but no calls — your follow-up is weak. If calls but no close — your pricing or pitch needs adjustment.</li>
+<li><strong>Plan Week 2:</strong></li>
+</ol>
+<ul>
+<li>Send 10 more proposals (2 per day Mon-Fri)</li>
+<li>Build 1 more automation (pick from the n8n Workflow Templates guide)</li>
+<li>Record 1 more portfolio video</li>
+<li>Post 2-3 times on LinkedIn</li>
+<li>Follow up on every open proposal</li>
+</ul>
+<ol start="3">
+<li><strong>Set a recurring weekly review</strong> every Sunday for 30 minutes. Same metrics, same format.</li>
+</ol>
+
+<h3>Time estimate</h3>
+<p>1 hour</p>
+
+<h3>Tools needed</h3>
+<p>Google Sheet or Notion for tracking, your Upwork dashboard</p>
+
+<h3>What "done" looks like</h3>
+<p>You have a completed Week 1 scorecard. You know exactly what worked and what didn't. Your Week 2 plan is written down with specific daily actions.</p>
+
+<div class="highlight"><strong>The 3 rules that got me to Top Rated Plus, 100% Job Success, and $14,840 projects:</strong><br><br>
+<strong>1. Time + Money + Effort — pick two.</strong> No money? Invest time and effort. No time? Invest money (ads, tools) and effort. There's no shortcut that eliminates all three.<br><br>
+<strong>2. Until $10K/month, your only problem is lead generation.</strong> Not your skills. Not your tools. Not your pricing. You don't have enough people seeing your offer. Fix that first. Everything else is a distraction.<br><br>
+<strong>3. Consistency beats talent.</strong> The freelancer who sends 10 proposals every week for 3 months will always beat the one who sends 50 in week one and quits. Show up every day. The math works if you do.</p></div>
+
+<div class="footer">Created by Madhu Tarun Sai — @taruns_ai<br>webaiautomations.com | DM "AUDIT" for a free 15-min automation consultation</div></body></html>
