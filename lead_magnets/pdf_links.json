@@ -1,0 +1,14 @@
+{
+  "cv_tarun": {
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='v2.api2pdf.com', port=443): Max retries exceeded with url: /chrome/pdf/html (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  },
+  "tools_stack": {
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='v2.api2pdf.com', port=443): Max retries exceeded with url: /chrome/pdf/html (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  },
+  "claude_md_pack": {
+    "status": "error",
+    "error": "HTTPSConnectionPool(host='v2.api2pdf.com', port=443): Max retries exceeded with url: /chrome/pdf/html (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))"
+  }
+}
