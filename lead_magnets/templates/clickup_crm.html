@@ -1,0 +1,283 @@
+<html><head><meta charset="UTF-8"><title>The ClickUp Freelancer CRM — Complete Setup Guide</title>
+<style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Helvetica Neue',Arial,sans-serif;color:#1a1a1a;line-height:1.6;max-width:800px;margin:0 auto;padding:40px}h1{font-size:26px;font-weight:700;margin-bottom:4px}h2{font-size:18px;font-weight:700;margin:28px 0 12px;border-bottom:2px solid #6366f1;padding-bottom:4px;text-transform:uppercase;letter-spacing:.05em}h3{font-size:14px;font-weight:600;margin:12px 0 4px}p,li{font-size:14px;margin-bottom:6px}ul,ol{padding-left:20px;margin-bottom:12px}pre,code{background:#f5f3ff;padding:8px 12px;border-radius:6px;font-size:12px;display:block;margin:8px 0;overflow-x:auto;white-space:pre-wrap}.sub{color:#6366f1;font-weight:600;margin-bottom:20px;font-size:15px}.footer{margin-top:32px;padding-top:16px;border-top:1px solid #eee;font-size:12px;color:#888}table{width:100%;border-collapse:collapse;margin:12px 0}th,td{text-align:left;padding:8px 12px;font-size:13px;border-bottom:1px solid #eee}th{background:#f5f3ff;font-weight:600;color:#6366f1}.highlight{background:#f0fdf4;border-left:3px solid #16a34a;padding:12px;margin:12px 0;font-size:13px}</style></head><body>
+
+<h1>The ClickUp Freelancer CRM</h1>
+<p class="sub">Complete Setup Guide — Go from Scattered to Systemized in One Afternoon</p>
+
+<p>Most freelancers track clients in their head, a messy spreadsheet, or not at all. This guide walks you through building a complete CRM inside ClickUp that handles your pipeline, active projects, finances, and recurring operations. Total setup time: 2-3 hours. Time saved: 5-10 hours per week, permanently.</p>
+
+<div class="highlight"><strong>What you need:</strong> A ClickUp account (free tier works for this). Everything below uses native ClickUp features — no integrations required for the base setup.</div>
+
+<!-- SPACE 1 -->
+<h2>Space 1: Client Management</h2>
+<p>This is your revenue engine. Every lead, active project, and past client lives here.</p>
+
+<h3>List 1: Pipeline</h3>
+<p>This is where leads enter and move through your sales process. Create a new List called "Pipeline" and add these custom fields:</p>
+
+<table>
+<tr><th>Field Name</th><th>Field Type</th><th>Options / Notes</th></tr>
+<tr><td>Company</td><td>Short Text</td><td>The business name</td></tr>
+<tr><td>Contact Name</td><td>Short Text</td><td>Primary decision maker</td></tr>
+<tr><td>Contact Email</td><td>Email</td><td>For quick access</td></tr>
+<tr><td>Estimated Value</td><td>Currency ($)</td><td>What the project is worth</td></tr>
+<tr><td>Stage</td><td>Dropdown</td><td>Lead / Contacted / Discovery Call / Proposal Sent / Negotiation / Closed Won / Closed Lost</td></tr>
+<tr><td>Source</td><td>Dropdown</td><td>Upwork / Referral / Cold Outreach / Inbound / Social Media / Other</td></tr>
+<tr><td>Next Action</td><td>Short Text</td><td>e.g., "Send proposal by Friday"</td></tr>
+<tr><td>Last Contact</td><td>Date</td><td>When you last reached out</td></tr>
+<tr><td>Priority</td><td>Dropdown</td><td>Hot / Warm / Cold</td></tr>
+</table>
+
+<p><strong>Statuses to configure:</strong></p>
+<code>Lead → Contacted → Discovery Call → Proposal Sent → Negotiation → Closed Won → Closed Lost</code>
+
+<div class="highlight"><strong>Pro tip:</strong> Set the default view to Board View grouped by "Stage." This gives you a visual Kanban pipeline. Drag cards between columns as deals progress.</div>
+
+<h3>List 2: Active Clients</h3>
+<p>Once a deal closes, it moves here. Create a new List called "Active Clients" with these custom fields:</p>
+
+<table>
+<tr><th>Field Name</th><th>Field Type</th><th>Options / Notes</th></tr>
+<tr><td>Project Name</td><td>Short Text</td><td>Descriptive name for the engagement</td></tr>
+<tr><td>Company</td><td>Short Text</td><td>Linked to Pipeline entry</td></tr>
+<tr><td>Project Value</td><td>Currency ($)</td><td>Total contract value</td></tr>
+<tr><td>Monthly Retainer</td><td>Currency ($)</td><td>If applicable (leave blank for one-time)</td></tr>
+<tr><td>Deadline</td><td>Date</td><td>Final delivery date</td></tr>
+<tr><td>Status</td><td>Dropdown</td><td>Onboarding / In Progress / Review / Delivered / On Hold</td></tr>
+<tr><td>Priority</td><td>Priority Field</td><td>Urgent / High / Normal / Low</td></tr>
+<tr><td>Slack Channel</td><td>URL</td><td>Link to client Slack channel if applicable</td></tr>
+<tr><td>Drive Folder</td><td>URL</td><td>Link to project Google Drive folder</td></tr>
+</table>
+
+<p><strong>Statuses to configure:</strong></p>
+<code>Onboarding → In Progress → Review → Delivered → On Hold</code>
+
+<h3>List 3: Completed</h3>
+<p>Past clients are future revenue. This list tracks post-project opportunities. Create "Completed" with these fields:</p>
+
+<table>
+<tr><th>Field Name</th><th>Field Type</th><th>Options / Notes</th></tr>
+<tr><td>Company</td><td>Short Text</td><td>Client business name</td></tr>
+<tr><td>Project Summary</td><td>Long Text</td><td>One-liner of what you delivered</td></tr>
+<tr><td>Final Value</td><td>Currency ($)</td><td>What you actually invoiced</td></tr>
+<tr><td>Completed Date</td><td>Date</td><td>When the project wrapped</td></tr>
+<tr><td>Testimonial Received</td><td>Checkbox</td><td>Yes / No</td></tr>
+<tr><td>Referral Asked</td><td>Checkbox</td><td>Yes / No</td></tr>
+<tr><td>Upsell Offered</td><td>Checkbox</td><td>Yes / No</td></tr>
+<tr><td>Upsell Notes</td><td>Long Text</td><td>What additional services could you offer?</td></tr>
+<tr><td>Rating</td><td>Dropdown</td><td>A-Client / B-Client / C-Client (would you work with them again?)</td></tr>
+</table>
+
+<div class="highlight"><strong>Revenue hack:</strong> Sort this list by "Upsell Offered = No" once a month. Reach out to every past client you haven't pitched an upsell to. This alone can add 20-30% to your annual revenue.</div>
+
+<!-- SPACE 2 -->
+<h2>Space 2: Operations</h2>
+<p>This space keeps your business running. Weekly tasks, monthly reviews, and content — all systematized.</p>
+
+<h3>List 1: Weekly Recurring Tasks</h3>
+<p>Create a list called "Weekly Recurring" and add these tasks (set each as a recurring task in ClickUp):</p>
+
+<table>
+<tr><th>Task Name</th><th>Recurrence</th><th>Day</th><th>Notes</th></tr>
+<tr><td>Pipeline Review</td><td>Weekly</td><td>Monday</td><td>Review every lead. Update stages. Follow up on stale deals.</td></tr>
+<tr><td>Client Check-ins</td><td>Weekly</td><td>Tuesday</td><td>Send status update to every active client.</td></tr>
+<tr><td>Content Batch</td><td>Weekly</td><td>Wednesday</td><td>Record / write / schedule 3-5 pieces of content.</td></tr>
+<tr><td>Invoice Check</td><td>Weekly</td><td>Thursday</td><td>Review outstanding invoices. Send reminders.</td></tr>
+<tr><td>Weekly Review</td><td>Weekly</td><td>Friday</td><td>Review wins, losses, metrics. Plan next week.</td></tr>
+<tr><td>Upwork Profile Refresh</td><td>Weekly</td><td>Friday</td><td>Update portfolio, send 5 proposals.</td></tr>
+</table>
+
+<h3>List 2: Monthly Reviews</h3>
+<p>Create "Monthly Reviews" with these recurring tasks:</p>
+
+<table>
+<tr><th>Task Name</th><th>Recurrence</th><th>Notes</th></tr>
+<tr><td>Revenue Review</td><td>1st of month</td><td>Total invoiced, collected, outstanding. Compare to goal.</td></tr>
+<tr><td>Client Satisfaction Check</td><td>1st of month</td><td>NPS-style check-in with every active client.</td></tr>
+<tr><td>Tool Audit</td><td>15th of month</td><td>Review subscriptions. Cancel anything unused.</td></tr>
+<tr><td>Upsell Outreach</td><td>15th of month</td><td>Contact 3 past clients with a new offer.</td></tr>
+<tr><td>Goal Setting</td><td>Last day of month</td><td>Set revenue, client, and content goals for next month.</td></tr>
+</table>
+
+<h3>List 3: Content Calendar</h3>
+<p>Create "Content Calendar" with these custom fields:</p>
+
+<table>
+<tr><th>Field Name</th><th>Field Type</th><th>Options / Notes</th></tr>
+<tr><td>Platform</td><td>Dropdown</td><td>Instagram / LinkedIn / Twitter / YouTube / TikTok / Blog</td></tr>
+<tr><td>Content Type</td><td>Dropdown</td><td>Hook Video / Carousel / Long-form / Story / Thread</td></tr>
+<tr><td>Topic</td><td>Short Text</td><td>What the content is about</td></tr>
+<tr><td>Publish Date</td><td>Date</td><td>When it goes live</td></tr>
+<tr><td>Status</td><td>Dropdown</td><td>Idea / Drafting / Editing / Scheduled / Published</td></tr>
+<tr><td>Link</td><td>URL</td><td>Link to published post</td></tr>
+<tr><td>Performance</td><td>Number</td><td>Views / impressions after 48 hours</td></tr>
+</table>
+
+<div class="highlight"><strong>View tip:</strong> Set the default view to Calendar View grouped by "Publish Date." This gives you a visual content calendar. Switch to Board View grouped by "Status" when you need to see what's in progress.</div>
+
+<!-- SPACE 3 -->
+<h2>Space 3: Finance</h2>
+<p>Know your numbers at a glance. No more digging through email to find who owes you what.</p>
+
+<h3>List 1: Invoices</h3>
+<p>Create "Invoices" with these custom fields:</p>
+
+<table>
+<tr><th>Field Name</th><th>Field Type</th><th>Options / Notes</th></tr>
+<tr><td>Invoice Number</td><td>Short Text</td><td>e.g., INV-2026-001</td></tr>
+<tr><td>Client</td><td>Short Text</td><td>Company name</td></tr>
+<tr><td>Amount</td><td>Currency ($)</td><td>Invoice total</td></tr>
+<tr><td>Status</td><td>Dropdown</td><td>Draft / Sent / Paid / Overdue / Cancelled</td></tr>
+<tr><td>Issue Date</td><td>Date</td><td>When you sent it</td></tr>
+<tr><td>Due Date</td><td>Date</td><td>Payment deadline (typically Net 15 or Net 30)</td></tr>
+<tr><td>Paid Date</td><td>Date</td><td>When payment was received</td></tr>
+<tr><td>Payment Method</td><td>Dropdown</td><td>Wise / PayPal / Stripe / Bank Transfer / Upwork</td></tr>
+<tr><td>Invoice Link</td><td>URL</td><td>Link to PDF or invoicing tool</td></tr>
+</table>
+
+<h3>List 2: Expenses</h3>
+<p>Create "Expenses" with these custom fields:</p>
+
+<table>
+<tr><th>Field Name</th><th>Field Type</th><th>Options / Notes</th></tr>
+<tr><td>Tool / Service</td><td>Short Text</td><td>e.g., "n8n Cloud," "ClickUp," "Claude Pro"</td></tr>
+<tr><td>Monthly Cost</td><td>Currency ($)</td><td>What you pay per month</td></tr>
+<tr><td>Annual Cost</td><td>Currency ($)</td><td>If billed annually</td></tr>
+<tr><td>Category</td><td>Dropdown</td><td>Software / Hosting / Marketing / Education / Contractor / Other</td></tr>
+<tr><td>Billing Date</td><td>Date</td><td>When it renews</td></tr>
+<tr><td>Essential</td><td>Checkbox</td><td>Would your business break without this?</td></tr>
+<tr><td>Notes</td><td>Long Text</td><td>What do you use it for?</td></tr>
+</table>
+
+<!-- AUTOMATIONS -->
+<h2>Automations to Set Up</h2>
+<p>These 4 automations eliminate manual work and ensure nothing slips through the cracks. Set these up in ClickUp's Automations section (available on paid plans; free plans get limited automations).</p>
+
+<h3>Automation 1: Closed Won → Onboarding</h3>
+<table>
+<tr><th>Setting</th><th>Value</th></tr>
+<tr><td><strong>Trigger</strong></td><td>When status changes to "Closed Won" in Pipeline list</td></tr>
+<tr><td><strong>Action 1</strong></td><td>Create task from Template "Client Onboarding Checklist" in Active Clients list</td></tr>
+<tr><td><strong>Action 2</strong></td><td>Assign to yourself</td></tr>
+<tr><td><strong>Action 3</strong></td><td>Set due date to 3 days from trigger</td></tr>
+</table>
+<p><strong>Onboarding template should include:</strong></p>
+<ul>
+<li>Send welcome email with project brief template</li>
+<li>Create shared Google Drive folder</li>
+<li>Schedule kickoff call</li>
+<li>Set up Slack channel (if applicable)</li>
+<li>Send contract and invoice</li>
+<li>Add to Active Clients with all custom fields</li>
+</ul>
+
+<h3>Automation 2: Due Date Reminder</h3>
+<table>
+<tr><th>Setting</th><th>Value</th></tr>
+<tr><td><strong>Trigger</strong></td><td>When task due date is 1 day away (any list in Client Management)</td></tr>
+<tr><td><strong>Action</strong></td><td>Send notification to Slack channel #tasks (or email if no Slack)</td></tr>
+</table>
+
+<h3>Automation 3: Task Completed → Review</h3>
+<table>
+<tr><th>Setting</th><th>Value</th></tr>
+<tr><td><strong>Trigger</strong></td><td>When task status changes to "Delivered" in Active Clients</td></tr>
+<tr><td><strong>Action 1</strong></td><td>Move task to Completed list</td></tr>
+<tr><td><strong>Action 2</strong></td><td>Create subtask: "Request testimonial" (due in 3 days)</td></tr>
+<tr><td><strong>Action 3</strong></td><td>Create subtask: "Ask for referral" (due in 7 days)</td></tr>
+<tr><td><strong>Action 4</strong></td><td>Create subtask: "Pitch upsell" (due in 14 days)</td></tr>
+</table>
+
+<h3>Automation 4: Weekly Review Recurring</h3>
+<table>
+<tr><th>Setting</th><th>Value</th></tr>
+<tr><td><strong>Trigger</strong></td><td>Every Friday at 3:00 PM</td></tr>
+<tr><td><strong>Action</strong></td><td>Create task "Weekly Review" in Operations > Weekly Recurring</td></tr>
+</table>
+<p><strong>Weekly Review task description template:</strong></p>
+<pre>## Weekly Review — [Week of DATE]
+
+### Wins
+- 
+
+### Pipeline Updates
+- New leads:
+- Proposals sent:
+- Deals closed:
+- Pipeline value:
+
+### Revenue
+- Invoiced this week: $
+- Collected this week: $
+- Outstanding: $
+
+### Next Week Priorities
+1. 
+2. 
+3. </pre>
+
+<!-- DASHBOARD -->
+<h2>Dashboard Widgets</h2>
+<p>Create a new Dashboard called "Freelance Command Center" and add these widgets:</p>
+
+<h3>Widget 1: Revenue This Month</h3>
+<table>
+<tr><th>Setting</th><th>Value</th></tr>
+<tr><td>Widget Type</td><td>Calculation (Sum)</td></tr>
+<tr><td>Source</td><td>Invoices list</td></tr>
+<tr><td>Field</td><td>Amount</td></tr>
+<tr><td>Filter</td><td>Status = "Paid" AND Paid Date = This Month</td></tr>
+</table>
+
+<h3>Widget 2: Pipeline Value</h3>
+<table>
+<tr><th>Setting</th><th>Value</th></tr>
+<tr><td>Widget Type</td><td>Calculation (Sum)</td></tr>
+<tr><td>Source</td><td>Pipeline list</td></tr>
+<tr><td>Field</td><td>Estimated Value</td></tr>
+<tr><td>Filter</td><td>Stage NOT IN (Closed Won, Closed Lost)</td></tr>
+</table>
+
+<h3>Widget 3: Tasks Overdue</h3>
+<table>
+<tr><th>Setting</th><th>Value</th></tr>
+<tr><td>Widget Type</td><td>Task List</td></tr>
+<tr><td>Source</td><td>All lists in all Spaces</td></tr>
+<tr><td>Filter</td><td>Due Date is past AND Status is not "Complete"</td></tr>
+<tr><td>Sort</td><td>Due Date (oldest first)</td></tr>
+</table>
+
+<h3>Widget 4: Tasks Completed This Week</h3>
+<table>
+<tr><th>Setting</th><th>Value</th></tr>
+<tr><td>Widget Type</td><td>Bar Chart</td></tr>
+<tr><td>Source</td><td>All lists in Client Management space</td></tr>
+<tr><td>Filter</td><td>Status = "Complete" AND Date Closed = This Week</td></tr>
+<tr><td>Group By</td><td>Day</td></tr>
+</table>
+
+<h3>Widget 5: Revenue by Client (Bonus)</h3>
+<table>
+<tr><th>Setting</th><th>Value</th></tr>
+<tr><td>Widget Type</td><td>Pie Chart</td></tr>
+<tr><td>Source</td><td>Invoices list</td></tr>
+<tr><td>Field</td><td>Amount</td></tr>
+<tr><td>Group By</td><td>Client</td></tr>
+<tr><td>Filter</td><td>Status = "Paid" AND Paid Date = This Month</td></tr>
+</table>
+
+<div class="highlight"><strong>Time to set up:</strong> ~2-3 hours for everything. After that, you spend 15 minutes per day maintaining it and save 5-10 hours per week. This is the same system used to manage 15 staffing clients, a $14,840 project pipeline, and maintain 100% Job Success on Upwork.</div>
+
+<h2>Quick-Start Checklist</h2>
+<ol>
+<li>Create the 3 Spaces: Client Management, Operations, Finance</li>
+<li>Create all Lists with the custom fields above</li>
+<li>Set up the 4 Automations</li>
+<li>Build the Dashboard with all 5 widgets</li>
+<li>Import your existing leads into Pipeline</li>
+<li>Move any current projects to Active Clients</li>
+<li>Add your tools/subscriptions to Expenses</li>
+<li>Set your first Weekly Review task for this Friday</li>
+</ol>
+
+<div class="footer">Created by Madhu Tarun Sai — @taruns_ai<br>webaiautomations.com | DM "AUDIT" for a free 15-min automation consultation</div></body></html>
