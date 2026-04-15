@@ -595,3 +595,307 @@ Three things. Time. Money. Effort. Pick two.
 DM me START for the full day-by-day breakdown.
 
 ---
+
+### SCRIPT 31 — How AI Video Generation Works (HeyGen)
+**Week 5 Wed | Lead magnet: AUDIT**
+
+You can create a video of yourself talking without ever sitting in front of a camera. Here's how it works.
+
+Tools like HeyGen take one photo and a three-minute audio sample. From that, they generate unlimited videos of you. Your face. Your voice. Your words. You write the script. AI makes the video.
+
+Why does this matter? Video gets five times more engagement than text on social media. But nobody has time to film every day. So most people just don't post video. 
+
+Now imagine thirty videos a month. Each one is you — talking about your work, your industry, your thoughts. Posted every day. People start to remember your face.
+
+This works for anyone with expertise. Staffing. Real estate. Coaches. Consultants. If you have a face and a voice, you can build a brand without ever sitting in front of a camera.
+
+DM me AUDIT — I'll show you how to set this up for your business.
+
+---
+
+### SCRIPT 32 — Clone Your Voice in 3 Minutes
+**Week 5 Wed | Lead magnet: AUDIT**
+
+Your voice is the easiest thing to clone. Three minutes of audio is all it takes.
+
+Record yourself talking about your business for three minutes. Doesn't matter what you say. AI doesn't need the words — it needs your voice pattern. Your rhythm. Your tone.
+
+Upload that three minutes to a voice cloning tool. HeyGen. ElevenLabs. A few others. The AI studies it. Now you can type any script and get it read in your voice.
+
+Watch what happens next. You combine that cloned voice with an AI video of your face. Now you have unlimited videos of yourself speaking any script. Your voice. Your face. Your expertise.
+
+The people who use this now — while it's new — build audiences nobody can catch up to in two years.
+
+DM me AUDIT to see how this would work for your business.
+
+---
+
+### SCRIPT 33 — Personal Profile Beats Company Page
+**Week 5 Thu | Lead magnet: AUDIT**
+
+Your company page gets 47 views. Your personal profile gets 4,700. Same content. Here's why.
+
+LinkedIn's algorithm pushes people, not pages. When you post from your personal profile — with your face, your name, your story — LinkedIn shows it to ten to a hundred times more people than the same post from a company page.
+
+This matters in every industry. Especially service businesses. People hire people they trust. Trust comes from seeing a face. Hearing a voice. Reading an opinion.
+
+Every business I've worked with had the same pattern. Beautiful company page. Good logo. Professional posts. Fifty views each. Then the owner starts posting from their personal profile. Same topics. Engagement explodes.
+
+The problem — owners are too busy to create content every day. That's where automation comes in.
+
+DM me AUDIT — I'll show you how to automate this for your face.
+
+---
+
+### SCRIPT 34 — Email Sequences That Hit 93% Open Rates
+**Week 5 Thu | Lead magnet: EMAILS**
+
+My best email campaigns hit 93% open rates. Sometimes 98%. Here's why they work when most people's emails go to spam.
+
+Rule one. Use their first name AND one specific detail about their business. Not "Hi there." Instead: "Hi Maria — saw you're hiring three new recruiters."
+
+Rule two. Subject lines under 40 characters. Lowercase works better than title case. Looks like a real person sent it.
+
+Rule three. No images in the first email. No logos. No signatures with links. Just text. Looks like a friend emailing you, not marketing.
+
+Rule four. Always send from a real domain with warmed-up email deliverability. A cold domain dies in the first week.
+
+Rule five. Follow up three times. Most replies come from follow-ups, not the first email.
+
+DM me EMAILS for 10 templates that follow all five rules.
+
+---
+
+### SCRIPT 35 — Website Visitor Tracking for Warm Leads
+**Week 5 Fri | Lead magnet: AUTOMATION**
+
+Your website has warm leads right now. You just can't see them. Here's how to capture them.
+
+Most visitors land on your site. Look around. Leave. You never know they were there. Meanwhile you're spending money on ads to attract strangers.
+
+Fix it with visitor tracking. Tools like Instantly.ai identify people who land on your site. They find their email, LinkedIn, and company. Within minutes you know who visited.
+
+Now your system automatically sends them a friendly message. "Hey — saw you were looking at our service page. Any questions I can help with?" One email. One LinkedIn message. Two soft touches before they choose your competitor.
+
+I built this for a healthcare client. They got the same number of new clients at thirty percent of their original ad spend. Conversion rates went up 32 to 40 percent.
+
+DM me AUTOMATION — I'll show you how to set this up.
+
+---
+
+### SCRIPT 36 — The SOP-Before-Automation Rule
+**Week 5 Fri | Lead magnet: SOP**
+
+Most automations break within three months. Here's why — and how to fix it.
+
+People try to automate processes they've never written down. They build a fancy system. Six weeks later the business changes slightly. Nobody knows how to fix the automation. It breaks. They abandon it.
+
+The fix. Write the SOP first. Step by step. Every decision point. Every edge case. Document the manual process as it exists today.
+
+Only then do you automate.
+
+Because now, when the business changes, you update the SOP. The SOP tells you exactly what to change in the automation. The system stays alive instead of dying.
+
+Here's the rule I tell every client. If you can't write a one-page SOP for a process, you can't automate it. Document first. Automate second.
+
+DM me SOP for five AI prompts that turn any transcript or rough notes into a polished SOP in minutes.
+
+---
+
+## SERVICE / CASE STUDY (12 scripts)
+
+### SCRIPT 37 — The Content Problem Every Owner Has
+**Week 1 Thu | Lead magnet: AUDIT**
+
+Every business owner I talk to says the same thing. "I know I should be posting. I just don't have time."
+
+Here's the math. You're running your business. Managing your team. Talking to clients. When exactly are you supposed to sit down and write posts? Tuesday at 2 a.m.?
+
+Your competitors figured this out. The ones growing fastest aren't writing their own posts. They have systems.
+
+Here's what a content system actually looks like. You record one three-minute voice memo. The system takes your voice, your face, your expertise — and turns it into thirty videos and thirty carousels. Every month. Posted automatically.
+
+Your face. Your voice. Your knowledge. You just never had to write, film, or schedule any of it.
+
+The owners I work with went from posting once a week — maybe — to twice a day. Inbound messages started showing up in the first month.
+
+DM me AUDIT if you're posting less than twice a week.
+
+---
+
+### SCRIPT 38 — The 3-Minute Setup
+**Week 1 Fri | Lead magnet: AUDIT**
+
+"How much of my time does this take?" That's the first question every business owner asks. The answer is three minutes. Once. Here's the setup.
+
+Minute one. Record yourself talking for 60 seconds. Anything. AI just needs your voice pattern.
+
+Minute two. Send me one headshot or a frame from a past video.
+
+Minute three. Answer three questions. Who are your ideal clients? Who are your ideal hires? What makes your business different?
+
+That's it.
+
+From those three minutes I build your entire content engine. The system researches what your audience cares about. Writes thirty video scripts in your voice. Generates the videos with your face. Creates thirty carousels. Loads everything into a dashboard.
+
+You review. Approve. It posts automatically.
+
+Every month. Sixty pieces of content. Your face. Your voice. Zero hours of your time after setup.
+
+DM me AUDIT — I'll walk you through how this works for your business.
+
+---
+
+### SCRIPT 39 — Dashboard Walkthrough
+**Week 2 Fri | Lead magnet: AUDIT**
+
+This is the dashboard I built for a staffing company owner. Thirty videos. Thirty carousels. All ready to post. He spent three minutes setting it up.
+
+Every row is one piece of content. The video is there. The caption is there. The hashtags are there. The posting date is there. He scrolls through, approves the ones he likes, and hits post. Or it posts automatically.
+
+Behind the dashboard. The system took his ideal customer profile. Researched trending topics in his industry. Wrote thirty scripts in his voice. Generated videos with his face using a three-minute audio sample.
+
+Thirty videos of him talking about hiring trends, candidate tips, industry insights. Thirty carousels breaking down best practices. Sixty pieces of content. Zero hours of his time.
+
+Before this system — he posted once a week. Maybe. Now his LinkedIn has fresh content twice a day. Inbound messages tripled in month one.
+
+DM me AUDIT if you want this for your business.
+
+---
+
+### SCRIPT 40 — Why Personal Brand Beats Company Page
+**Week 2 Fri | Lead magnet: AUDIT**
+
+If your LinkedIn page has a logo instead of your face — you're losing leads every day.
+
+People don't follow companies. They follow people. They hire people they've seen on their feed for months. Not faceless brands.
+
+Every staffing owner I've worked with had the same experience. Their company page got ignored. Then they started posting from their personal profile. Same topics. Same tips. But with their actual face. Engagement exploded. Candidates started DMing them. Clients started mentioning their posts.
+
+The problem — you're too busy to do it consistently. So you post once a month, see no results, and quit.
+
+That's where an automated content system matters. Your face and voice on posts going out twice a day. Without you touching a camera or writing a caption.
+
+DM me AUDIT — I'll show you the exact system I built for my staffing clients.
+
+---
+
+### SCRIPT 41 — 6 Weeks to 1 Week Hiring
+**Week 3 Fri | Lead magnet: AUDIT**
+
+A staffing company was taking six weeks to fill one role. Now they fill roles in under one week. Same team. Same clients. Here's what changed.
+
+Their recruiters were drowning in manual work. Reading every application by hand. Typing data into spreadsheets. Sending template emails one by one. Copy. Paste. All day.
+
+I built three things.
+
+One. AI candidate scoring. Every application gets read and ranked automatically. Qualified candidate rate went from 40% to 78%.
+
+Two. Automated client updates. Every stage of the hiring process triggers a notification. Status calls dropped by more than half.
+
+Three. Real-time pipeline dashboard. Replaced their spreadsheet mess.
+
+Nobody got fired. The recruiters now spend their time talking to candidates and clients. Building relationships. Closing placements. The system does the busywork.
+
+DM me AUDIT — I'll show you the math for your business.
+
+---
+
+### SCRIPT 42 — 30% of the Ad Spend, Same Clients
+**Week 3 Fri | Lead magnet: AUTOMATION**
+
+A healthcare company was burning thousands on Google ads. Now they get the same number of clients at 30% of the original spend. Here's how.
+
+The problem. They were spending ads to attract strangers. Meanwhile, people already on their website were leaving without booking. Classic leaky bucket.
+
+The fix. Website visitor tracking. When someone lands on the service page and doesn't book — the system finds their email, LinkedIn, and company automatically. AI writes a personalized message. Sends an email and LinkedIn invite within minutes.
+
+"Hey, saw you were looking at our service page. Anything I can help answer?"
+
+One email. One LinkedIn message. Two touches before they picked a competitor. Conversion rates jumped 32 to 40%.
+
+Before you spend more on ads, capture the people already coming to you. Fix the leak before pouring more water.
+
+DM me AUTOMATION for the n8n setup that does this.
+
+---
+
+### SCRIPT 43 — How We Built 93% Email Open Rates
+**Week 4 Fri | Lead magnet: EMAILS**
+
+My last campaign hit 93% open rates. One campaign peaked at 98%. Here's the setup.
+
+Step one. Warmed up domains for three weeks before sending. This is non-negotiable. Cold domains die instantly.
+
+Step two. Personalized first lines. Every single email referenced something specific about the recipient's company. Not just their name — their recent hires, their website, their services.
+
+Step three. Subject lines under 40 characters. Lowercase. Looked like a real person sent it. "quick question about your team."
+
+Step four. Plain text only. No images. No logos. No signatures. Pure human-looking email.
+
+Step five. AI-written body in the recipient's industry language. Not marketing-speak. Actual words a colleague would use.
+
+The result. Inboxes opened. Replies came. Meetings got booked.
+
+DM me EMAILS for 10 template styles that follow this framework.
+
+---
+
+### SCRIPT 44 — The Hidden API Story
+**Week 4 Fri | Lead magnet: AUTOMATION**
+
+A client needed their old CRM connected to their new system. The problem — the CRM had zero API documentation. Zero. Every freelancer they hired quit.
+
+I used one trick. Browser Dev Tools.
+
+I opened the CRM. Right-clicked. Inspect. Network tab. Then I manually did the action I wanted to automate. Watched the network traffic.
+
+Every button click is actually an API call happening in the background. I could see the URL. The method. The payload. All of it. It wasn't hidden. It was just invisible to people who don't look under the hood.
+
+I copied those payloads. Recreated them in n8n as HTTP requests. Added error handling. Sleep nodes for rate limits. Retry logic.
+
+Sixty nodes. Fourteen thousand leads. Ten sub-accounts connected into one master workflow. Runs every second. Solid.
+
+This isn't hacking. It's how the internet works. Every freelancer who quit just didn't know to look.
+
+DM me AUTOMATION for the full technique.
+
+---
+
+### SCRIPT 45 — 42 Posts from a 20-Minute Voice Memo
+**Week 5 Sat | Lead magnet: AUDIT**
+
+An ecommerce company's founder recorded one 20-minute voice memo. From that memo, the system produced 42 social media posts that month. Here's how.
+
+She talked about her business. Her customers. Her opinions. No script. Just stream of consciousness for twenty minutes.
+
+The system transcribed it. Fed it to Claude with her brand voice profile. Claude extracted 42 distinct ideas. Wrote each one as a full post. Formatted for Instagram, LinkedIn, Twitter. Matched her tone exactly.
+
+95% brand voice accuracy. Her team compared AI posts to her manually written ones. Couldn't tell the difference.
+
+Month one — 35 posts published. Same engagement as her old handwritten posts. Her time — two hours for the whole month.
+
+Month three — 42 posts and a 15% increase in engagement. Three new client inquiries came directly from the content.
+
+DM me AUDIT if you want this for your business.
+
+---
+
+### SCRIPT 46 — "Why Were We Doing This by Hand?"
+**Week 5 Sat | Lead magnet: AUDIT**
+
+Every time I deliver an automation, clients say the same line. "Why were we doing this by hand?"
+
+Last month. A staffing company's recruiters used to spend three hours every morning copying candidate info between two systems. I automated it in one week. The owner opened the dashboard, watched the candidates auto-populate, and literally said those words.
+
+A healthcare client who used to manually email every new lead. Now the system sends a personalized email within sixty seconds. Same reaction. "Why were we doing this by hand?"
+
+An ecommerce founder who wrote every social post by hand. Now a voice memo turns into 42 posts a month. Her exact words. "Why was I doing this by hand?"
+
+The pattern is always the same. Smart business owners. Busy teams. Doing work a system does in seconds. Not because they're lazy. Because nobody showed them what's possible.
+
+That's my entire job. Show you what's possible. Then build it.
+
+DM me AUDIT. Fifteen minutes. I'll show you what you're doing by hand that shouldn't be.
+
+---
