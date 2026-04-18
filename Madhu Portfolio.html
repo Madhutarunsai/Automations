@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Madhu Tarun Sai — Portfolio</title>
+<meta name="description" content="Portfolio of Madhu Tarun Sai — building AI automations, content systems, and delightful software." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0d12;
+    --bg-elev: #12151c;
+    --surface: #171b24;
+    --border: #232836;
+    --text: #e7eaf0;
+    --muted: #9aa3b2;
+    --accent: #7c5cff;
+    --accent-2: #22d3ee;
+    --gradient: linear-gradient(135deg, #7c5cff 0%, #22d3ee 100%);
+    --radius: 14px;
+    --max-w: 1120px;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #ffffff;
+      --bg-elev: #f7f8fb;
+      --surface: #ffffff;
+      --border: #e6e8ee;
+      --text: #0e1116;
+      --muted: #4a5160;
+      --accent: #5b3df5;
+      --accent-2: #0891b2;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+
+  .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+  /* Nav */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: saturate(140%) blur(10px);
+    background: color-mix(in srgb, var(--bg) 75%, transparent);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 24px; max-width: var(--max-w); margin: 0 auto;
+  }
+  .brand {
+    font-weight: 700; letter-spacing: -0.01em; font-size: 1.05rem;
+    display: inline-flex; align-items: center; gap: 10px;
+  }
+  .brand-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--gradient);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent);
+  }
+  .nav-links { display: flex; gap: 22px; align-items: center; }
+  .nav-links a { color: var(--muted); font-size: 0.95rem; font-weight: 500; }
+  .nav-links a:hover { color: var(--text); }
+  .nav-cta {
+    padding: 8px 14px; border-radius: 999px;
+    background: var(--gradient); color: white !important; font-weight: 600;
+  }
+  @media (max-width: 640px) {
+    .nav-links a:not(.nav-cta) { display: none; }
+  }
+
+  /* Hero */
+  .hero {
+    position: relative; overflow: hidden;
+    padding: 96px 0 64px;
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: -20% -10% auto -10%; height: 520px;
+    background:
+      radial-gradient(600px 300px at 20% 30%, color-mix(in srgb, var(--accent) 35%, transparent), transparent 70%),
+      radial-gradient(500px 300px at 80% 20%, color-mix(in srgb, var(--accent-2) 30%, transparent), transparent 70%);
+    filter: blur(30px); z-index: 0; pointer-events: none;
+  }
+  .hero-inner { position: relative; z-index: 1; }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 6px 12px; border-radius: 999px;
+    background: var(--surface); border: 1px solid var(--border);
+    color: var(--muted); font-size: 0.85rem; font-weight: 500;
+  }
+  .eyebrow .pulse {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: #22c55e; box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.18);
+  }
+  h1.hero-title {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 800; line-height: 1.05; letter-spacing: -0.03em;
+    margin: 18px 0 16px;
+  }
+  .hero-title .grad {
+    background: var(--gradient);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .hero-sub {
+    color: var(--muted); font-size: 1.1rem; max-width: 640px;
+  }
+  .hero-ctas { display: flex; gap: 12px; margin-top: 26px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 18px; border-radius: 10px; font-weight: 600;
+    border: 1px solid var(--border); background: var(--surface);
+    transition: transform .15s ease, border-color .2s ease, background .2s ease;
+  }
+  .btn:hover { transform: translateY(-1px); border-color: color-mix(in srgb, var(--accent) 60%, var(--border)); }
+  .btn.primary { background: var(--gradient); border: none; color: white; }
+  .btn.primary:hover { filter: brightness(1.05); }
+
+  /* Sections */
+  section { padding: 72px 0; }
+  .section-head {
+    display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 28px;
+  }
+  .section-head h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem); letter-spacing: -0.02em;
+    margin: 0; font-weight: 700;
+  }
+  .section-head p { color: var(--muted); margin: 6px 0 0; }
+  .kicker {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.8rem;
+    color: var(--accent-2); text-transform: uppercase; letter-spacing: 0.12em;
+  }
+
+  /* About */
+  .about-grid {
+    display: grid; grid-template-columns: 1.4fr 1fr; gap: 36px; align-items: start;
+  }
+  @media (max-width: 820px) { .about-grid { grid-template-columns: 1fr; } }
+  .about-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 24px;
+  }
+  .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+  .stat {
+    background: var(--bg-elev); border: 1px solid var(--border);
+    border-radius: 10px; padding: 14px; text-align: center;
+  }
+  .stat b { display: block; font-size: 1.4rem; letter-spacing: -0.02em; }
+  .stat span { color: var(--muted); font-size: 0.85rem; }
+
+  /* Skills */
+  .skills {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px;
+  }
+  .skill {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 16px 18px; display: flex; gap: 12px; align-items: center;
+  }
+  .skill-icon {
+    width: 38px; height: 38px; border-radius: 10px;
+    background: var(--gradient); display: grid; place-items: center; color: white;
+    font-weight: 700;
+  }
+  .skill h4 { margin: 0; font-size: 0.98rem; }
+  .skill p { margin: 2px 0 0; color: var(--muted); font-size: 0.85rem; }
+
+  /* Projects */
+  .projects {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px;
+  }
+  .project {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    overflow: hidden; display: flex; flex-direction: column;
+    transition: transform .2s ease, border-color .2s ease;
+  }
+  .project:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--accent) 50%, var(--border)); }
+  .project-cover {
+    aspect-ratio: 16/9;
+    background: var(--gradient);
+    display: grid; place-items: center; color: white; font-weight: 700;
+    font-family: 'JetBrains Mono', monospace; letter-spacing: 0.08em;
+  }
+  .project-body { padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .project h3 { margin: 0; font-size: 1.08rem; }
+  .project p { margin: 0; color: var(--muted); font-size: 0.93rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 10px; }
+  .tag {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.72rem;
+    color: var(--muted); border: 1px solid var(--border); padding: 3px 8px; border-radius: 999px;
+  }
+
+  /* Experience */
+  .timeline { position: relative; padding-left: 22px; }
+  .timeline::before {
+    content: ""; position: absolute; left: 6px; top: 4px; bottom: 4px;
+    width: 2px; background: var(--border);
+  }
+  .exp { position: relative; padding: 0 0 22px 16px; }
+  .exp::before {
+    content: ""; position: absolute; left: -4px; top: 6px; width: 12px; height: 12px;
+    border-radius: 50%; background: var(--gradient);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 15%, transparent);
+  }
+  .exp h4 { margin: 0; font-size: 1.02rem; }
+  .exp .meta { color: var(--muted); font-size: 0.85rem; font-family: 'JetBrains Mono', monospace; }
+  .exp p { color: var(--muted); margin: 6px 0 0; }
+
+  /* Contact */
+  .contact-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 32px; text-align: center;
+  }
+  .socials { display: flex; gap: 10px; justify-content: center; margin-top: 18px; flex-wrap: wrap; }
+  .social {
+    padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px;
+    font-weight: 500; color: var(--muted);
+  }
+  .social:hover { color: var(--text); border-color: color-mix(in srgb, var(--accent) 60%, var(--border)); }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 24px 0; color: var(--muted); font-size: 0.9rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand"><span class="brand-dot"></span> Madhu Tarun Sai</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </div>
+  </div>
+</nav>
+
+<header id="top" class="hero">
+  <div class="container hero-inner">
+    <span class="eyebrow"><span class="pulse"></span> Available for new opportunities</span>
+    <h1 class="hero-title">Hi, I'm Madhu — I build <span class="grad">AI-powered automations</span> that ship.</h1>
+    <p class="hero-sub">Full-stack engineer focused on practical AI systems, content automation, and developer tooling. I turn messy real-world workflows into reliable, measurable software.</p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn primary">View my work →</a>
+      <a href="#contact" class="btn">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="kicker">01 — About</div>
+        <h2>A quick introduction</h2>
+        <p>What I do and why I care.</p>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <p>I'm an engineer who enjoys the space between systems and humans — building tools that make repetitive work disappear. My current focus is orchestrating LLM agents to produce content, run experiments, and automate the parts of knowledge work that nobody actually likes doing.</p>
+        <p>Lately I've been shipping multi-agent content pipelines, autoresearch loops for ML, and small dev-tools that punch above their weight. I care about clear APIs, honest metrics, and code that other people can pick up on day one.</p>
+        <div class="stat-row">
+          <div class="stat"><b>5+</b><span>Years building</span></div>
+          <div class="stat"><b>20+</b><span>Shipped projects</span></div>
+          <div class="stat"><b>∞</b><span>Cups of chai</span></div>
+        </div>
+      </div>
+      <div class="about-card">
+        <h4 style="margin-top:0">Currently working on</h4>
+        <ul style="color:var(--muted); padding-left: 18px; margin: 8px 0;">
+          <li>Agent Teams for parallel Claude workflows</li>
+          <li>Blog Engine — SEO/AEO/GEO daily content</li>
+          <li>Autoresearch pretraining experiments</li>
+          <li>Lead magnets &amp; content automation</li>
+        </ul>
+        <h4>Stack I reach for</h4>
+        <p style="color:var(--muted); margin:6px 0 0;">Python, TypeScript, Claude API, FastAPI, Next.js, Postgres, and whatever the problem needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="kicker">02 — Skills</div>
+        <h2>What I'm good at</h2>
+        <p>Tools, domains, and craft.</p>
+      </div>
+    </div>
+    <div class="skills">
+      <div class="skill"><div class="skill-icon">AI</div><div><h4>LLM Engineering</h4><p>Agents, tool use, evals</p></div></div>
+      <div class="skill"><div class="skill-icon">Py</div><div><h4>Python</h4><p>Backend, data, ML</p></div></div>
+      <div class="skill"><div class="skill-icon">Ts</div><div><h4>TypeScript</h4><p>Next.js, Node APIs</p></div></div>
+      <div class="skill"><div class="skill-icon">⚡</div><div><h4>Automation</h4><p>Workflows, pipelines</p></div></div>
+      <div class="skill"><div class="skill-icon">DB</div><div><h4>Databases</h4><p>Postgres, Redis, vectors</p></div></div>
+      <div class="skill"><div class="skill-icon">☁️</div><div><h4>Cloud &amp; DevOps</h4><p>AWS, Docker, CI/CD</p></div></div>
+      <div class="skill"><div class="skill-icon">UX</div><div><h4>Product sense</h4><p>Clean UX, tight loops</p></div></div>
+      <div class="skill"><div class="skill-icon">SEO</div><div><h4>Content systems</h4><p>SEO, AEO, GEO</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="kicker">03 — Projects</div>
+        <h2>Selected work</h2>
+        <p>A few things I've built recently.</p>
+      </div>
+    </div>
+    <div class="projects">
+      <article class="project">
+        <div class="project-cover">AGENT TEAMS</div>
+        <div class="project-body">
+          <h3>Claude Agent Teams</h3>
+          <p>Multi-agent orchestration framework that spawns specialized Claude instances (researcher, implementer, reviewer) in isolated contexts for parallel work.</p>
+          <div class="tags">
+            <span class="tag">Claude</span><span class="tag">Python</span><span class="tag">Orchestration</span>
+          </div>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-cover">BLOG ENGINE</div>
+        <div class="project-body">
+          <h3>Content Autoresearch</h3>
+          <p>Generates 5 SEO/AEO/GEO-optimized blog posts daily, with automated scoring, quality gates, and topic rotation across content pillars.</p>
+          <div class="tags">
+            <span class="tag">LLM</span><span class="tag">SEO</span><span class="tag">Pipelines</span>
+          </div>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-cover">AUTORESEARCH</div>
+        <div class="project-body">
+          <h3>Autonomous Pretraining Loop</h3>
+          <p>An AI agent iteratively modifies <code>train.py</code>, trains a GPT model for 5 minutes, and keeps any improvement — a tiny research loop that runs itself.</p>
+          <div class="tags">
+            <span class="tag">ML</span><span class="tag">Research</span><span class="tag">PyTorch</span>
+          </div>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-cover">LEAD MAGNETS</div>
+        <div class="project-body">
+          <h3>Lead Magnet Suite</h3>
+          <p>A set of high-conversion lead magnets for the AI-automation audience, bundled with landing pages, capture flows, and nurture sequences.</p>
+          <div class="tags">
+            <span class="tag">Growth</span><span class="tag">Copy</span><span class="tag">Funnels</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <div class="kicker">04 — Experience</div>
+        <h2>Where I've worked</h2>
+        <p>A short highlight reel.</p>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="exp">
+        <h4>Founder — Web AI Automations</h4>
+        <div class="meta">2024 — Present</div>
+        <p>Building AI-powered content and workflow automations for service businesses. Shipping agent pipelines, lead systems, and research tools.</p>
+      </div>
+      <div class="exp">
+        <h4>Senior Engineer — AI Systems</h4>
+        <div class="meta">2022 — 2024</div>
+        <p>Led LLM integration work: evals, prompt systems, internal copilots. Reduced manual review workload for the content team by ~60%.</p>
+      </div>
+      <div class="exp">
+        <h4>Software Engineer</h4>
+        <div class="meta">2019 — 2022</div>
+        <p>Full-stack product work across Python, TypeScript, and data pipelines. Built several 0 → 1 features that are still in production.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-card">
+      <div class="kicker">05 — Contact</div>
+      <h2 style="margin:6px 0 8px;">Let's build something</h2>
+      <p style="color:var(--muted); max-width: 560px; margin: 0 auto;">
+        If you have a messy workflow, a content problem, or an AI idea that could use an engineer, I'd love to hear about it.
+      </p>
+      <div class="socials">
+        <a class="social" href="mailto:hello@webaiautomations.com">Email</a>
+        <a class="social" href="https://github.com/madhutarunsai" target="_blank" rel="noopener">GitHub</a>
+        <a class="social" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="social" href="https://webaiautomations.com" target="_blank" rel="noopener">Website</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">© <span id="year"></span> Madhu Tarun Sai. Built with care.</div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const links = document.querySelectorAll('.nav-links a[href^="#"]');
+  const sections = [...links].map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  const setActive = () => {
+    const y = window.scrollY + 120;
+    let current = null;
+    for (const s of sections) {
+      if (s.offsetTop <= y) current = s;
+    }
+    links.forEach(l => {
+      const match = current && l.getAttribute('href') === '#' + current.id;
+      l.style.color = match ? 'var(--text)' : '';
+    });
+  };
+  window.addEventListener('scroll', setActive, { passive: true });
+  setActive();
+</script>
+</body>
+</html>
