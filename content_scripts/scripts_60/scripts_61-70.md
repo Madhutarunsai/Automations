@@ -136,19 +136,19 @@ If your projects keep ballooning, you might need a process audit before you take
 **Lead Magnet Keyword:** PRICING
 
 **HOOK (0–3s):**
-I used to make two hundred dollars per project. Now I have clients paying me every single month. Same skills. Different offer structure.
+My early projects paid two hundred to four hundred dollars each. Build it, deliver it, start from zero again. Now I handle nine staffing firms at once on monthly work. Here's what changed.
 
 **SETUP (3–10s):**
-One-off projects are a trap. You finish, you get paid, and then you're back to zero. Hunting for the next client while your bank account drains. The freelancers making real money aren't doing bigger projects — they're doing ongoing ones.
+One-off projects are a trap. You finish, get paid, and you're back to hunting. Your income looks like a heartbeat monitor — up, down, up, down. The freelancers making real money aren't doing bigger one-time builds. They're doing ongoing work.
 
 **STORY (10–40s):**
-When I started, every project was a one-time build. CRM setup — done. Automation — done. Invoice — done. Then silence. I'd spend two weeks finding the next client. My income looked like a heartbeat monitor — up, down, up, down. Then one of my staffing clients asked: "Can you run the campaigns too? Not just build them?" I almost said no — I thought my job was to build and leave. Instead I said: "I can manage and optimize them monthly." That one conversation turned a three-thousand-dollar project into a recurring monthly retainer. I did the same with the content system. Instead of "I'll build your content pipeline" — I said "I'll build it and produce sixty pieces of content every month." Now I have multiple clients on monthly retainers. My income is predictable. I don't wake up wondering where the next project comes from.
+I work with fifteen staffing firms total. Nine of them I handle at the same time. The main service — I produce sixty pieces of content every month for each firm. Thirty AI-generated videos with the owner's face and cloned voice. Thirty carousels for LinkedIn and Instagram. The owner does one thirty-minute onboarding call, gives me a three-minute audio sample and a photo. That's their total input. Everything else runs on the system. They review and approve from a dashboard. I deliver every month. They pay every month. That's recurring revenue. I didn't pitch it as a retainer. I built a service where the output is monthly by nature. You can't deliver sixty pieces of content as a one-time project — it only makes sense as an ongoing system. The structure of the service created the recurring revenue automatically. My projects went from one-time CRM builds at two hundred dollars to monthly content systems at real rates. Same skills — automation, AI, systems thinking. Different packaging.
 
 **LESSON (40–50s):**
-Every one-off project has a monthly version hiding inside it. You built the system — now offer to run it. That's where the real money lives.
+Don't try to turn a one-off into a retainer. Build a service where the output is monthly by design. Content, outreach, reporting, optimization — these are naturally recurring. Package your skills around them.
 
 **CTA (50–60s):**
-I created a word-for-word script for turning a one-off project into a retainer on the final delivery call. Comment PRICING and I'll send it.
+I use a specific pricing framework for monthly services — value pricing, not hourly. Comment PRICING and I'll send you the discovery call script.
 
 ---
 
