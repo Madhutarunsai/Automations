@@ -11,16 +11,16 @@ Source of truth: REAL_DATA.md + KNOWLEDGE_BASE.md + MINDSET_DATA.md
 **Duration:** 45s
 
 **HOOK (0–3s):**
-Every new client I sign gets a welcome message, an onboarding doc, a tool stack list, and a project dashboard — before I even get on the first call. It takes me zero minutes. Here's how.
+Every new client I sign gets a welcome message, an onboarding doc, a tool stack list, and a project dashboard — before the first real build starts. Here's my exact process.
 
 **SETUP (3–10s):**
 Most freelancers wing the first week with a new client. No process. No structure. The client doesn't know what to expect, you forget to collect login credentials, and you spend the first three days chasing access instead of building.
 
 **STORY (10–32s):**
-I used to do this manually. Every client got a slightly different version. Some got a welcome doc. Some didn't. I'd forget to ask for tool access on the call and then spend a week going back and forth over email. So I built a sequence. The moment I mark a deal as "won" — an n8n workflow fires. It sends the client a welcome message with what to expect. It creates their project workspace in Notion. It generates a Google Sheet listing every tool I'll need access to. It schedules the onboarding call. By the time we meet, they already feel like they hired a professional. Not a freelancer scrambling to figure out step one.
+My onboarding is the same every time. Step one — welcome message with what to expect and the timeline. Step two — onboarding doc with the scope and my process. Step three — Google Sheet listing every tool I'll need access to. Step four — onboarding call where I explain the process, confirm scope, and invite them to the PM dashboard. On that call, I collect ALL tool access right there. Not over email later — right there. Then I build a detailed Miro flow of the project plan so they can see every step visually. Updates go out every Monday and Thursday. Two meeting slots per week for questions. By the time the first deliverable lands, they already trust the process. Because I showed them the process before I showed them the work.
 
 **LESSON (32–40s):**
-Onboarding is the first impression after the sale. Automate it once and every client starts with confidence — in you and in the process.
+Onboarding is the first impression after the sale. Do it the same way every time and every client starts with confidence — in you and in the process.
 
 **CTA (40–45s):**
 Comment AUTOMATION and I'll send you five n8n workflow templates — including the onboarding one.
@@ -39,10 +39,10 @@ I don't have a sales team. I have four case studies. They close more deals than 
 Most freelancers finish a project and move on. They never document what happened. Six months later, a perfect client shows up and they can't explain what they did — because they forgot the details. A case study written the week you deliver is worth ten written from memory.
 
 **STORY (10–32s):**
-After I helped a staffing firm cut their hiring time from six weeks to under one week, I wrote it up. Not a fancy PDF. Just four sections. The problem — they were losing clients because they took too long to fill roles. The approach — we built content plus an Airtable automation. The result — hiring within one week. The proof — qualified candidate rate jumped from forty percent to seventy-eight percent. Three hundred words. Took me twenty minutes. I've sent that case study to eleven prospects since then. Four of them became clients. No call needed — they read it, saw themselves in the story, and said "I want that."
+After I helped a staffing firm cut their hiring time from six weeks to under one week, I wrote it up. Not a fancy PDF. Just four sections. The problem — they were losing clients because they took too long to fill roles. The approach — we built content plus an Airtable automation. The result — hiring within one week. The proof — qualified candidate rate jumped from forty percent to seventy-eight percent. Now every time I send a proposal to a staffing company, I attach that case study. They see themselves in the story. They see the numbers. They don't need me to pitch them — the result pitches for me. One case study I can use in every proposal for that niche. Written once, used dozens of times.
 
 **LESSON (32–40s):**
-Write the case study the same week you deliver results. Four sections: problem, approach, result, proof. Twenty minutes of writing that sells for months.
+Write the case study the same week you deliver results. Four sections: problem, approach, result, proof. One write-up becomes ammunition for every proposal in that niche.
 
 **CTA (40–45s):**
 I keep all my case studies in a Notion workspace with a template. Comment TEMPLATE and I'll send it to you.
@@ -105,7 +105,7 @@ Every project I deliver, I offer one more thing. It doubles my revenue from that
 When you finish a build — CRM, automation, outreach system — the client sees what you built. But they can't see what they're still missing. That's your job to show them.
 
 **STORY (8–22s):**
-On the final delivery call, after I walk through everything, I say: "The system's running. But I noticed two areas where you're leaving money on the table. Would you like me to do a quick growth audit — thirty minutes, I'll map out what to fix next?" Nine out of ten say yes. Half of those turn into a new project. I'm not pushing a sale. I'm showing them problems they didn't know they had. That's the knee-pain approach — show the damage first, then offer the fix.
+On the final delivery call, after I walk through everything and hand over the SOP with screenshots, I offer one more thing: a growth audit. "The system's running. But I noticed areas where you're leaving money on the table. Want me to map out what to fix next?" It's the knee-pain approach — your parents have knee pain at fifty but they think it's fine. You show them the damage first. Then you offer the fix. Same thing in business. Show the client problems they didn't know they had. The audit becomes the next project naturally.
 
 **LESSON (22–27s):**
 The easiest sale is to someone who already trusts you. The growth audit is how you earn the next project before the current one ends.
@@ -138,24 +138,24 @@ Comment TOOLS and I'll send you the complete tool stack I use — every tool org
 ---
 
 ## Script 77 — Teaching | Week 7, Thursday
-**Topic:** How to automate weekly client reports
+**Topic:** Why I update clients every Monday and Thursday
 **Lead Magnet Keyword:** AUTOMATION / SEQUENCE
 **Duration:** 45s
 
 **HOOK (0–3s):**
-I update every client twice a week. Monday and Thursday. It takes me five minutes total — for all of them. Here's the system.
+I update every client twice a week. Monday and Thursday. No exceptions. Here's why that rhythm changed everything.
 
 **SETUP (3–10s):**
 Most freelancers either over-communicate — hourly Slack messages — or disappear for two weeks. Both kill trust. Clients don't want constant chatter. They want to know the project is moving. A consistent rhythm does that.
 
 **STORY (10–32s):**
-I built an n8n workflow that runs every Monday and Thursday morning. It pulls the latest status from each client's Notion workspace — current phase, what shipped this week, what's next, any blockers. It formats that into a clean message and sends it to the client's preferred channel — Slack, email, or WhatsApp. The client wakes up, sees an update, and knows exactly where things stand. No meeting needed. No "hey, just checking in" messages from them. Before I automated this, I'd spend forty-five minutes every Monday writing updates manually. Now I spend five minutes reviewing what the bot drafted. The rest runs itself.
+Every Monday and Thursday, each client gets an update. What shipped since the last update. What's in progress. What's next. Any blockers. That's it. Short, consistent, predictable. The client wakes up, sees the update, and knows exactly where things stand. They don't need to send "hey, just checking in" messages. They don't need to schedule a meeting just to get a status. The rhythm handles it. I also give every client two meeting slots per week for questions — flexible, increases if the project needs it. But most weeks they don't even use them. Because the Monday and Thursday updates already answered everything. Consistency builds trust faster than talent. When clients know they'll hear from you on a schedule, they stop worrying. And when clients stop worrying, they let you do your best work.
 
 **LESSON (32–40s):**
-Updates every Monday and Thursday. That's the rhythm. Automate the pull, review the draft, hit send. Consistency builds more trust than talent.
+Pick two days. Update every client on those days. Same format. Same rhythm. It takes minutes but it builds the kind of trust that turns one project into five.
 
 **CTA (40–45s):**
-The weekly report template is one of the five n8n workflows in my automation pack. Comment AUTOMATION and I'll send all five.
+The update rhythm is part of my full onboarding-to-delivery system. Comment AUTOMATION and I'll send you the five n8n workflow templates I use.
 
 ---
 
@@ -171,7 +171,7 @@ A staffing company owner came to me posting zero times a month on LinkedIn. Sixt
 Staffing owners are busy. They're recruiting, managing clients, putting out fires. Content is the last thing on their mind. But here's the problem — candidates follow people, not company pages. If you're not posting, your competitor who is posting twice a day is getting the candidates and the clients.
 
 **STORY (10–40s):**
-This owner knew he needed to be on LinkedIn. He'd tried hiring a content person. They posted generic industry articles from the company page. Zero engagement. Zero leads. He called me frustrated. I told him — stop posting from the company page. People don't follow logos. They follow faces. Here's what we did. One thirty-minute onboarding call. He gave me a three-minute audio sample and a photo. That's all. From his business data and his ideal client profile, I built content topics that matched his expertise. Then the system took over. AI generated thirty short-form videos using his face and cloned voice through HeyGen. Thirty carousels for LinkedIn and Instagram. Everything lands in a dashboard. He reviews, approves, and the system posts automatically. Sixty pieces of content a month. He spends twenty minutes a week reviewing. His competitors are still posting once a week from a company page nobody follows. He's posting twice a day with his face and his voice. The inbound leads started within three weeks.
+This owner knew he needed to be on LinkedIn. He'd tried hiring a content person. They posted generic industry articles from the company page. Zero engagement. Zero leads. He called me frustrated. I told him — stop posting from the company page. People don't follow logos. They follow faces. Here's what we did. One thirty-minute onboarding call. He gave me a three-minute audio sample and a photo. That's all. From his business data and his ideal client profile, I built content topics that matched his expertise. Then the system took over. AI generated thirty short-form videos using his face and cloned voice through HeyGen. Thirty carousels for LinkedIn and Instagram. Everything lands in a dashboard. He reviews, approves, and the system posts automatically. Sixty pieces of content a month. He reviews and approves from a dashboard — that's his only involvement. His competitors are still posting from a company page nobody follows. He's posting twice a day with his face and his voice.
 
 **LESSON (40–50s):**
 Content isn't optional anymore — it's the growth channel. But you don't need to create it yourself. You need a system that does it with your face and your voice while you run your business.
@@ -209,13 +209,13 @@ If you're in that silence right now and you can't tell if you're on the right tr
 **Duration:** 45s
 
 **HOOK (0–3s):**
-Everyone says "network, network, network." I have three hundred and sixty-five Instagram followers. I make more than most people with ten thousand. Here's why networking is overrated.
+Everyone says "network, network, network." My biggest project — nearly fifteen thousand dollars — came from a cold proposal to a stranger. Here's why networking is overrated.
 
 **SETUP (3–10s):**
 The freelance internet is obsessed with building an audience. Go to events. Join communities. Comment on posts. DM people. That's fine if you have no skills. But if you can actually deliver results — there's a faster path.
 
 **STORY (10–32s):**
-I didn't get my clients from networking. I got them from Upwork. Cold proposals. No warm intros. No community referrals. Just me, a four-line proposal, and a Vidyard video showing I understood their problem. My biggest project — nearly fifteen thousand dollars — came from a cold proposal to a company I'd never spoken to before. They didn't care about my follower count. They didn't check my LinkedIn connections. They cared that I showed them exactly how I'd solve their problem in a ninety-second video. Once I delivered results, they referred me to others. That's when the network built itself. Not from events. From results. Every hour I could have spent networking, I spent building. And the building created the network automatically.
+I didn't get my clients from networking. I got them from Upwork. Cold proposals. No warm intros. No community referrals. Just me, a four-line proposal, and a Vidyard video showing I understood their problem. My biggest project — nearly fifteen thousand dollars — came from a cold proposal to a company I'd never spoken to before. They didn't care about my follower count. They didn't check my LinkedIn connections. They cared that I showed them exactly how I'd solve their problem in a ninety-second video. Once I delivered results, the next projects came easier. Proof stacks. One hundred percent job success score on Upwork. Sixteen completed projects. That's the network — not connections, but evidence. Every hour I could have spent networking, I spent building. And the building created the reputation automatically.
 
 **LESSON (32–40s):**
 Your work is your network. Deliver something remarkable and the referrals come. Skip the small talk. Ship the work.

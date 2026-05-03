@@ -27,23 +27,23 @@ I built a discovery call script that catches these traps before you quote. Comme
 ---
 
 ## Script 62 — Teaching | Week 6, Monday
-**Topic:** How to turn one client into three referrals
+**Topic:** How one client becomes the next five
 **Lead Magnet Keyword:** TEMPLATE / CRM
 
 **HOOK (0–3s):**
-My first six months on Upwork I made less than a thousand dollars total. Then I landed six jobs in two months. Same person. Same skills. Here's what changed.
+My first six months on Upwork I made less than a thousand dollars total. Then I landed six jobs in two months. Here's what actually made the difference.
 
 **SETUP (3–10s):**
-Most freelancers finish a project and move on. They never ask for the thing that costs zero dollars and prints money — a referral. They think the work should speak for itself. It doesn't. You have to ask.
+Most freelancers think getting clients is about sending more proposals. It's not. It's about stacking proof. Every project you finish is a weapon — if you use it right.
 
 **STORY (10–40s):**
-After my first real project landed, I did something different. On the last delivery call, after the client said they were happy, I said one sentence: "Do you know anyone else in your industry who has the same problem you had three weeks ago?" That's it. No pitch. No awkwardness. Just a question. That client introduced me to two people. One of those turned into a paying project within a week. The second one hired me a month later. I went from sending fifteen proposals a day to getting inbound introductions. My calendar filled up not because I got better at proposals — but because I got better at asking one question at the right time.
+When I landed my first real client after three weeks of silence, I didn't just deliver. I documented everything. Screenshots of the workflow. Before and after numbers. A short case study of the result. Then I used that proof in my next proposals. Instead of saying "I can build automations," I said "I built this specific thing for a company like yours — here's what happened." I'd attach a Vidyard walkthrough showing the actual system running. That's not a pitch. That's evidence. The first project gave me proof for the next proposal. The second gave me more. By the time I had three projects done, my proposals were stacked with real examples. I went from sending ten to fifteen proposals a day with nothing to show, to sending proposals where every line had a screenshot behind it. Six jobs in two months. Same platform. Same skills. Just better proof.
 
 **LESSON (40–50s):**
-The best time to ask for a referral is right after you deliver results. Not a week later. Not in a follow-up email. Right there, on the call, while they're still impressed.
+Every project you deliver is proof for the next ten proposals. Document everything — screenshots, results, walkthroughs. Proof compounds faster than followers.
 
 **CTA (50–60s):**
-I use a Notion workspace to track every client touchpoint — delivery, referral ask, follow-up. Comment TEMPLATE and I'll send you the template.
+I track every project, deliverable, and result in one Notion workspace. Comment TEMPLATE and I'll send you the template.
 
 ---
 
@@ -58,10 +58,10 @@ I manage nine staffing firms at the same time. Here's the dashboard that keeps m
 Most freelancers track everything in their head. Or worse — scattered across Slack messages, emails, and sticky notes. That works with one client. With five clients you start missing deadlines. With nine you're drowning.
 
 **STORY (10–40s):**
-When I hit my fourth client, I started forgetting things. A Monday update got sent on Wednesday. A deliverable slipped. Nothing catastrophic — but I could feel it slipping. So I built a system. One Notion workspace. Every client gets a row. Columns for: current phase, next deliverable, last update date, next meeting, and open questions. Every Monday morning before I do anything else — I open the dashboard. Fifteen minutes. I know exactly where every project stands. When a client messages me at 2 PM asking for a status update, I don't panic. I open one page and answer in thirty seconds. The dashboard isn't fancy. It's a table with seven columns. But it's the reason I can handle nine clients without hiring anyone.
+I handle nine staffing firms at the same time. Each one has a different phase, different deliverables, different meeting schedules. I update clients every Monday and Thursday. Without a system, that would be impossible. So everything lives in one Notion workspace. Each client gets a page. I can see at a glance — what phase they're in, what's due next, when our last meeting was, what's blocking progress. Every Monday I check campaign performance first thing. Then I open the workspace and know exactly where every project stands. When a client messages me asking for a status update, I open their page and answer in thirty seconds. It's not fancy. It's one workspace with a consistent structure for every client. That's how you go from juggling to managing.
 
 **LESSON (40–50s):**
-You don't need a CRM until you're past ten clients. You need one table. Seven columns. And fifteen minutes every Monday. That's it.
+You don't need a CRM until you're past five to ten clients. You need one workspace. One consistent structure. And a Monday rhythm. That's it.
 
 **CTA (50–60s):**
 Comment CRM and I'll send you the ClickUp freelancer template I built for exactly this. Or comment TEMPLATE for the Notion version.
@@ -100,7 +100,7 @@ I've built automations for fifteen companies. The ones that break? They all skip
 Everyone wants to automate first and document later. That's backwards. If you automate something without understanding the manual process, you'll project-creep everything. I learned this the hard way.
 
 **STORY (10–40s):**
-A staffing client came to me wanting to automate their entire hiring pipeline. Screening, scheduling, emails, the works. I asked one question: "Walk me through how you do it right now. Step by step." Silence. They couldn't. They had five recruiters and each one did it differently. No two candidates went through the same process. If I had built the automation that day, it would have broken in a week. Because you can't automate chaos. So we spent the first three days just writing down what happens. Step one — application comes in. Step two — recruiter checks the resume for these three things. Step three — if qualified, send this email. We wrote it like a recipe. Simple enough that a new hire could follow it on day one. Then — and only then — we turned each step into a node in n8n. The automation ran for six months without breaking. Because it was built on a process that actually existed.
+A staffing client came to me wanting to automate their entire hiring pipeline. Screening, scheduling, emails, the works. I asked one question: "Walk me through how you do it right now. Step by step." They couldn't clearly explain it. The manual process was all over the place. If I had built the automation that day, it would have broken in a week. Because you can't automate chaos. So we spent time just mapping out what actually happens. I created an entity diagram — step one, step two, step three. We documented the SOP of the manual process first. Who does what. What triggers what. What happens when something fails. We wrote it like a recipe. Simple enough that a new hire could follow it on day one. Then — and only then — we turned each step into a node in n8n. It worked because it was built on a process that actually existed. Not a guess.
 
 **LESSON (40–50s):**
 Manual first. Document second. Automate third. Skip any step and the system breaks. An SOP is not paperwork — it's the foundation your automation stands on.
@@ -199,13 +199,13 @@ If you're sitting at your version of that café right now and you don't know wha
 **Lead Magnet Keyword:** AUDIT
 
 **HOOK (0–3s):**
-A company making less than a million dollars a year asked me to build them a custom AI voice agent. I told them no. Here's why they thanked me later.
+Companies making less than a million dollars a year keep asking me for fancy AI systems. I keep telling them no. Here's why.
 
 **SETUP (3–10s):**
-This is the thing that drives me crazy. Companies making less than two hundred thousand a year think they need the latest AI tool. Voice agents. Chatbots. Custom GPTs. They don't. Their real problem is nobody knows they exist. They don't have a lead generation problem with technology. They have a lead generation problem with effort.
+This is the thing that drives me crazy. Companies making less than two hundred thousand a year think they need the latest AI tool. Voice agents. Chatbots. Custom GPTs. They don't. Their real problem is nobody knows they exist.
 
 **STORY (10–40s):**
-This staffing firm came to me excited. They'd seen a demo of an AI voice agent that could screen candidates automatically. They wanted one built. Custom. Full integration. I asked them three questions. How many leads are you getting per month? About twenty. How many of those convert? Maybe two. How are you getting those twenty leads? Referrals mostly. I told them the truth. "You don't need a voice agent. You need two thousand prospects in your pipeline this month. Once you have five hundred responses, then the voice agent makes sense. Right now you're building a machine to sort mail — but nobody is sending you letters." They didn't love hearing it. But we built the outreach system first. Within two months their inbound tripled. Then — and only then — we built the automation to handle the volume. If we'd built the voice agent first, it would have sat there doing nothing. A toy they bought to show off. And nobody would have seen it because they weren't recognizable yet.
+I've seen this pattern across fifteen staffing firms. A new client comes in and immediately wants features. "I want to optimize the system." "I want this integration." "I want to automate hiring." And I ask one question: "What's the North Star metric right now?" The answer is always the same — revenue. So how do you get revenue? By getting clients first. If we're building systems without money coming in, it's just another toy we're creating to show off. And nobody will even see it because you're not recognizable yet. My approach every time: Phase one — leads. Reach out to two thousand prospects. Get responses. Phase two — features. Phase three — optimization. Until you have steady clients, your only problem is lead generation. Everything else is shiny object syndrome. I've watched people buy tools, learn tools, build tools — but never make money because they skipped the only step that matters.
 
 **LESSON (40–50s):**
 If you're making under two hundred thousand a year, your only problem is lead generation. Fix that first. Everything else is a distraction dressed up as progress.

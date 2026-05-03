@@ -28,24 +28,24 @@ Supabase is in my tool stack — free tier handles most projects. Comment TOOLS 
 ---
 
 ## Script 82 — Teaching | Week 8, Monday
-**Topic:** How to fire a bad client without burning the bridge
+**Topic:** How to handle clients with shiny object syndrome
 **Lead Magnet Keyword:** AUDIT
 **Duration:** 45s
 
 **HOOK (0–3s):**
-Not every client is worth keeping. I've let go of clients who were paying me. And every time, my income went up the next month. Here's why.
+Some clients want everything at once. Every week a new feature. Every call a new direction. Here's how to handle them without losing your mind or the project.
 
 **SETUP (3–10s):**
-Bad clients don't just waste your time. They take the slot where a good client could be. They drain your energy. They send messages at midnight about things that aren't urgent. And every hour you spend managing them is an hour you're not spending on clients who actually value your work.
+Shiny object syndrome is the number one thing that kills freelance projects. The client keeps changing scope — not because they're bad, but because they don't have a framework to prioritize. That's your job to provide.
 
 **STORY (10–32s):**
-I had a client who changed the scope every week. New feature. New priority. New direction. I tried the phased approach — "let's focus on this first." But they'd agree on Monday and change their mind by Wednesday. I was working twice the hours for the same money. So I finished the current deliverable, scheduled a call, and said: "I've delivered everything in the original scope. I think the next phase needs someone who's a better fit for the direction you want to take." No blame. No frustration. Just a clean handoff. I offered to document everything so the next person could pick it up. The client thanked me. Left a five-star review. And that slot? I filled it with a staffing client who's been paying me monthly for eight months straight.
+I had a staffing client who kept asking for more. "I want to hire more people." "I want more clients." "I want to optimize the system." "Can we add this feature? And that one?" Constantly changing scope. Every week, new priorities. Here's what I do now. I say: "Yes, that's a good idea. Can I suggest something?" I wait for them to say yes. Then: "What is the North Star metric? What one thing solves all problems right now?" The answer is always money. "How do you get money? By getting clients first. Let's set a goal — reach out to two thousand prospects this month. Once we have responses, then we add features." I frame everything as phases. Phase one, phase two, phase three. I'll do what they want — but I'll always give them an option of what's more important right now. That framework saves the project and saves the relationship.
 
 **LESSON (32–40s):**
-Fire with grace. Finish what you promised. Frame it as a fit issue, not a blame issue. The right clients fill the gap fast.
+Don't fight shiny object syndrome. Redirect it. Give the client a phased framework so every idea has a place — just not all at once.
 
 **CTA (40–45s):**
-If you're stuck with a client that's costing you more than they're paying — something needs to change. Comment AUDIT for a free fifteen-minute call. I'll help you see it clearly.
+If your projects keep getting derailed by scope changes, you might need a different approach. Comment AUDIT for a free fifteen-minute call.
 
 ---
 
@@ -105,10 +105,10 @@ We built an email campaign that hit ninety-three percent open rates. Some weeks 
 Bad emails start with "I hope this finds you well" and end with "let me know if you're interested." They read like a template because they are a template. The inbox is a war zone. If your email looks like every other email, it's already dead.
 
 **STORY (10–32s):**
-Three rules we follow. First — the subject line is a question, not an announcement. Not "Our AI Automation Services." Instead: "Quick question about your hiring process." Questions get opened because the brain wants to answer them. Second — the first line references something real about their business. We use AI to research each prospect — their LinkedIn posts, their website, their recent hires. The icebreaker proves we looked. Third — the email is five sentences max. Problem. Proof. One-line CTA. No attachments. No calendly links in the first email. Just a reply-friendly question: "Worth a quick chat?" That's it. We A/B tested twenty-three variations before we found the combination that hit ninety-three percent. Most people send one version and wonder why it doesn't work.
+Three rules we follow. First — the subject line is a question, not an announcement. Not "Our AI Automation Services." Instead: "Quick question about your hiring process." Questions get opened because the brain wants to answer them. Second — the first line references something real about their business. We use AI to research each prospect — their LinkedIn posts, their website, their recent hires. The icebreaker proves we looked. Third — the email is five sentences max. Problem. Proof. One-line CTA. No attachments. No calendly links in the first email. Just a reply-friendly question: "Worth a quick chat?" That's it. We tested multiple variations — different subject lines, different icebreakers, different CTAs — until we found what hit ninety-three percent. Most people send one version and wonder why it doesn't work.
 
 **LESSON (32–40s):**
-Short. Personal. A question, not a pitch. Test twenty versions, not one. That's how you go from twenty percent open rates to ninety-three.
+Short. Personal. A question, not a pitch. Test multiple versions, not one. That's how you go from twenty percent open rates to ninety-three.
 
 **CTA (40–45s):**
 Comment EMAILS and I'll send you ten cold email templates — first outreach, follow-ups, re-engagement, the full set.
