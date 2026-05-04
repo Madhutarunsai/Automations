@@ -1,627 +1,396 @@
-# LinkedIn 1K → 100K in 6 Months
+# LinkedIn Growth + Revenue Playbook (6 Months)
 
 **Owner:** Madhu Tarun Sai · AI Automation Specialist
 **Profile:** https://www.linkedin.com/in/madhu-tarun-sai/
 **Site:** https://webaiautomations.com
 **Window:** May 2026 → Oct 2026
-**Goal:** 1,000 → 100,000 followers + a predictable inbound pipeline
+**Honest target:** 30K followers · 4K newsletter subs · $20K MRR · 10 calls/wk
+**Stretch (15% probability):** 100K followers — only if 1 podcast hits + 1 viral post + paid collabs land
+
+> This document replaces an earlier plan that overpromised 100K followers as the base case. The math didn't survive scrutiny: 99K net followers in 26 weeks requires average post impressions of ~150K (top-0.5% creator territory). Realistic ceiling without paid amp or a viral break is 15–30K. This version optimizes for revenue first, audience as a side effect, with a real pivot trigger at Month 3.
 
 ---
 
-## 1. Reality Check (read first)
+## 1. The Five Decisions You Make in Week 0
 
-**Honest take:** going from 1K → 100K in 6 months is the 99th percentile outcome. It happens — Steve Blakeman added 100K in 6 months, Ruben Hassid went 49 → 10K in 17 days, Aylin Round did 2K → 28K in 2.5 years. The first two had a viral break (a hot AI niche, a few outsized posts). The realistic median for a focused creator with your existing assets is **20K–40K in 6 months**; 100K requires (a) at least 2–3 posts that crack 500K+ impressions, (b) a LinkedIn newsletter that compounds, and (c) appearance in someone else's audience (collab, podcast, viral comment thread).
+These block everything. None are optional.
 
-So the plan optimizes for two things in parallel:
-1. **Math that gets you to 30K reliably** — daily compounding from posting + commenting + outbound.
-2. **Asymmetric upside bets** — the few moves that, if they hit, take you from 30K → 100K.
-
-If you only want lead-gen revenue, you don't need 100K. ~10K of the *right* followers + a converting DM funnel beats 100K of strangers. Keep that as the fallback win condition.
-
----
-
-## 2. The Growth Math
-
-### Follower flywheel inputs
-LinkedIn follower growth = **f(impressions × profile-CTR × follow-rate)**.
-
-Working numbers from the 2026 benchmarks:
-- Carousel/document engagement: ~24% (top format)
-- Multi-image: ~6.6% · Native video: ~5.6% · Polls: ~4.4% · Text: ~4%
-- Comments are weighted **15× a like** in the 360Brew algorithm
-- Profile-view → follow conversion for an optimized profile: ~8–15%
-- Follower → newsletter subscriber: ~10% on launch, 1–3% steady-state
-
-### Plan inputs
-- **Posts:** 5/wk (Mon–Fri) — algorithm sweet spot is 3–4/wk; we run 5 because you have 60 pre-written scripts and a content engine.
-- **Comments:** 10–15/day on big creators in the AI/automation/solopreneur niche.
-- **Connection requests:** 100/wk personalized (raise to 200–250/wk once Sales Navigator is on).
-- **DMs:** 20–30 warm DMs/day to people who liked/commented on your posts.
-
-### Funnel target by month-end
-
-| Month | Followers | Avg post impressions | Posts >50K | Newsletter subs | Inbound calls/wk |
-|------:|----------:|---------------------:|-----------:|----------------:|-----------------:|
-| 0     | 1,000     | 500                  | 0          | 0               | 0                |
-| 1     | 2,500     | 2,000                | 0          | 150             | 1                |
-| 2     | 6,000     | 6,000                | 1          | 500             | 3                |
-| 3     | 14,000    | 15,000               | 2          | 1,500           | 6                |
-| 4     | 28,000    | 30,000               | 3          | 3,500           | 10               |
-| 5     | 55,000    | 60,000               | 4          | 7,000           | 15               |
-| 6     | 100,000   | 100,000              | 5+         | 12,000          | 20+              |
-
-Months 1–3 are the grind. The hockey stick happens *only* if the foundation in M1 is right.
+1. **One thesis, one sentence.** Not 5 pillars. One contrarian claim every post reinforces. Candidates:
+   - *"Replace one role per quarter with Claude + n8n."*
+   - *"Solopreneurs should fire the VA before they hire the employee."*
+   - *"AI agents are 90% prompt, 10% code."*
+   Pick one. Pin it above your monitor.
+2. **One ICP.** Drop "freelancer / Upwork beginner." Target **agency owners and founders at $10K–$200K MRR running manual ops**. They have budget; beginners don't. Re-aim every existing lead magnet at this audience over weeks 2–4.
+3. **One win condition: $20K MRR by M6.** Followers are a side effect. 10K of the right people beats 100K strangers.
+4. **Apply for LinkedIn verification + Top Voice in Week 1.** Verification is free and instant. Top Voice = 20 expert answers in collaborative articles over 30 days. Both are 360Brew trust signals.
+5. **Write the M3 pivot trigger and pin it.**
+   *"On July 31, if I am below 12K followers OR newsletter < 1.2K OR MRR < $3K, I drop the audience goal and run revenue-only for M4–M6."*
 
 ---
 
-## 3. The Algorithm in 2026 (what we are optimizing for)
+## 2. Reality Check — What the Math Actually Says
 
-LinkedIn is now ranked by **360Brew**, an LLM-powered ranker. Old "engagement pod" tricks are detected at ~97% accuracy and shadow-banned. What actually moves the needle:
+Goal: 1,000 → 100,000 = **3,800 net followers/week** for 26 weeks.
 
-1. **Dwell time.** The single biggest hidden signal. Posts with 61+ s of dwell time average 15.6% engagement vs. 1.2% for sub-3 s. → Write for retention, not for likes.
-2. **First 60–90 minutes.** Most reach is decided in this window. Comments in the first hour are 15× a like.
-3. **Conversation depth.** Posts that spark back-and-forth threads get 5.2× more amplification than monologues.
-4. **Author authority on a topic.** 360Brew builds an interest graph from the *semantic content* of your posts and comments. Posting and commenting on the same topic for 6 months teaches the algorithm you are the AI-automation guy and routes that audience to you.
-5. **Skills count.** Profiles with 5+ relevant skills are 27× more discoverable.
-6. **Format diversity.** Accounts rotating between formats see 37% more follower growth than single-format accounts.
+| Source | Realistic ceiling | Followers added (6mo) |
+|--------|------------------|----------------------|
+| Connection accepts (1st-degree auto-follow) | 100/wk × 45% accept | ~1,200 |
+| Direct follows from feed (~0.5% of impressions) | needs **750K impressions/wk** to hit goal | likely <10K |
+| Profile-view → follow (~10% of profile views) | needs ~38K profile views/wk | likely <5K |
+| Newsletter back-flow | trivial vs goal | <500 |
+| Viral comments on big posts | 14–55 viral comments × 50–200 followers | ~1K–8K |
 
-**Tactical implication:** every post should be (a) carousel or long-text or video — never a bare image, (b) end on a question that invites a >3-sentence reply, (c) get 5+ comments from your network in the first 30 min.
+**Honest M6 ceilings:**
+- All-organic, no flagship, no paid: **12–18K**
+- + paid creator collabs + LinkedIn ads: **22–32K**
+- + 1 podcast hit OR 1 viral post (>500K impressions): **35–55K**
+- + all of the above + 1 outlier post (>1M impressions): **60–100K** (~15% probability)
 
----
-
-## 4. Foundation — Week 0 (do this before posting anything new)
-
-### 4.1 Profile rebuild (90-min job)
-
-- [ ] **Headline (220 chars):** outcome + ICP + proof + offer.
-  Example: `I help solopreneurs replace 20+ hrs/wk of manual work with AI agents · 50+ automations shipped · Free 15-min audit ↓`
-- [ ] **Banner:** value prop + DM-comment trigger words. ("Comment AUTOMATION for the n8n pack.")
-- [ ] **About section:** 2,000-char story arc — Pain → Realization → Method → Proof → CTA. Open with a hook line, not "I am a…".
-- [ ] **Featured section:** 6 tiles → starter guide PDF, n8n templates, CLAUDE.md mega pack, case study, free audit Calendly, newsletter.
-- [ ] **Creator Mode ON.** Pick 5 hashtags: `#AIAutomation #Solopreneur #n8n #LeadGeneration #ClaudeCode`. (Creator Mode = +30% profile views, +20% engagement.)
-- [ ] **Skills (top 5 pinned):** AI Automation, n8n, Claude, Lead Generation, Workflow Automation. Add 45 more (LinkedIn allows 50). Get ≥3 endorsements per top-5 skill from clients.
-- [ ] **Custom URL:** linkedin.com/in/madhu-tarun-sai (already set — verify).
-- [ ] **Activity broadcast:** OFF for profile edits during the rebuild week.
-- [ ] **Featured services:** turn on (LinkedIn Services Marketplace) — auto-routes inbound.
-
-### 4.2 ICP definition (30 min, then never re-do)
-
-Write down once:
-- **Who:** solopreneur agencies / freelancers earning $5K–$50K/mo who do client work manually
-- **Industries:** marketing agencies, recruiters, coaches, real estate, e-com store owners
-- **Title strings:** Founder, Owner, Solopreneur, Freelancer, Agency Owner, Consultant
-- **Geos:** US, UK, Canada, AU, India (English-first)
-- **Pain triggers:** "drowning in admin", "scaling without hiring", "manual lead follow-up"
-
-### 4.3 Asset audit (you already have this — confirm)
-
-Existing assets to wire into the funnel:
-- `content_scripts/MASTER_CONTENT_SHEET.csv` — 60 scripts mapped to keywords
-- `lead_magnets/` — 14 magnets in 3 tiers (DM-gated, Comment-gated, Free)
-- `blog_engine/` — 5 SEO posts/day → repurpose into LinkedIn carousels
-- `content_engine/` — calendar + pipeline
-
-Gap: there is no LinkedIn-specific content scheduler or comment-trigger automation. Section 11 specifies what to build.
+Plan for 30K. Architect for upside.
 
 ---
 
-## 5. The Content System
+## 3. The 360Brew Algorithm (what we optimize for)
 
-### 5.1 Pillar mapping (already aligned with `seo_rules.json`)
+LinkedIn's 2026 ranker is an LLM that reads the *meaning* of your posts and comments, builds an interest graph, and routes content within that graph.
 
-| Day | Pillar (existing) | LinkedIn angle | Format |
-|-----|-------------------|----------------|--------|
-| Mon | AI Automation | Deep how-to / framework | **Carousel** (8–10 slides) |
-| Tue | Lead Generation | Cold-email or LinkedIn outreach play | **Text post** (story) |
-| Wed | Hiring & Operations | "Replaced an X with AI" case study | **Native video** (60–90 s) |
-| Thu | Tools & Tutorials | Tool comparison / hidden feature | **Carousel** + repo link |
-| Fri | Case Studies & ROI | Client win / before-after | **Multi-image** + numbers |
+What it weights:
+- **Dwell time** is the #1 signal. 61+ s dwell → 15.6% engagement; <3 s → 1.2%.
+- **First 60–90 minutes** decide reach. Comments in this window are weighted 15× a like.
+- **Conversation depth.** Threads with back-and-forth get 5.2× amplification vs. monologues.
+- **Topic authority.** Post and comment on the same niche for 6 months → algorithm tags you as the authority and routes that audience to you.
+- **5+ skills** = 27× more discoverable.
 
-Saturday: **1 thoughtful long-text** (story, contrarian, behind-the-scenes). No post Sunday — engage only.
+Tactical implication for every post: (a) carousel, long-text, or video — never a bare image, (b) end on a question that invites a >3-sentence reply, (c) get 5+ comments from your network in the first 30 min.
 
-### 5.2 Hook bank (use one per post — rotate, never repeat in 14 days)
+What's now penalized: engagement pods (97% detection), generic "Great post!" comments, repeat-format accounts, AI-detected em-dash dumps.
 
-The first 200 chars decide whether it gets read. Frameworks that work in 2026:
-- **Contrarian:** "Stop using Zapier for cold email. Here's why."
-- **Number/result:** "I sent 14,000 cold emails. 3 things mattered. 27 didn't."
-- **Story-in-the-middle:** "I almost fired my best automation yesterday."
-- **Insider confession:** "I charged a client $4,000 for a workflow I built in 47 minutes. Here's the prompt."
-- **Stat-first:** "79% of B2B buyers ignore cold DMs in 2026. The 21% reply rate comes from this."
-- **Why-I-stopped:** "Why I stopped writing posts at 6 AM."
-- **Problem-Agitation-Solution (PAS):** open with the pain, twist the knife, then the fix.
-- **Before-After-Bridge (BAB):** here's where they are, here's where they could be, here's how.
+---
 
-**Banned openers:** "I am excited to share…", "In today's fast-paced…", any em-dash that LinkedIn detects as AI.
+## 4. The Four Parallel Tracks
 
-### 5.3 Post structure (700–1,400 chars)
+All four run from Week 1. Skipping any kills the plan.
+
+### Track A — Revenue (funds everything else)
+
+The biggest mistake of the previous plan was waiting until Month 5 to monetize. Ship in Week 2.
+
+- **Week 1:** Productize one offer.
+  - **AI Automation Starter Kit — $497**: 5 n8n templates (already in `lead_magnets/templates/`) + 1 hour of setup support. Stripe Payment Link, no website.
+  - OR **Solopreneur AI Audit — $1,997**: 90-min audit + custom playbook + 30 days Slack support.
+- **Week 2:** Launch with one LinkedIn post + DM to your warmest 50 connections. **Goal: 5 sales by Friday = $2,500.**
+- **Week 4:** Add a $4,997 done-with-you tier as the audit-call upsell.
+- **Ongoing:** Every Friday post is a case study with a *direct* CTA to the offer. Not soft. "If you want me to build this for you: [link]."
+
+This track pays for tools, the VA, and ads. Without it, Track D is impossible.
+
+### Track B — Content (Mon–Fri)
+
+**4 posts/week, not 5.** Quality > volume. Thursday is comment-only.
+
+| Day | Format | Purpose | Source |
+|-----|--------|---------|--------|
+| Mon | Carousel (8–10 slides) | Framework / how-to | Reformat from `blog_engine/posts/` |
+| Tue | Text post (story) | Thesis reinforcement | Pull from `MASTER_CONTENT_SHEET.csv` |
+| Wed | Native video (60–90 s) | Face + voice → trust | Wednesday hiring/ops pillar |
+| Thu | **No post** — comment-only day | Distribution | — |
+| Fri | Multi-image case study | Proof → revenue CTA | Real client work |
+
+Sat: 1 long story post (optional). Sun: off.
+
+Every post must:
+1. Reinforce the one thesis.
+2. End with a question OR a keyword-trigger CTA from `lead_magnets/lead_magnets_sheet.csv`.
+3. Be drafted the day before, never at 8 AM.
+4. Stay under 1,400 chars; hook in first 200 chars before the "see more" cutoff.
+
+Format performance to plan around (2026 benchmarks): Carousels ~24% engagement · Multi-image 6.6% · Video 5.6% · Polls 4.4% · Text 4%.
+
+**Use what you have.** 60 scripts in `MASTER_CONTENT_SHEET.csv` = 12 weeks of LinkedIn content. Reformat — don't rewrite. One blog post = 1 carousel + 1 text post + 1 newsletter section + 4 planted comments. The blog engine is the idea factory; LinkedIn is distribution.
+
+### Track C — Distribution (the part founders skip)
+
+**Distribution > Content. Always.** A mediocre post with 30 thoughtful first-hour comments beats a great post nobody sees. If you have 90 min today, spend 30 on the post and 60 on commenting + DMs.
+
+- **15 thoughtful comments/day. 3-Sentence Rule:** Acknowledge a specific point, expand with your own data/story, ask a follow-up question. 10 min before your post goes live (lifts your reach ~20%), 10 min after.
+- **30-creator target list** in `content_scripts/COMMENT_TARGETS.md`: 10 Tier-A (100K+, your ICP audience) · 10 Tier-B (20K–100K peers) · 10 Tier-C (1K–20K reciprocal). Bell-icon notifications on for Tier A — comment in the first 10 min.
+- **10 connection invites/day, warm only** in M1–M2. Target people who liked or commented on your last 3 posts. Acceptance rate matters more than volume — drop below 30% and LinkedIn jails you.
+- **No pitch in the connect note.** Under 200 chars: *"Hey {{firstName}} — saw your post about {{topic}}. Same world here. No pitch, just enjoying your content."*
+- **DM your warmest 100 1st-degree connections in Week 1** — not pitching, asking what content they want more of. This is research that doubles as a re-activation signal.
+
+### Track D — Leverage (breaks the organic ceiling)
+
+Organic alone caps at 15–20K. These break the ceiling:
+
+- **Pitch 30 podcasts in Weeks 2–4** (lead time is 6–10 weeks; M1 pitches = M3 episodes). Tracker: name, host, sent date, response, episode date. Use `lead_magnets/cv_tarun.html` as the pitch attachment.
+- **Paid creator collabs starting M2.** Pay 2 mid-tier creators (20K–80K, adjacent niches) $500–$2K each to co-author a post or share your flagship asset. Single fastest 3K–8K-follower lever. Budget: $1K/mo from M2.
+- **LinkedIn Thought Leader Ads from M3.** Boost your top 2 organic posts/month. Budget: $500–$1,500/mo. Targets: by job title, by company list, by competitor's followers. CPM is high (~$30) but follower-CAC is $2–$5 vs. $20+ for cold ads.
+- **Flagship asset launched in M3.** Build *one* shareable artifact:
+  - "State of Solopreneur AI 2026" report with original survey data (n≥200), OR
+  - Open-source `claude-md-pack` repo on GitHub with 50+ stars target, OR
+  - Free public dashboard / calculator (e.g. "What does manual ops cost your agency?").
+  This is your viral lottery ticket. Without one, viral never happens — only random hot takes.
+- **VA from Week 4.** $400–$800/mo on Onlinejobs.ph or GenZRevolution. They handle: inbox, magnet DMs, comment responses on old posts, scheduling. Frees ~10 h/week.
+
+---
+
+## 5. Profile Foundation (Week 1, 90 minutes)
+
+- **Headline (220 chars):** thesis + ICP + proof + CTA. Example based on a Claude+n8n thesis:
+  *"I help agency owners replace 1 role per quarter with Claude + n8n · 50+ automations shipped · Free 15-min audit ↓"*
+- **Banner:** thesis line + DM-keyword trigger. *"Comment AUTOMATION for the n8n template pack."*
+- **About:** 2,000-char arc — Pain → Realization → Method → Proof → CTA. Open with the thesis sentence.
+- **Featured (6 tiles):** starter guide PDF, n8n templates, CLAUDE.md mega pack, named case study, free audit Calendly, newsletter.
+- **Creator Mode ON.** Five hashtags: `#AIAutomation #AgencyOps #n8n #LeadGeneration #ClaudeCode`.
+- **Skills (50 max, top 5 pinned):** AI Automation, n8n, Claude, Lead Generation, Workflow Automation. Get ≥3 endorsements per top-5 skill from past clients.
+- **Verification:** apply Day 1.
+- **Activity broadcast:** OFF during the rebuild day.
+
+---
+
+## 6. The Newsletter (start Week 2 — your moat)
+
+Newsletter notifications are the *only* LinkedIn surface that bypasses the feed algorithm. A 4K newsletter = 4K guaranteed inbox visits/week — survives any feed change.
+
+- **Title:** *The Solopreneur Automation Brief* (or whatever fits your thesis)
+- **Cadence:** weekly, Friday 9 AM EST. Skip any week you can't ship — never miss to post junk.
+- **Length:** 1,000–1,500 words. Three sections: 1 framework, 1 tool/tactic, 1 case study.
+- **Subscribe surfaces:** every post CTA, profile featured, dedicated launch + every 1K-sub milestone post.
+- **CTA:** every issue ends with one offer (the $497 kit OR the $1,997 audit). 2% of subs convert = 80 calls/yr from a 4K list.
+
+---
+
+## 7. Connection + DM Funnel
+
+### Hard limits (LinkedIn 2026)
+- Standard: 100 invites/wk · Sales Nav / high SSI: 200–250/wk · New / low-trust: 20–50/wk
+- Below 30% accept rate → invite restrictions
+- Profile visits: 80/day max · 1st-degree DMs: 40/day max
+- Random delays 90–240 s · Active hours only · No weekends
+
+### Daily cadence (Mon–Fri)
+- 10 invites to engagers (warm) — auto-pause if 7-day acceptance < 25%
+- 80 profile visits (half come back to your profile)
+- 20 DM replies + 10 keyword-magnet auto-DMs
+- 15 comments (Track C ritual)
+
+### Sales Navigator Boolean (paste in Week 1)
 
 ```
-HOOK (1–2 lines, <200 chars, ends before "see more")
-[blank line]
-CONTEXT (2–3 lines — why this matters, who this is for)
-[blank line]
-BODY (5–9 short bullet lines, one idea per line, generous whitespace)
-[blank line]
-PROOF / EXAMPLE (1 specific number, screenshot, or named client)
-[blank line]
-CTA: a single question OR "Comment KEYWORD for the [magnet]"
+Agency owners (US):
+(title:("Founder" OR "Owner" OR "CEO") AND industry:("Marketing Services" OR "Advertising Services") AND companySize:"11-50" AND geography:"United States")
+
+Solopreneur consultants:
+(title:("Coach" OR "Consultant" OR "Advisor") AND keywords:("AI" OR "automation" OR "scale") AND geography:("United States" OR "United Kingdom" OR "Canada" OR "Australia"))
 ```
 
-Every Monday and Thursday post **must** end with a comment-trigger keyword that maps to an existing lead magnet. Use the keyword column from `MASTER_CONTENT_SHEET.csv` (TOOLS, PRICING, SOP, CLAUDE, AUDIT, CRM, AUTOMATION, SEQUENCE, HOOKS, EMAILS).
+Save as Sales Nav lead lists. Refresh weekly with `Posted on LinkedIn in past 30 days`.
 
-### 5.4 Carousel template (8–10 slides)
+### The 4-step DM sequence (cold path, after accept)
 
-1. **Cover:** headline + subhead + your face/logo. Promises a number ("9 prompts").
-2. **The problem.** One sentence + a stat.
-3–7. **The slides that deliver.** One idea per slide. ≤25 words each.
-8. **Recap / cheat sheet.** Bullets.
-9. **CTA:** "Comment KEYWORD — I'll DM the full pack."
-10. **Follow card:** "Follow Madhu Tarun Sai for weekly AI automation playbooks."
+Spaced Day 0 / 2 / 4 / 6. Stop on reply.
 
-Carousels generate 2–3× the dwell time of any other format. They are the single highest-leverage post you can make. Aim for **2 carousels/wk**.
+1. **D0:** *"Thanks for connecting, {{firstName}}. Curious — is {{specific pain}} something you're tackling now or already solved?"*
+2. **D2 (voice note, 30 s):** Reference one thing from their LinkedIn. (Voice DMs +28% reply vs. text in 2026.)
+3. **D4 (free resource, no ask):** *"Saw you posted about X. This made me think of you — [magnet link]. No reply needed."*
+4. **D6 (last touch):** *"Last note from me — if {{pain}} is on the table this quarter, happy to spend 15 min mapping the bottleneck. No pitch unless we both think there's fit. [Calendly]"*
 
-### 5.5 Native video (Wednesday)
+After D6 → 6-month dormant list. Re-engage on hyper-relevant content only.
 
-- Length: 60–90 s (LinkedIn caps autoplay value at ~90 s).
-- Hook in first 3 s — speak the headline before the title card.
-- Burn-in captions (85% watch muted).
-- End: "Comment AUDIT, I'll DM you a free 15-min slot."
+### The warm DM path (engagers — your highest converter)
 
-### 5.6 Repurposing pipeline (zero extra writing)
+Comment-keyword on your post → auto-DM the matching magnet within 5 min → 24h human follow-up → 72h problem question → audit offer if they describe a real problem. ~10% of magnet-grabbers book a call.
 
-Each blog post from `blog_engine/` → 1 carousel + 2 text posts + 1 video script + 4 comments planted on related posts. One blog feeds **8 LinkedIn surfaces**. The 60 scripts in `content_scripts/MASTER_CONTENT_SHEET.csv` are 12 weeks of LinkedIn content already written — just reformat.
-
----
-
-## 6. The Engagement Engine (more important than your posts)
-
-The single highest-ROI hour of your day is **commenting**, not posting.
-
-### 6.1 Daily comment ritual (30 min, twice a day)
-
-- **Before posting (15 min):** comment on 5 posts from creators with overlapping ICP. Top creators in your space — Greg Isenberg, Pat Walls, Riley Brown, Nicolas Cole, Justin Welsh, Daniel Vassallo, Jason Aten, Sahil Bloom (use this list; rotate). Engaging *15–30 min before posting* lifts your own post reach by ~20%.
-- **After posting (15 min):** reply to every comment on your post within 60 min. Two-sentence minimum.
-
-### 6.2 The 3-Sentence Rule (mandatory — no shortcuts)
-
-Engagement pods are dead. Generic "Great post!" comments are detected and demoted. Every comment must have:
-
-1. **Acknowledge** — quote or name the specific point you're reacting to.
-2. **Expand** — add a data point, a counter-example, or a story from your own work.
-3. **Engage** — ask a follow-up question.
-
-Comments that tick all three boxes get pinned, drive profile visits, and route the host's audience to you. One thoughtful comment on a 200K-impression post = 50–200 followers.
-
-### 6.3 Target list for commenting
-
-Build a list of **30 creators** in `content_scripts/COMMENT_TARGETS.md` (to create). Tier them:
-- **Tier A (10):** 100K+ followers, your exact ICP audience. Comment on every post.
-- **Tier B (10):** 20K–100K, peer creators. Comment 3×/wk.
-- **Tier C (10):** Up-and-comers (1K–20K). Comment to build reciprocity. They will collab later.
-
-Subscribe to their notifications (the 🔔 icon). When they post, you should comment in the first 10 minutes.
-
-### 6.4 No engagement pods — but yes, "engagement pact"
-
-LinkedIn's TOS explicitly bans engagement pods (auto-likes/comments). What's safe and effective:
-- Build a Slack/WhatsApp group of 5–10 *real* creator friends. When you post, you ping the group; everyone reads, decides if it's good, leaves a real comment if so. **No quid-pro-quo, no automation, no "+1".**
-- This is signal-equivalent to early-traction comments without violating TOS, because the comments are organic and substantive.
-
----
-
-## 7. Connection Request Strategy
-
-### 7.1 Hard limits (from LinkedIn 2026 enforcement)
-
-- **Standard accounts:** 100 invites/wk. Hard ceiling.
-- **High SSI score / Sales Navigator:** 200–250/wk.
-- **New / low-trust accounts:** 20–50/wk until trust builds.
-- If acceptance rate drops below ~30%, LinkedIn restricts you. → Personalize.
-- "I don't know this person" reports = invite jail. → Send only to relevant ICP.
-
-### 7.2 The daily invite cadence
-
-Run **Mon–Fri only** (15 invites/day = 75/wk, leaves headroom for warm requests).
-
-### 7.3 The 3-tier targeting
-
-| Tier | Who | Filter (Sales Navigator) | Note required? |
-|------|-----|--------------------------|----------------|
-| 1. Engagers | People who liked/commented on your last 3 posts | LinkedIn search — "Likes & comments on Madhu's posts" | No (warm, ~70% accept) |
-| 2. ICP cold | Solopreneurs by title + geo | `(Founder OR Owner OR Solopreneur) AND (agency OR consultant)` + US/UK/CA/AU | Yes — short, value-first |
-| 3. 2nd-degree from clients | Mutual connections of past clients | Sales Nav "shared connections" | Yes — name-drop the mutual |
-
-### 7.4 The connection note (under 200 chars, no pitch)
-
-```
-Hey {{firstName}} — saw your post about {{topic}}. Same world here, I help solopreneurs automate the boring stuff. No pitch, just enjoying your content.
-```
-
-That's it. **Do not pitch in the connect note.** Acceptance rate target: ≥45%.
-
-### 7.5 Boolean strings to load into Sales Navigator
-
-```
-ICP-1 (Solopreneur agencies, US):
-(title:("Founder" OR "Owner" OR "Solopreneur" OR "Agency Owner")) AND (industry:("Marketing Services" OR "Advertising Services")) AND (geography:"United States") AND (companySize:"1-10")
-
-ICP-2 (Coaches & consultants):
-(title:("Coach" OR "Consultant" OR "Advisor")) AND (keywords:("AI" OR "automation" OR "scale")) AND (geography:("United States" OR "United Kingdom" OR "Canada" OR "Australia"))
-
-ICP-3 (E-com solopreneurs):
-(title:("Founder" OR "Owner")) AND (industry:"Retail Apparel and Fashion" OR industry:"E-Learning Providers") AND (companySize:"1-10")
-```
-
-Save each as a Sales Nav lead list. Refresh weekly with `Posted on LinkedIn in past 30 days` to bias toward active users.
-
----
-
-## 8. The DM → Lead Funnel
-
-### 8.1 The truth about cold DMs in 2026
-
-79% of B2B decision-makers actively ignore cold DMs. Calendly-link-in-DM-2 is dead. Reply rates jump +28% when you switch to **voice or short video DMs** (use Loom or LinkedIn's native voice notes).
-
-### 8.2 The 4-step DM sequence (ICP-2 cold path)
-
-Sent only after they accept. Spaced 2/4/6 days. Stop on reply.
-
-**DM 1 — Day 0 (after accept):**
-> Thanks for connecting, {{firstName}}. Curious — is {{specific pain ICP feels}} something you're tackling right now, or already solved?
-
-**DM 2 — Day 2 (if no reply):** *voice note (30 s)*
-> Hey {{firstName}}, recorded a quick voice note instead of typing. [content: 2 sentences on what they could automate based on their LinkedIn]
-
-**DM 3 — Day 4:** *send a free resource, no ask*
-> Saw you posted about {{X}} last week. Made me think of this — [link to specific lead magnet from `lead_magnets/`]. No reply needed, just thought it'd help.
-
-**DM 4 — Day 6:**
-> Last note from me — if {{pain}} is on the table this quarter, happy to spend 15 min mapping the bottleneck (no pitch unless we both think there's a fit). Calendly: [link]
-
-After DM 4, they go into a **6-month dormant list**. Re-engage when you publish something hyper-relevant to them.
-
-### 8.3 The warm DM path (engagers)
-
-When someone comments a keyword on your post (TOOLS, AUTOMATION, etc.):
-
-1. Auto-DM the matching lead magnet within 5 min (see automation in §11).
-2. **Manual follow-up at 24h:** "Did the {{magnet}} land OK? Anything I can clarify?"
-3. At 72h, if they replied positively: "Out of curiosity, what made you grab the {{magnet}} — anything specific you're working on?"
-4. If they describe a real problem → offer the free 15-min audit.
-
-This is the highest-converting path. ~10% of magnet-grabbers will book a call. With 5 keyword posts/wk averaging 30 grabs each = 150 magnets/wk = 15 calls/wk by month 4.
-
-### 8.4 What never to send
-
+### Never send
 - Calendly link in the first DM
-- A pitch deck before they asked
-- "Just checking in"
-- Any message that mentions "synergies", "circle back", "touch base"
-- 7-paragraph walls of text
+- A pitch deck before they asked for it
+- "Just checking in" / "circle back" / "synergies"
+- Walls of text
 
 ---
 
-## 9. Automation Stack & Safety Limits
+## 8. Tool Stack ($235/mo) — Pick One Per Job
 
-### 9.1 Tools (in order of priority)
+Stack risk is real: more tools = higher detection. **One tool per job.**
 
-| Tool | Use | Cost | Notes |
-|------|-----|------|-------|
-| **Sales Navigator Core** | ICP filtering, save lists | $99/mo | Non-negotiable. Unlocks 200+ invite/wk ceiling and Boolean. |
-| **HeyReach** | Connection invites + DM sequencing | $79/mo | Cloud-based, dedicated proxy, multi-account. Safest in 2026. |
-| **Taplio or Supergrow** | Post scheduling, hook DB, analytics | $39/mo | Pick one. Supergrow has better hook generator; Taplio has better analytics. |
-| **Authoredup** | Post formatting + dwell-time analytics | $19/mo | The only tool that exposes dwell-time per post. |
-| **Loom or Vimeo** | Video DMs | Free → $15/mo | For DM-2 voice/video upgrade. |
-| **Shield Analytics** | Post-level data (post views, follow source) | $29/mo | Exposes what LinkedIn hides. |
-| **Calendly** | Free 15-min audit booking | $10/mo | Already in your stack. |
-| **n8n** (you already use) | Glue: keyword-trigger → DM → CRM | self-host | Section 11. |
+| Tool | Use | Cost |
+|------|-----|------|
+| Sales Navigator Core | ICP filtering + Boolean + 200 invite cap | $99/mo |
+| HeyReach | Connection invites + DM sequencing (cloud, dedicated proxy) | $79/mo |
+| Authoredup | Post formatting + dwell-time analytics | $19/mo |
+| Shield Analytics | Per-post data, follow-source attribution | $29/mo |
+| Calendly | 15-min audit booking | already have |
+| n8n (self-host) | Glue: keyword → DM → CRM | already have |
 
-**Avoid:** Phantombuster, Dux-Soup, LinkedHelper for outreach. Browser-extension tools have higher ban rates in 2026 because LinkedIn fingerprints the extension.
+**Avoid:** Phantombuster, Dux-Soup, LinkedHelper. Browser-extension fingerprints are the #1 ban vector in 2026.
 
-### 9.2 Safety guardrails (set these in HeyReach + n8n)
-
-- Connection requests: **15/day max** (75/wk, well under the 100 limit). Mon–Fri only.
-- Profile visits: **80/day max**. Triggers a "viewed your profile" notification — half of inbound profile visits come back.
-- DMs to 1st-degree connections: **40/day max.**
-- InMails (paid): **20/wk** to prospects you cannot connect to.
-- **Random delay:** 90–240 s between actions. Never round numbers.
-- **Active hours only:** 8 AM – 6 PM in your timezone. No automation overnight.
-- **Pause weekends.** LinkedIn flags weekend bursts.
-- **One tool, one account.** Don't run HeyReach + a Chrome extension simultaneously.
-- **Warm-up:** if account is fresh, ramp 5 → 10 → 15 invites/day over 3 weeks.
-
-### 9.3 Acceptance-rate kill-switch
-
-Add this rule in HeyReach: if 7-day acceptance rate < 25%, **auto-pause** new invites for 48 h. You will recover faster than if LinkedIn jails you for 21 days.
+**Account safety:** one tool per session, residential IP, no concurrent Chrome extensions, no automation overnight or weekends. If 7-day accept rate <25%, auto-pause invites for 48 h — recover in days, not weeks.
 
 ---
 
-## 10. The 6-Month Plan (week by week)
+## 9. The First Four Weeks (in detail — this is what determines whether the rest works)
 
-### **Month 1 — Foundation & First Signal** (Goal: 1K → 2.5K)
+### Week 1
+- D1: Make the 5 decisions (§1). Write thesis sentence. Pin it.
+- D2: Profile rebuild (§5). Apply for LinkedIn verification.
+- D3: Build productized offer page. Stripe Payment Link.
+- D4: DM 50 warmest connections asking what they want more of.
+- D5: Schedule 4 posts for Week 2. Draft newsletter issue 1.
+- Weekend: Pitch 10 podcasts. Subscribe to 30-creator notifications. Set up Sales Nav with 2 saved searches.
 
-**Week 1**
-- Day 1: Profile rebuild (§4.1). Activity broadcast OFF.
-- Day 2: Creator Mode ON. Pin 5 hashtags. Add 50 skills. Endorse and request 15 endorsements from past clients.
-- Day 3: Build comment target list (`content_scripts/COMMENT_TARGETS.md`, 30 creators).
-- Day 4: Set up Sales Navigator + 3 ICP lead lists (§7.5).
-- Day 5: Start posting — 1/day, Mon–Fri. Re-publish 5 of your best `MASTER_CONTENT_SHEET.csv` scripts as carousels.
-- Day 6–7: Comment 10/day on Tier A creators. No outbound yet.
+### Week 2
+- Mon: Launch the productized offer with a "behind the scenes" post. **Target: 5 sales by Friday = $2,500.**
+- Daily: 4 posts/wk + 15 comments + 10 connection invites + Track A DMs.
+- Fri: Newsletter issue 1 ships. Promote in 1 post + 1 DM-batch + 1 comment-thread.
+- Weekend: 10 more podcast pitches. Post VA job ad on Onlinejobs.ph.
 
-**Week 2**
-- Posts: 5 (continue daily). Add 1 native video on Wed.
-- Comments: 15/day.
-- Connection invites: turn on at **5/day** (warm-up). Target Tier 1 (engagers) only.
-- Build the keyword-trigger DM automation in n8n (§11.1).
-- Launch the LinkedIn Newsletter (§12). First issue Friday.
+### Week 3
+- Daily rhythm locked. No new tactics — just execution.
+- Apply for LinkedIn Top Voice (5 collaborative-article answers/week, all on-thesis).
+- Email 5 past clients asking for case-study permission. Document 2 with real numbers.
 
-**Week 3**
-- Invites: 10/day. Add Tier 2 (ICP cold) at 5/day.
-- First "100 comments" attempt: pick one Mon post, ask a strong question, reply to every comment within 90 min.
-- Manually DM your 30 most-engaged followers; ask what they want more of. (This is research, not pitching.)
+### Week 4
+- VA starts. Train on: comment-keyword → DM-magnet flow, inbox triage, scheduling.
+- Reach out to 2 mid-tier creators for M2 paid collabs. Negotiate $500–$1,500.
+- **Month 1 review (90 min):** posts published, impressions, followers added, calls booked, MRR. What worked, what didn't.
+- Decision: if Track A revenue < $1,500 in M1, simplify the offer to one-line copy and $297 price.
 
-**Week 4**
-- Invites: 15/day. Acceptance ≥40% — confirm before scaling.
-- Run your first **collab post**: tag a Tier C peer in a "I learned X from @Y" post.
-- Newsletter issue 4. Should be at 150 subs.
-
-**Month 1 KPIs:** 2.5K followers · 150 newsletter subs · 1 inbound call · 1 post >5K impressions.
+**Month 1 KPIs:** 2.5K followers · 200 newsletter subs · 1–3 inbound calls · 5 product sales · 1 podcast booked for M3.
 
 ---
 
-### **Month 2 — Format Lock-In** (Goal: 2.5K → 6K)
+## 10. Months 2–6 (the rhythm)
 
-- Lock in the format mix (§5.1). Stop experimenting.
-- 2 carousels/wk minimum (these will be your scaling lever).
-- Pitch 5 mid-tier creators (Tier B) for a **comment-collab**: "If I write a comment on your next post, do you want to reciprocate on mine?" (No, this is *not* a pod — it's a one-time mutual-comment swap, organic and unscheduled.)
-- Run your **first carousel scoring 100K+ impressions**. Post-mortem it: hook, dwell time, comments.
-- DM funnel live: every keyword-comment auto-DMs the lead magnet. Track conversion in your existing pipeline.
-- Start guesting on 1 podcast/mo. Use your CV (`lead_magnets/cv_tarun.html`) as the pitch.
+| Month | Followers | News subs | Calls/wk | MRR | Key moves |
+|------:|----------:|----------:|---------:|----:|-----------|
+| 2 | 5K | 600 | 3 | $4K | First paid creator collab. Top Voice badge. Add $4,997 tier. |
+| 3 | 9K | 1.2K | 5 | $7K | Flagship asset launch. First podcast episode airs. **PIVOT CHECK.** |
+| 4 | 14K | 2K | 7 | $11K | Second flagship promotion wave. LinkedIn ads on. Hot-take post weekly. |
+| 5 | 20K | 3K | 9 | $16K | Host one LinkedIn Live with 4 guests. Productize a $4,997 group cohort. |
+| 6 | 28K | 4K | 11 | $22K | Year-in-review flagship carousel. Press push. Stretch shot at the 100K window. |
 
-**Month 2 KPIs:** 6K followers · 500 subs · 3 inbound calls/wk · 1 post >50K.
-
----
-
-### **Month 3 — Compounding** (Goal: 6K → 14K)
-
-- Add a 6th post on Saturday (long story format).
-- Push connection invites to 20/day if Sales Nav warmed up (still under cap if SSI is good).
-- Start the **comment-engine**: 20 thoughtful comments/day, half before posting, half after.
-- Launch a **lead magnet bundle**: `claude_md_pack` + `n8n_guide` + `tools_stack` as one mega-pack, gated by newsletter signup. This converts followers → subs at 2–3× the rate of single magnets.
-- Pitch 2 collabs: a webinar + a co-authored carousel with a Tier B creator.
-
-**Month 3 KPIs:** 14K followers · 1.5K subs · 6 calls/wk · 2 posts >50K · 1 viral comment (>500 likes on someone else's post).
+The above is the **honest base case (50% probability of hitting these numbers)**. The 100K stretch lives in M5–M6 if and only if (a) one podcast goes long-tail viral, (b) one paid collab compounds, (c) the flagship asset gets shared by a >250K creator. Plan for the base case; architect optionality for the stretch.
 
 ---
 
-### **Month 4 — The Asymmetric Bets** (Goal: 14K → 28K)
+## 11. The M3 Pivot (the most important section)
 
-This is where you place the 100K bets:
+End of Month 3, look at four numbers:
 
-1. **A polarizing hot-take post** per week. Real opinion. Fight a sacred cow ("Stop using Zapier", "n8n is overrated for X", "AI freelancers are charging wrong"). Polarization compounds.
-2. **A LinkedIn newsletter relaunch** — promote it inside posts, comments, profile featured, connection notes. Goal: 3.5K subs.
-3. **Two long-form documents** (15-slide carousels). One should be a public case study with real client numbers (anonymize if needed).
-4. **One co-authored post** with a 50K+ creator. This is the single fastest way to add 5K followers in a week.
-5. **Apply for LinkedIn Top Voice** in AI/Automation. Contributing to collaborative articles is the route — write 20 expert answers this month.
+| Metric | M3 target | If under… |
+|--------|-----------|-----------|
+| Followers | 9K | Thesis or post quality is broken — post-mortem the bottom 10 posts |
+| Newsletter | 1.2K | CTAs are weak — every post needs an explicit subscribe ask for 2 weeks |
+| MRR | $5K (cumulative $10K) | Audience isn't your buyer — pivot ICP or simplify offer |
+| Calls/wk | 5 | DM funnel is broken — A/B test the warm DM script |
 
-**Month 4 KPIs:** 28K followers · 3.5K subs · 10 calls/wk · 3 posts >50K · 1 post >250K.
+**Decision matrix:**
 
----
-
-### **Month 5 — Scale & Productize** (Goal: 28K → 55K)
-
-- Productize one offer (e.g. a $497 "n8n Automation Starter Kit" or a $1,997 "Solopreneur AI System"). Sell it from the newsletter and from posts. This is the income flywheel that funds Months 5–6.
-- Start a **podcast or YouTube short series** — 1 ep/wk, 15 min, native to LinkedIn (not just cross-posted). Native LinkedIn video gets 2–3× the reach of YouTube reposts.
-- DM volume: 40/day to 1st-degree warm connections only. Outbound to 2nd-degree paused — your inbound is now the channel.
-- Hire an EA or VA for 10 h/wk to handle the inbox. Inbound at 100+ DMs/day will eat your week otherwise.
-
-**Month 5 KPIs:** 55K followers · 7K subs · 15 calls/wk · $5K–$15K MRR from product + audits · 4 posts >50K.
+- **Followers + MRR both on track →** continue plan, push Track D harder.
+- **Followers behind, MRR on track →** keep going. The goal is achieved. Followers are vanity; revenue is the win.
+- **MRR behind, followers on track →** **kill the audience goal.** M4–M6 = pure outbound + product. 50 cold DMs/day to qualified ICPs + LinkedIn ads + closed-list outreach. Posting drops to 2/wk.
+- **Both behind →** stop. Take a week off. Re-pick the thesis and ICP. The plan was wrong, not your effort.
 
 ---
 
-### **Month 6 — Compound & Capitalize** (Goal: 55K → 100K)
+## 12. Repo Integration (how the existing assets plug in)
 
-Hitting 100K from 55K requires one of three triggers:
-1. **A genuine viral post (>1M impressions).** Higher chance now because you have 55K base + algorithm authority.
-2. **A LinkedIn Live or virtual summit you host** with 5+ creator guests. Each guest brings 500–2K followers.
-3. **A press / podcast hit** (Greg Isenberg's pod, My First Million, etc.). One appearance ≈ 5–15K followers.
+You already own most of the infrastructure. Build these three modules to wire it to LinkedIn:
 
-Plan all three in M6:
-- Week 1–2: Pitch 20 podcasts. Lock 3 recordings.
-- Week 3: Host a LinkedIn Live (90 min) on "The Solopreneur AI Stack 2027". Invite 5 Tier B creators as panelists.
-- Week 4: Publish a flagship 30-slide carousel — your "year in review" with every framework. Promote it for 4 days straight in DMs and comments. This is your shot at 1M impressions.
+### 12.1 `linkedin_engine/keyword_dm.py` (n8n + Python)
+- Listens for comments on your posts via LinkedIn webhook
+- Matches comment text against `lead_magnets/lead_magnets_sheet.csv` keyword column
+- Looks up matching `pdf_links.json` URL
+- Sends DM via HeyReach API: *"Hey {{firstName}}, here you go — {{magnet}}: {{link}}."*
+- Logs to `linkedin_engine/conversions.csv`
+- Triggers 24h human follow-up reminder in CRM
 
-**Month 6 KPIs:** 100K followers · 12K subs · 20+ calls/wk · $20K+ MRR · 1 post >500K · 1 post >1M (best case).
+### 12.2 `blog_engine/to_carousel.py`
+- Input: a markdown post from `blog_engine/posts/`
+- Output: 8–10 slide carousel JSON (title + bullets per slide)
+- Renders via Canva API. Uses existing AEO `direct_answer_within_words` block as opening slide.
 
----
-
-## 11. How the Existing Repo Slots In
-
-You already have most of the infrastructure. Here's the explicit mapping:
-
-### 11.1 Build: keyword → DM automation
-
-New module: `linkedin_engine/keyword_dm.py` (n8n workflow + Python helper).
-
-Trigger: comment on your post containing a keyword from `lead_magnets/lead_magnets_sheet.csv`.
-Flow:
-1. n8n LinkedIn webhook receives comment event.
-2. Match comment text against keyword column (regex, case-insensitive).
-3. Look up the matching `pdf_links.json` URL.
-4. Send a DM via HeyReach API:
-   `Hey {{firstName}}, here you go — {{magnet_name}}: {{link}}. Lmk if you have questions.`
-5. Log to `linkedin_engine/conversions.csv` (timestamp, follower_id, keyword, magnet, replied).
-6. 24h timer → trigger manual follow-up reminder in your CRM.
-
-### 11.2 Build: post scheduler that pulls from existing scripts
-
-New CLI command: `content-engine linkedin schedule --weeks 4`
+### 12.3 `content-engine linkedin schedule --weeks 4`
 - Reads `content_scripts/MASTER_CONTENT_SHEET.csv`
 - Filters Status=Written, groups by week + pillar
-- Reformats each script into a LinkedIn post (hook + body + CTA + keyword)
-- Pushes to Taplio/Supergrow via API
+- Reformats each script: hook + body + CTA + keyword
+- Pushes to LinkedIn scheduler via API
 - Tags each post in `content_engine/calendar.py`
 
-### 11.3 Build: blog → carousel converter
-
-New module: `blog_engine/to_carousel.py`
-- Input: a published markdown post from `blog_engine/posts/`
-- Output: 8–10 slide carousel JSON (title + bullet text per slide), ready to render in Canva via API
-- Use the existing AEO `direct_answer_within_words` and FAQ structure as the slide content
-
-### 11.4 Use: blog as long-form anchor
-
-The 5 daily SEO posts from `blog_engine/` already cover the same pillars as LinkedIn. Each blog post becomes:
-- 1 LinkedIn carousel (top 8 takeaways)
-- 1 LinkedIn text post (the contrarian one-liner)
-- 1 LinkedIn newsletter section (long-form summary + link)
-- 4 planted comments on related creator posts
-
-→ The blog engine is your idea factory. LinkedIn is the distribution.
-
-### 11.5 New file: `content_scripts/COMMENT_TARGETS.md`
-
-30-creator commenting list with: handle, follower count, tier (A/B/C), notification ON/OFF, last comment date, response rate. Update weekly.
-
-### 11.6 New file: `content_scripts/HOOK_BANK.md`
-
-200-row bank: hook formula, niche, last used date. Rotate to never reuse a hook in 14 days.
-
-### 11.7 Metrics dashboard
-
-Pipe Shield Analytics + Sales Navigator + HeyReach into a single Notion or Google Sheet. Track weekly:
-
-| Metric | Target M1 | M3 | M6 |
-|--------|-----------|-----|-----|
-| Posts published | 25 | 26 | 26 |
-| Avg post impressions | 2K | 15K | 100K |
-| Comments received | 200 | 1,500 | 8,000 |
-| Profile views | 1K | 8K | 40K |
-| Followers added | 1.5K | 8K | 45K |
-| Connection accepts | 50 | 200 | 250 |
-| Magnet grabs | 100 | 800 | 4,000 |
-| Calls booked | 4 | 25 | 80 |
-| Newsletter subs | 150 | 1,500 | 12,000 |
+### 12.4 New tracking files
+- `content_scripts/COMMENT_TARGETS.md` — 30-creator list (handle, followers, tier, last-touched, reciprocity rate)
+- `content_scripts/HOOK_BANK.md` — 200-row hook DB (formula, niche, last-used) — never reuse a hook in 14 days
 
 ---
 
-## 12. The LinkedIn Newsletter (separate compounding asset)
+## 13. Daily / Weekly / Monthly Rhythm
 
-Launch in Week 2 of M1.
+### Daily (90 min, Mon–Fri)
+- 08:30 — 15 min: comment on 5 Tier-A posts before publishing
+- 09:00 — Publish today's post (drafted yesterday)
+- 09:00–10:00 — Reply to every comment within 60 min, trigger keyword DMs
+- 12:30 — 15 min: comments round 2 (Tier B + C)
+- 15:00 — 15 min: HeyReach review, warm DM follow-ups
+- 17:00 — 15 min: draft tomorrow's hook + CTA
 
-- **Title:** *The Solopreneur Automation Brief*
-- **Cadence:** weekly, Friday 9 AM EST
-- **Length:** 1,000–1,500 words. Three sections: 1 framework, 1 tool/tactic, 1 case study.
-- **Subscribe surfaces:** every post CTA, profile featured, newsletter announcement post on launch + at every 1K-sub milestone.
-- **Why it matters:** newsletter notifications are the *only* LinkedIn surface that bypasses the feed algorithm. A 12K newsletter = 12K guaranteed inbox visits/week, which is a moat if your reach drops.
-- **Conversion target:** 2% subscriber → audit-call rate = 240 calls/yr from the newsletter alone at 12K subs.
-
----
-
-## 13. Risks & What Could Kill This
-
-| Risk | Likelihood | Mitigation |
-|------|-----------|------------|
-| Account restricted (invite jail) | Medium | Stay at 75 invites/wk for first 6 wk. Auto-pause on <25% accept. |
-| Shadow ban from auto-comments | Low if rules followed | Never use AI comment bots on others' posts. Manual only. |
-| Algorithm change kills reach | High (happens every 6 mo) | Newsletter is the moat. 12K subs survive any feed change. |
-| Burnout at month 3 | High | Hire VA in M5. Use repurposing pipeline. Take Sundays fully off. |
-| Lead magnet fatigue | Medium | Add 2 new magnets in M3 and M5. Bundle differently. |
-| Tier A creators ignore you | Low | Tier C reciprocity buys you Tier B by M3, which buys Tier A by M5. |
-| You hit 50K but not 100K | High | The 50K outcome still produces $20K+ MRR. Don't chase 100K at the cost of revenue. |
-
----
-
-## 14. Daily / Weekly Operating Rhythm
-
-### Daily (90 min total)
-
-- **08:30** — 15 min commenting (5 Tier-A posts) before publishing.
-- **09:00** — Publish today's post.
-- **09:00–10:00** — Reply to every comment within 60 min. Trigger keyword DMs.
-- **12:30** — 15 min commenting round 2 (Tier B + C).
-- **15:00** — 15 min: review HeyReach acceptances, send follow-up DMs to engagers.
-- **17:00** — 15 min: sketch tomorrow's hook + CTA.
-
-### Weekly (3 hr block, Sunday 10–13:00)
-
-- Review 7-day metrics dashboard.
-- Write 5 hooks for next week's posts (use HOOK_BANK).
-- Repurpose 1 blog post → 1 carousel.
-- Newsletter draft → schedule for Friday.
-- Refresh Sales Navigator lead list with last-7-day-active filter.
-- Update `COMMENT_TARGETS.md` with last-touched dates.
+### Weekly (Sunday, 3 hrs)
+- Review 7-day metrics dashboard
+- Write 4 hooks for next week
+- Repurpose 1 blog post → 1 carousel
+- Newsletter draft → schedule for Friday
+- Refresh Sales Nav with last-7-day-active filter
+- Update `COMMENT_TARGETS.md` with last-touched dates
 
 ### Monthly
-
-- Post-mortem the top 3 and bottom 3 posts. Pattern-match.
+- Post-mortem top 3 and bottom 3 posts. Pattern-match.
 - Pitch 1 podcast guest spot.
-- Add 2 magnets to the bank.
-- Review acceptance/reply rates; tighten DMs that dropped.
+- Add 1 lead magnet + bundle differently.
+- Review accept and reply rates; tighten DMs that dropped.
 
 ---
 
-## 15. The Single-Page Cheat Sheet
+## 14. The Single Rule
 
-```
-Profile: Creator Mode ON · 5 skills pinned · 6 featured tiles · keyword-CTA banner
-Cadence: 5 posts/wk (Mon–Fri) + 1 Saturday story + Sunday off
-Format mix: 2 carousels / 1 video / 1 multi-image / 1 text / 1 long story
-Hooks: <200 chars · contrarian / number / story-mid / stat-first
-Engagement: 15 thoughtful comments/day · 3-Sentence Rule · 30-creator target list
-Invites: 15/day Mon–Fri · personalized note · 1st warm > 2nd cold
-DMs: keyword auto-magnet → 24h human follow-up → 72h problem question → audit offer
-Newsletter: weekly Friday · the moat · CTA in every post
-Tools: Sales Nav + HeyReach + Authoredup + Supergrow + Shield + Calendly + n8n
-Targets: 1K → 2.5K → 6K → 14K → 28K → 55K → 100K (M0–M6)
-North star: dwell time per post + newsletter subscribers (the two that compound)
-```
+**Distribution > Content. Always.**
+
+Most founders fail on LinkedIn because they spend 80% of time *making* posts and 20% *distributing*. Reverse it. The 10 minutes before publishing — comments planted on big creators' posts — are more valuable than the 60 you spent writing. If you have 90 min today, spend 30 on the post and 60 on commenting + DMing.
 
 ---
 
-## 16. What to Do Tomorrow Morning
+## 15. What Tomorrow Morning Looks Like
 
-1. Rebuild the profile (§4.1) — block 90 min.
-2. Turn on Creator Mode + add 5 skills.
-3. Build `content_scripts/COMMENT_TARGETS.md` with 30 creators.
-4. Pick 5 scripts from `MASTER_CONTENT_SHEET.csv` for next week.
-5. Subscribe to Sales Navigator (start the 30-day trial today).
-6. Schedule the 90-min weekly Sunday block on your calendar.
-7. Open HeyReach trial, configure 5/day invite warm-up.
-8. Write the first newsletter issue. Schedule for Friday.
+1. Make the 5 decisions in §1. Write thesis sentence. Pin it.
+2. Profile rebuild (§5) — 90 min.
+3. Apply for LinkedIn verification.
+4. Build the productized offer page on Stripe.
+5. DM 50 warmest connections asking what they want more.
+6. Pitch 5 podcasts before bed.
+7. Book a 90-min Sunday recurring block on your calendar.
+8. Open Sales Nav trial + HeyReach trial. Configure 5/day invite warm-up.
+9. Draft newsletter issue 1.
 
-That's the launch sequence. The compounding starts the day after.
+That's the launch sequence. Compounding starts the day after.
 
 ---
 
 ## Sources
 
-- [How the LinkedIn Algorithm Works (2026 Update) — SourceGeek](https://www.sourcegeek.com/en/news/how-the-linkedin-algorithm-works-2026-update)
+- [LinkedIn Algorithm 2026 — 360Brew breakdown — ALM Corp](https://almcorp.com/blog/linkedin-feed-algorithm-update-llm-2026/)
 - [LinkedIn Algorithm 2026: Why Your First 60 Min Decide Everything — Growleads](https://growleads.io/blog/linkedin-algorithm-2026-text-vs-video-reach/)
-- [LinkedIn Feed Algorithm Update 2026: 360Brew — ALM Corp](https://almcorp.com/blog/linkedin-feed-algorithm-update-llm-2026/)
-- [LinkedIn Algorithm 2026: What Works Now (Documents, Newsletters, Video) — DataSlayer](https://www.dataslayer.ai/blog/linkedin-algorithm-february-2026-whats-working-now)
-- [The Complete Guide to Growing From 0 to 100,000+ Followers on LinkedIn — Creator Economy](https://creatoreconomy.so/p/complete-guide-to-growing-on-linkedin)
-- [How I added 100,000 Followers on LinkedIn in just 6 months — Steve Blakeman](https://www.linkedin.com/pulse/how-i-added-100000-followers-linkedin-just-6-months-steve-blakeman)
-- [From 49 to 10,000 followers in 17 days — Ruben Hassid](https://ruben.substack.com/p/from-49-to-10000-followers-in-17)
-- [How I Grew My LinkedIn from 2k to Over 28k Followers in 2.5 Years — Aylin Round](https://medium.com/@aylin.round/how-i-grew-my-linkedin-from-2k-to-over-28k-followers-in-2-5-years-b9ed41b72ded)
-- [LinkedIn Weekly Connection Request Limit (2026) — Konnector](https://konnector.ai/linkedin-weekly-connection-request-limit-2026/)
-- [Setting LinkedIn Automation Safe Limits — PhantomBuster](https://phantombuster.com/blog/linkedin-automation/linkedin-automation-safe-limits-2026/)
-- [LinkedIn Automation Daily Limits & Guidelines (2026) — LinkBoost](https://blog.linkboost.co/linkedin-automation-daily-limits-guidelines-2026/)
+- [LinkedIn Algorithm 2026: What Works Now — DataSlayer](https://www.dataslayer.ai/blog/linkedin-algorithm-february-2026-whats-working-now)
+- [Richard van der Blom — Algorithm Insights 2025/26](https://www.linkedin.com/posts/richardvanderblom_want-more-reach-more-engagement-and-more-activity-7323960700844838912-ymze)
+- [LinkedIn Content Formats: Performance Stats 2026 — Meet-LEA](https://meet-lea.com/en/blog/linkedin-content-formats-performance)
+- [LinkedIn Carousels vs Text vs Video — CarouselMaker](https://carouselmaker.co/en/blog/linkedin-carousels-vs-text-posts-vs-videos)
+- [LinkedIn Weekly Connection Limit 2026 — Konnector](https://konnector.ai/linkedin-weekly-connection-request-limit-2026/)
+- [LinkedIn Automation Safe Limits — PhantomBuster](https://phantombuster.com/blog/linkedin-automation/linkedin-automation-safe-limits-2026/)
 - [Best LinkedIn Automation Tools 2026 — Postiv](https://postiv.ai/blog/best-linkedin-automation-tools)
-- [Expandi vs Dripify — HeyReach](https://www.heyreach.io/blog/expandi-vs-dripify)
-- [LinkedIn Algorithm 2026 — 7 Shifts B2B Marketers Need To Know — DowSocial](https://www.dowsocial.com/linkedin-algorithm-2026/)
-- [Richard van der Blom — LinkedIn Algorithm Insights 2025/26](https://www.linkedin.com/posts/richardvanderblom_want-more-reach-more-engagement-and-more-activity-7323960700844838912-ymze)
-- [LinkedIn Content Formats: Performance and Statistics 2026 — Meet-LEA](https://meet-lea.com/en/blog/linkedin-content-formats-performance)
-- [LinkedIn Carousels vs Text Posts vs Videos — CarouselMaker](https://carouselmaker.co/en/blog/linkedin-carousels-vs-text-posts-vs-videos)
-- [LinkedIn Hooks That Actually Work in 2026 — Viral Boris](https://medium.com/@viralboris/linkedin-hooks-that-actually-work-in-2026-50-examples-bbe7976cde67)
-- [Top 5 Frameworks for Viral LinkedIn Hooks — UseVisuals](https://usevisuals.com/blog/top-frameworks-for-viral-linkedin-hooks)
-- [Mastering LinkedIn in 2026: B2B Lead Generation — The Strategy Story](https://thestrategystory.com/blog/mastering-linkedin-in-2026-a-comprehensive-strategy-for-high-quality-b2b-lead-generation/)
-- [How to Generate B2B Leads on LinkedIn Without Ads (2026) — LinkBoost](https://blog.linkboost.co/generate-b2b-leads-linkedin-without-ads-2026/)
-- [LinkedIn Newsletter Strategy Guide 2026 — InfluenceFlow](https://influenceflow.io/resources/linkedin-newsletter-strategy-complete-guide-to-building-an-engaged-subscriber-base-in-2026/)
-- [LinkedIn Creator Mode: Should You Turn It On? — Linklulu](https://www.linklulu.com/blog/linkedin-creator-mode)
 - [LinkedIn Engagement Pods Crackdown 2026 — ConnectSafely](https://connectsafely.ai/articles/linkedin-engagement-pods-crackdown-2026)
-- [LinkedIn Engagement Best Practices 2026 — LinkMate](https://blog.linkmate.io/linkedin-engagement-best-practices-2026/)
-- [LinkedIn Strategy for SaaS Founders: 2026 Growth Guide — LinkBoost](https://blog.linkboost.co/linkedin-strategy-for-saas-founders-2026/)
-- [Sales Navigator Filters: Advanced Search Guide 2026 — Sbl.so](https://sbl.so/linkedin/sales-navigator-filters-guide/)
-- [How to Use LinkedIn Sales Navigator Boolean Search — GrackerAI](https://gracker.ai/blog/linkedin-sales-navigator-boolean-search)
-- [LinkedIn Growth Hacks 2026 [17 Strategies to Reach 100K Followers] — Marky](https://mymarky.com/blog/linkedin-growth-hacks-2026)
+- [LinkedIn Hooks That Actually Work in 2026 — Viral Boris](https://medium.com/@viralboris/linkedin-hooks-that-actually-work-in-2026-50-examples-bbe7976cde67)
+- [Top Frameworks for Viral LinkedIn Hooks — UseVisuals](https://usevisuals.com/blog/top-frameworks-for-viral-linkedin-hooks)
+- [Mastering LinkedIn in 2026: B2B Lead Generation — The Strategy Story](https://thestrategystory.com/blog/mastering-linkedin-in-2026-a-comprehensive-strategy-for-high-quality-b2b-lead-generation/)
+- [LinkedIn Newsletter Strategy Guide 2026 — InfluenceFlow](https://influenceflow.io/resources/linkedin-newsletter-strategy-complete-guide-to-building-an-engaged-subscriber-base-in-2026/)
+- [LinkedIn Strategy for SaaS Founders — LinkBoost](https://blog.linkboost.co/linkedin-strategy-for-saas-founders-2026/)
+- [Sales Navigator Filters Guide 2026 — Sbl.so](https://sbl.so/linkedin/sales-navigator-filters-guide/)
+- [How to Use Sales Navigator Boolean Search — GrackerAI](https://gracker.ai/blog/linkedin-sales-navigator-boolean-search)
+- [How I added 100K Followers in 6 months — Steve Blakeman (outlier case)](https://www.linkedin.com/pulse/how-i-added-100000-followers-linkedin-just-6-months-steve-blakeman)
+- [From 49 to 10K followers in 17 days — Ruben Hassid (outlier case)](https://ruben.substack.com/p/from-49-to-10000-followers-in-17)
