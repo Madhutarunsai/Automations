@@ -1,0 +1,21 @@
+{
+  "_comment": "Copy to config.json and fill in. config.json is gitignored.",
+  "telegram": {
+    "bot_token": "REPLACE_WITH_BOT_TOKEN_FROM_BOTFATHER",
+    "chat_id": "REPLACE_WITH_YOUR_CHAT_ID"
+  },
+  "program": {
+    "start_date": "2026-05-04",
+    "thesis": "I automate the back office of staffing firms. 6-week hires become 1-week hires.",
+    "calendly_url": "https://calendly.com/madhu-tarun-sai/audit",
+    "stripe_offer_url": "https://buy.stripe.com/REPLACE",
+    "newsletter_name": "The Staffing Automation Brief"
+  },
+  "cadence": {
+    "posts_per_week": 4,
+    "comments_per_day": 15,
+    "invites_per_day": 10,
+    "warm_dms_per_day": 20,
+    "podcast_pitches_per_week": 5
+  }
+}

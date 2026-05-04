@@ -4,3 +4,7 @@ __pycache__/
 .pytest_cache/
 dist/
 build/
+
+# Secrets - never commit
+linkedin_engine/config.json
+*.env
