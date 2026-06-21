@@ -61,8 +61,16 @@ Global flags: `--json` (compact output for piping), `--location-id ID`,
 | `payments` | `transactions`, `orders`, `invoices` |
 | `locations` | `get`, `custom-fields`, `custom-values` |
 
-`--set key=value` flags build a JSON body; values are JSON-decoded when
-possible (so `tags=["a","b"]` and `monetaryValue=100` work as expected).
+`--set key=value` adds a **string** field (sent verbatim, so numeric-looking
+ids like `externalId=12345` stay strings). Use `--set-json key=value` for
+**typed** fields whose value is JSON: numbers, booleans, arrays, objects
+(e.g. `--set-json monetaryValue=5000`, `--set-json tags='["a","b"]'`). The
+resolved location id always wins over a `--set locationId=...`.
+
+> Endpoint caveats to verify against a live account: `contacts search` sends a
+> simple `{query, pageLimit}` body and `payments invoices` sends
+> `altId/altType` only — GHL's v2 search/invoice contracts may want richer
+> filters or pagination. Reads elsewhere are straightforward.
 
 ## Examples
 

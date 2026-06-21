@@ -26,28 +26,57 @@ def _emit(result, *, compact: bool) -> None:
         print(json.dumps(result, indent=2, sort_keys=False))
 
 
-def _kv_body(pairs: list[str] | None) -> dict:
-    """Parse repeated ``key=value`` flags into a dict (values JSON-decoded)."""
+def _kv_body(pairs: list[str] | None, json_pairs: list[str] | None = None) -> dict:
+    """Build a JSON body from ``--set`` (string values, sent verbatim) and
+    ``--set-json`` (values JSON-decoded into numbers/booleans/arrays/objects).
+
+    ``--set`` is kept as a string so numeric-looking identifiers like
+    ``externalId=12345`` are not silently coerced to ints. Use ``--set-json``
+    when you genuinely want a typed value (e.g. ``monetaryValue=5000``).
+    """
     body: dict = {}
     for item in pairs or []:
-        if "=" not in item:
-            raise ConfigError(f"--set expects key=value, got: {item!r}")
-        key, _, value = item.partition("=")
+        key, value = _split_pair(item)
+        body[key] = value
+    for item in json_pairs or []:
+        key, value = _split_pair(item)
         try:
             body[key] = json.loads(value)
-        except json.JSONDecodeError:
-            body[key] = value
+        except json.JSONDecodeError as exc:
+            raise ConfigError(f"--set-json value for {key!r} is not valid JSON: {value!r}") from exc
     return body
+
+
+def _split_pair(item: str) -> tuple[str, str]:
+    if "=" not in item:
+        raise ConfigError(f"expected key=value, got: {item!r}")
+    key, _, value = item.partition("=")
+    return key, value
 
 
 def _load_json_file(path: str | None) -> dict:
     if not path:
         return {}
-    with open(path, "r", encoding="utf-8") as fh:
-        return json.load(fh)
+    try:
+        with open(path, "r", encoding="utf-8") as fh:
+            return json.load(fh)
+    except OSError as exc:
+        raise ConfigError(f"cannot read {path!r}: {exc.strerror or exc}") from exc
+    except json.JSONDecodeError as exc:
+        raise ConfigError(f"{path!r} is not valid JSON: {exc}") from exc
 
 
 # ── argument parser ────────────────────────────────────────────────────
+
+def _add_body_opts(parser, *, required: bool = False) -> None:
+    """Add ``--set`` (string fields) and ``--set-json`` (typed fields)."""
+    parser.add_argument("--set", action="append", metavar="key=value", help="string field (sent verbatim)")
+    parser.add_argument("--set-json", action="append", dest="set_json", metavar="key=json",
+                        help="typed field, JSON-decoded (numbers, booleans, arrays, objects)")
+    if required:
+        # argparse can't require "one of these"; enforce in dispatch instead.
+        parser.set_defaults(_body_required=True)
+
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="ghl", description="GoHighLevel CLI")
@@ -62,11 +91,11 @@ def build_parser() -> argparse.ArgumentParser:
 
     # contacts -----------------------------------------------------------
     c = groups.add_parser("contacts").add_subparsers(dest="action", required=True)
-    p = c.add_parser("list"); p.add_argument("--limit", type=int, default=20); p.add_argument("--query")
+    p = c.add_parser("list"); p.add_argument("--limit", type=int, default=20)
     p = c.add_parser("get"); p.add_argument("id")
     p = c.add_parser("search"); p.add_argument("--query", required=True); p.add_argument("--limit", type=int, default=20)
-    p = c.add_parser("create"); p.add_argument("--set", action="append", metavar="key=value")
-    p = c.add_parser("update"); p.add_argument("id"); p.add_argument("--set", action="append", metavar="key=value")
+    p = c.add_parser("create"); _add_body_opts(p)
+    p = c.add_parser("update"); p.add_argument("id"); _add_body_opts(p)
     p = c.add_parser("delete"); p.add_argument("id")
     p = c.add_parser("add-tag"); p.add_argument("id"); p.add_argument("tags", nargs="+")
     p = c.add_parser("remove-tag"); p.add_argument("id"); p.add_argument("tags", nargs="+")
@@ -76,8 +105,8 @@ def build_parser() -> argparse.ArgumentParser:
     p = o.add_parser("list"); p.add_argument("--limit", type=int, default=20)
     o.add_parser("pipelines")
     p = o.add_parser("get"); p.add_argument("id")
-    p = o.add_parser("create"); p.add_argument("--set", action="append", metavar="key=value")
-    p = o.add_parser("update"); p.add_argument("id"); p.add_argument("--set", action="append", metavar="key=value")
+    p = o.add_parser("create"); _add_body_opts(p)
+    p = o.add_parser("update"); p.add_argument("id"); _add_body_opts(p)
     p = o.add_parser("delete"); p.add_argument("id")
 
     # calendars ----------------------------------------------------------
@@ -97,7 +126,7 @@ def build_parser() -> argparse.ArgumentParser:
     cv = groups.add_parser("conversations").add_subparsers(dest="action", required=True)
     p = cv.add_parser("list"); p.add_argument("--limit", type=int, default=20)
     p = cv.add_parser("messages"); p.add_argument("id")
-    p = cv.add_parser("send"); p.add_argument("--set", action="append", metavar="key=value", required=True)
+    p = cv.add_parser("send"); _add_body_opts(p, required=True)
 
     # payments -----------------------------------------------------------
     pay = groups.add_parser("payments").add_subparsers(dest="action", required=True)
@@ -123,7 +152,7 @@ def _dispatch(args, client: GHLClient) -> object:
     if group == "contacts":
         if action == "list":
             loc = cfg.require_location(args.location_id)
-            return client.request("GET", "/contacts/", params={"locationId": loc, "limit": args.limit, "query": args.query})
+            return client.request("GET", "/contacts/", params={"locationId": loc, "limit": args.limit})
         if action == "get":
             return client.request("GET", f"/contacts/{args.id}")
         if action == "search":
@@ -131,9 +160,9 @@ def _dispatch(args, client: GHLClient) -> object:
             return client.request("POST", "/contacts/search", body={"locationId": loc, "query": args.query, "pageLimit": args.limit})
         if action == "create":
             loc = cfg.require_location(args.location_id)
-            return client.request("POST", "/contacts/", body={"locationId": loc, **_kv_body(args.set)})
+            return client.request("POST", "/contacts/", body={**_kv_body(args.set, args.set_json), "locationId": loc})
         if action == "update":
-            return client.request("PUT", f"/contacts/{args.id}", body=_kv_body(args.set))
+            return client.request("PUT", f"/contacts/{args.id}", body=_kv_body(args.set, args.set_json))
         if action == "delete":
             return client.request("DELETE", f"/contacts/{args.id}")
         if action == "add-tag":
@@ -142,23 +171,25 @@ def _dispatch(args, client: GHLClient) -> object:
             return client.request("DELETE", f"/contacts/{args.id}/tags", body={"tags": args.tags})
 
     if group == "opportunities":
-        loc = cfg.require_location(args.location_id)
         if action == "list":
+            loc = cfg.require_location(args.location_id)
             return client.request("GET", "/opportunities/search", params={"location_id": loc, "limit": args.limit})
         if action == "pipelines":
+            loc = cfg.require_location(args.location_id)
             return client.request("GET", "/opportunities/pipelines", params={"locationId": loc})
         if action == "get":
             return client.request("GET", f"/opportunities/{args.id}")
         if action == "create":
-            return client.request("POST", "/opportunities/", body={"locationId": loc, **_kv_body(args.set)})
+            loc = cfg.require_location(args.location_id)
+            return client.request("POST", "/opportunities/", body={**_kv_body(args.set, args.set_json), "locationId": loc})
         if action == "update":
-            return client.request("PUT", f"/opportunities/{args.id}", body=_kv_body(args.set))
+            return client.request("PUT", f"/opportunities/{args.id}", body=_kv_body(args.set, args.set_json))
         if action == "delete":
             return client.request("DELETE", f"/opportunities/{args.id}")
 
     if group == "calendars":
-        loc = cfg.require_location(args.location_id)
         if action == "list":
+            loc = cfg.require_location(args.location_id)
             return client.request("GET", "/calendars/", params={"locationId": loc})
         if action == "get":
             return client.request("GET", f"/calendars/{args.id}")
@@ -166,8 +197,8 @@ def _dispatch(args, client: GHLClient) -> object:
             return client.request("GET", f"/calendars/{args.id}/free-slots", params={"startDate": args.start, "endDate": args.end})
 
     if group == "workflows":
-        loc = cfg.require_location(args.location_id)
         if action == "list":
+            loc = cfg.require_location(args.location_id)
             return client.request("GET", "/workflows/", params={"locationId": loc})
         if action == "enroll":
             return client.request("POST", f"/contacts/{args.contact_id}/workflow/{args.workflow_id}")
@@ -176,18 +207,22 @@ def _dispatch(args, client: GHLClient) -> object:
         if action == "create":
             if not args.experimental:
                 raise ConfigError("'workflows create' uses the internal API; pass --experimental to enable it.")
+            loc = cfg.require_location(args.location_id)
             definition = _load_json_file(args.from_json)
             definition.setdefault("locationId", loc)
             return client.internal_request("POST", "/workflows/", body=definition)
 
     if group == "conversations":
-        loc = cfg.require_location(args.location_id)
         if action == "list":
+            loc = cfg.require_location(args.location_id)
             return client.request("GET", "/conversations/search", params={"locationId": loc, "limit": args.limit})
         if action == "messages":
             return client.request("GET", f"/conversations/{args.id}/messages")
         if action == "send":
-            return client.request("POST", "/conversations/messages", body=_kv_body(args.set))
+            body = _kv_body(args.set, args.set_json)
+            if not body:
+                raise ConfigError("conversations send needs at least one --set/--set-json field (e.g. --set type=Email)")
+            return client.request("POST", "/conversations/messages", body=body)
 
     if group == "payments":
         loc = cfg.require_location(args.location_id)
@@ -213,10 +248,12 @@ def _dispatch(args, client: GHLClient) -> object:
 
 def main(argv: list[str] | None = None, *, client: GHLClient | None = None) -> int:
     args = build_parser().parse_args(argv)
+    # The only internal-API-only command is `workflows create`; it authenticates
+    # with the Firebase session token, so don't demand a public GHL_API_KEY.
+    internal_only = args.group == "workflows" and args.action == "create"
     try:
         if client is None:
-            # Experimental commands also need the public api key for config.
-            client = GHLClient(Config.from_env())
+            client = GHLClient(Config.from_env(require_api_key=not internal_only))
         result = _dispatch(args, client)
     except ConfigError as exc:
         print(f"error: {exc}", file=sys.stderr)

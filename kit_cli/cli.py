@@ -42,8 +42,11 @@ def _kv_body(pairs: list[str] | None) -> dict:
 def _read_body_file(path: str | None) -> str | None:
     if not path:
         return None
-    with open(path, "r", encoding="utf-8") as fh:
-        return fh.read()
+    try:
+        with open(path, "r", encoding="utf-8") as fh:
+            return fh.read()
+    except OSError as exc:
+        raise ConfigError(f"cannot read --body-file {path!r}: {exc.strerror or exc}") from exc
 
 
 # ── parser ──────────────────────────────────────────────────────────────
@@ -115,7 +118,8 @@ def _dispatch(args, client: KitClient) -> object:
             content = args.content or _read_body_file(args.body_file)
             if not content:
                 raise ConfigError("provide --content or --body-file for the broadcast body")
-            body = {"subject": args.subject, "content": content, **_kv_body(args.set)}
+            # --set first so the required --subject/--content always win.
+            body = {**_kv_body(args.set), "subject": args.subject, "content": content}
             if args.send_at:
                 body["send_at"] = args.send_at
             return client.request("POST", "/broadcasts", body=body)
@@ -150,7 +154,7 @@ def _dispatch(args, client: KitClient) -> object:
         if action == "list":
             return client.request("GET", "/subscribers", params={"per_page": args.limit})
         if action == "create":
-            return client.request("POST", "/subscribers", body={"email_address": args.email, **_kv_body(args.set)})
+            return client.request("POST", "/subscribers", body={**_kv_body(args.set), "email_address": args.email})
 
     if group == "segments":
         if action == "list":

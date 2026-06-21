@@ -60,6 +60,29 @@ def test_broadcast_create_requires_body():
     assert fc.calls == []
 
 
+def test_broadcast_create_without_send_at_is_draft():
+    fc = FakeClient()
+    run(["broadcasts", "create", "--subject", "Hi", "--content", "x"], fc)
+    _, _, _, body = fc.calls[0]
+    assert "send_at" not in body  # omitting --send-at leaves it a draft
+    assert body == {"subject": "Hi", "content": "x"}
+
+
+def test_broadcast_set_cannot_clobber_required_fields():
+    fc = FakeClient()
+    run(["broadcasts", "create", "--subject", "Real", "--content", "x", "--set", "subject=Hijacked"], fc)
+    _, _, _, body = fc.calls[0]
+    assert body["subject"] == "Real"
+
+
+def test_missing_body_file_is_clean_error(capsys):
+    fc = FakeClient()
+    rc = run(["broadcasts", "create", "--subject", "Hi", "--body-file", "/no/such/file.html"], fc)
+    assert rc == 2  # ConfigError, not an unhandled traceback
+    assert "cannot read" in capsys.readouterr().err
+    assert fc.calls == []
+
+
 def test_sequence_email_create_path():
     fc = FakeClient()
     run(["sequence-emails", "create", "--sequence-id", "9", "--subject", "S", "--content", "x", "--delay-days", "2"], fc)
@@ -87,15 +110,16 @@ def test_api_error_reported(capsys):
 
 def test_parser_groups():
     parser = build_parser()
-    for argv in (
-        ["broadcasts", "stats", "1"],
-        ["sequences", "create", "--name", "n"],
-        ["tags", "list"],
-        ["custom-fields", "list"],
-        ["segments", "list"],
-    ):
+    cases = [
+        (["broadcasts", "stats", "1"], "broadcasts", "stats"),
+        (["sequences", "create", "--name", "n"], "sequences", "create"),
+        (["tags", "list"], "tags", "list"),
+        (["custom-fields", "list"], "custom-fields", "list"),
+        (["segments", "list"], "segments", "list"),
+    ]
+    for argv, group, action in cases:
         ns = parser.parse_args(argv)
-        assert ns.group and ns.action
+        assert ns.group == group and ns.action == action
 
 
 def test_client_constructible():
