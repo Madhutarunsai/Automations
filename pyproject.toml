@@ -8,8 +8,17 @@ dependencies = []
 [project.optional-dependencies]
 dev = ["pytest>=7.0"]
 
+# The repo has several top-level dirs that are not installable packages
+# (script-only or data dirs), so list the real packages explicitly rather
+# than relying on setuptools flat-layout auto-discovery.
+[tool.setuptools]
+packages = ["blog_engine", "content_engine", "gohighlevel_cli", "kit_cli", "flows"]
+
 [project.scripts]
 content-engine = "content_engine.cli:main"
+ghl = "gohighlevel_cli.cli:main"
+kit = "kit_cli.cli:main"
+leadflow = "flows.deploy:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

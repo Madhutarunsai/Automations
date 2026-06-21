@@ -47,6 +47,37 @@ The `blog_engine/` package generates 5 SEO/AEO/GEO optimized blog posts daily fo
 
 Content pillars rotate daily: Mon=AI Automation, Tue=Lead Gen, Wed=Hiring, Thu=Tools, Fri=Case Studies.
 
+## GoHighLevel CLI
+
+The `gohighlevel_cli/` package is a dependency-free (stdlib only) CLI for the
+GoHighLevel CRM/Marketing API. Run it via `python -m gohighlevel_cli ...` or the
+`ghl` console script. The matching Claude Code skill lives in
+`.claude/skills/gohighlevel-cli/`.
+
+- `gohighlevel_cli/client.py` — HTTP client for the public API and an
+  experimental internal-API path (your own Firebase session token only)
+- `gohighlevel_cli/cli.py` — argparse command groups (contacts, opportunities,
+  calendars, workflows, conversations, payments, locations)
+- Requires `GHL_API_KEY` (Private Integration Token) and `GHL_LOCATION_ID`.
+  Internal-API commands are gated behind `--experimental`; see the SKILL.md.
+
+## Email Marketing CLI (Kit)
+
+The `kit_cli/` package is a dependency-free CLI for the Kit (ConvertKit) v4 API
+— broadcasts, nurture sequences, tags, subscribers. Run via `python -m kit_cli`
+or the `kit` console script. Skill: `.claude/skills/lgj-email-marketing/`.
+Requires `KIT_API_KEY`. Pairs with the GoHighLevel CLI for the full
+CRM-plus-deliverability flow.
+
+## Lead-Gen Flows
+
+The `flows/` package provisions opt-in funnels built on the GoHighLevel + Kit
+skills. A flow is a JSON spec (tag, Kit nurture sequence + email bodies, GHL
+workflow); `flows/deploy.py` reads it and provisions the assets — dry-run by
+default, `--apply` to execute. Run `python -m flows.deploy <flow.json>` or the
+`leadflow` console script. The reference flow is
+`flows/ai_automation_leadgen/` (for webaiautomations.com).
+
 ## Project Conventions
 
 - Commit messages should be concise and describe the "why"
