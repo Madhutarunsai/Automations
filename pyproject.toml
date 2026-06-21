@@ -10,6 +10,7 @@ dev = ["pytest>=7.0"]
 
 [project.scripts]
 content-engine = "content_engine.cli:main"
+ghl = "gohighlevel_cli.cli:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

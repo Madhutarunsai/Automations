@@ -47,6 +47,20 @@ The `blog_engine/` package generates 5 SEO/AEO/GEO optimized blog posts daily fo
 
 Content pillars rotate daily: Mon=AI Automation, Tue=Lead Gen, Wed=Hiring, Thu=Tools, Fri=Case Studies.
 
+## GoHighLevel CLI
+
+The `gohighlevel_cli/` package is a dependency-free (stdlib only) CLI for the
+GoHighLevel CRM/Marketing API. Run it via `python -m gohighlevel_cli ...` or the
+`ghl` console script. The matching Claude Code skill lives in
+`.claude/skills/gohighlevel-cli/`.
+
+- `gohighlevel_cli/client.py` — HTTP client for the public API and an
+  experimental internal-API path (your own Firebase session token only)
+- `gohighlevel_cli/cli.py` — argparse command groups (contacts, opportunities,
+  calendars, workflows, conversations, payments, locations)
+- Requires `GHL_API_KEY` (Private Integration Token) and `GHL_LOCATION_ID`.
+  Internal-API commands are gated behind `--experimental`; see the SKILL.md.
+
 ## Project Conventions
 
 - Commit messages should be concise and describe the "why"
