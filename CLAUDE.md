@@ -61,6 +61,14 @@ GoHighLevel CRM/Marketing API. Run it via `python -m gohighlevel_cli ...` or the
 - Requires `GHL_API_KEY` (Private Integration Token) and `GHL_LOCATION_ID`.
   Internal-API commands are gated behind `--experimental`; see the SKILL.md.
 
+## Email Marketing CLI (Kit)
+
+The `kit_cli/` package is a dependency-free CLI for the Kit (ConvertKit) v4 API
+— broadcasts, nurture sequences, tags, subscribers. Run via `python -m kit_cli`
+or the `kit` console script. Skill: `.claude/skills/lgj-email-marketing/`.
+Requires `KIT_API_KEY`. Pairs with the GoHighLevel CLI for the full
+CRM-plus-deliverability flow.
+
 ## Project Conventions
 
 - Commit messages should be concise and describe the "why"
