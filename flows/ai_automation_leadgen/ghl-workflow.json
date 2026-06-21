@@ -1,0 +1,33 @@
+{
+  "name": "AI Automation - New Lead Nurture",
+  "status": "draft",
+  "trigger": {
+    "type": "contact_tag_added",
+    "filters": [{ "field": "tag", "operator": "is", "value": "lead-magnet-ghl-cli" }]
+  },
+  "steps": [
+    {
+      "type": "send_email",
+      "name": "Welcome + deliver CLI",
+      "subject": "Your GoHighLevel CLI is inside",
+      "body": "<p style=\"line-height:1.5\">Hey {{contact.first_name}}, thanks for grabbing the CLI. Setup link is in your inbox.</p>"
+    },
+    { "type": "wait", "name": "Wait 2 days", "delay": { "value": 2, "unit": "days" } },
+    {
+      "type": "if_else",
+      "name": "Booked a call yet?",
+      "condition": { "field": "appointment_status", "operator": "is", "value": "booked" },
+      "yes": [{ "type": "goal", "name": "Goal: call booked" }],
+      "no": [
+        {
+          "type": "send_email",
+          "name": "Nudge to book",
+          "subject": "Want a hand wiring this up?",
+          "body": "<p style=\"line-height:1.5\">Grab a free automation audit: {{custom_values.booking_link}}</p>"
+        }
+      ]
+    },
+    { "type": "goal", "name": "Goal: call booked", "event": "appointment.booked" }
+  ],
+  "_notes": "Template for `ghl --experimental workflows create --from-json ghl-workflow.json`. Field names follow GHL's internal workflow shape and may need adjusting against a live account. Every workflow defines a trigger and ends on a goal so contacts exit cleanly."
+}

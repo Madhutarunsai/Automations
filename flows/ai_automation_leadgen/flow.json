@@ -1,0 +1,27 @@
+{
+  "name": "AI Automation Lead-Gen",
+  "site": "webaiautomations.com",
+  "lead_magnet": "Free GoHighLevel CLI for Claude",
+  "trigger": "form_submitted (lead-magnet opt-in)",
+  "goal": "call_booked (free automation audit)",
+  "kit": {
+    "tag": "lead-magnet-ghl-cli",
+    "sequence_name": "GHL CLI Nurture",
+    "emails": [
+      {"subject": "Here is your GoHighLevel CLI (2-min setup)", "delay_days": 0, "body_file": "emails/01-welcome.md"},
+      {"subject": "Map every workflow in your CRM with one command", "delay_days": 2, "body_file": "emails/02-value.md"},
+      {"subject": "How we launch a full nurture sequence in a day", "delay_days": 4, "body_file": "emails/03-value.md"},
+      {"subject": "Want us to audit your automations (free)?", "delay_days": 7, "body_file": "emails/04-offer.md"}
+    ],
+    "reengagement_sequence": {
+      "sequence_name": "GHL CLI Re-Engagement",
+      "emails": [
+        {"subject": "Still automating the hard way?", "delay_days": 0, "body_file": "emails/reengage-01.md"},
+        {"subject": "Last one from me (for now)", "delay_days": 3, "body_file": "emails/reengage-02.md"}
+      ]
+    }
+  },
+  "ghl": {
+    "workflow_file": "ghl-workflow.json"
+  }
+}

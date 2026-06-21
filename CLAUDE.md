@@ -69,6 +69,15 @@ or the `kit` console script. Skill: `.claude/skills/lgj-email-marketing/`.
 Requires `KIT_API_KEY`. Pairs with the GoHighLevel CLI for the full
 CRM-plus-deliverability flow.
 
+## Lead-Gen Flows
+
+The `flows/` package provisions opt-in funnels built on the GoHighLevel + Kit
+skills. A flow is a JSON spec (tag, Kit nurture sequence + email bodies, GHL
+workflow); `flows/deploy.py` reads it and provisions the assets — dry-run by
+default, `--apply` to execute. Run `python -m flows.deploy <flow.json>` or the
+`leadflow` console script. The reference flow is
+`flows/ai_automation_leadgen/` (for webaiautomations.com).
+
 ## Project Conventions
 
 - Commit messages should be concise and describe the "why"
